@@ -1,0 +1,1485 @@
+,Title,Summary,DOI,Categories,Publish Time,Authors
+0,PROVIDENCE: a Flexible Round-by-Round Risk-Limiting Audit,"A Risk-Limiting Audit (RLA) is a statistical election tabulation audit with a
+rigorous error guarantee. We present ballot polling RLA PROVIDENCE, an audit
+with the efficiency of MINERVA and flexibility of BRAVO. We prove that
+PROVIDENCE is risk-limiting in the presence of an adversary who can choose
+subsequent round sizes given knowledge of previous samples. We describe a
+measure of audit workload as a function of the number of rounds, precincts
+touched, and ballots drawn.We quantify the problem of obtaining a misleading
+audit sample when rounds are too small, demonstrating the importance of the
+resulting constraint on audit planning. We present simulation results
+demonstrating the superiority of PROVIDENCE using these measures and describing
+an approach to planning audit round schedules.
+  We describe the use of PROVIDENCE by the Rhode Island Board of Elections in a
+tabulation audit of the 2021 election. Our implementation of PROVIDENCE and
+audit planning tools in the open source R2B2 library should be useful to the
+states of Georgia and Pennsylvania, which are planning pre-certification ballot
+polling RLAs for the 2022 general election.",2210.08717v1,['cs.CR'],2022-10-17 03:14:46+00:00,"[arxiv.Result.Author('Oliver Broadrick'), arxiv.Result.Author('Poorvi L. Vora'), arxiv.Result.Author('Filip Zagórski')]"
+1,Non(c)esuch Ballot-Level Risk-Limiting Audits for Precinct-Count Voting Systems,"Risk-limiting audits (RLAs) guarantee a high probability of correcting
+incorrect reported outcomes before the outcomes are certified. The most
+efficient use ballot-level comparison, comparing the voting system's
+interpretation of individual ballot cards sampled at random (cast-vote records,
+CVRs) from a trustworthy paper trail to a human interpretation of the same
+cards. Such comparisons require the voting system to create and export CVRs in
+a way that can be linked to the individual ballots the CVRs purport to
+represent. Such links can be created by keeping the ballots in the order in
+which they are scanned or by printing a unique serial number on each ballot.
+But for precinct-count systems (PCOS), these strategies may compromise vote
+anonymity: the order in which ballots are cast may identify the voters who cast
+them. Printing a unique pseudo-random number (""cryptographic nonce"") on each
+ballot card after the voter last touches it could reduce such privacy risks.
+But what if the system does not in fact print a unique number on each ballot or
+does not accurately report the numbers it printed? This paper gives two ways to
+conduct an RLA so that even if the system does not print a genuine nonce on
+each ballot or misreports the nonces it used, the audit's risk limit is not
+compromised (however, the anonymity of votes might be compromised). One method
+allows untrusted technology to be used to imprint and to retrieve ballot cards.
+The method is adaptive: if the technology behaves properly, this protection
+does not increase the audit workload. But if the imprinting or retrieval system
+misbehaves, the sample size the RLA requires to confirm the reported results
+when the results are correct is generally larger than if the imprinting and
+retrieval were accurate.",2207.01362v1,"['cs.CR', 'stat.AP']",2022-07-04 12:35:42+00:00,[arxiv.Result.Author('Philip B. Stark')]
+2,Conservative statistical post-election audits,"There are many sources of error in counting votes: the apparent winner might
+not be the rightful winner. Hand tallies of the votes in a random sample of
+precincts can be used to test the hypothesis that a full manual recount would
+find a different outcome. This paper develops a conservative sequential test
+based on the vote-counting errors found in a hand tally of a simple or
+stratified random sample of precincts. The procedure includes a natural
+escalation: If the hypothesis that the apparent outcome is incorrect is not
+rejected at stage $s$, more precincts are audited. Eventually, either the
+hypothesis is rejected--and the apparent outcome is confirmed--or all precincts
+have been audited and the true outcome is known. The test uses a priori bounds
+on the overstatement of the margin that could result from error in each
+precinct. Such bounds can be derived from the reported counts in each precinct
+and upper bounds on the number of votes cast in each precinct. The test allows
+errors in different precincts to be treated differently to reflect voting
+technology or precinct sizes. It is not optimal, but it is conservative: the
+chance of erroneously confirming the outcome of a contest if a full manual
+recount would show a different outcome is no larger than the nominal
+significance level. The approach also gives a conservative $P$-value for the
+hypothesis that a full manual recount would find a different outcome, given the
+errors found in a fixed size sample. This is illustrated with two contests from
+November, 2006: the U.S. Senate race in Minnesota and a school board race for
+the Sausalito Marin City School District in California, a small contest in
+which voters could vote for up to three candidates.",0807.4005v1,['stat.AP'],2008-07-25 06:54:40+00:00,[arxiv.Result.Author('Philip B. Stark')]
+3,Decentralized Verifiable Mail-in Ballot Counting for Postal Voting,"As computer vision is prevalently used for mail-in ballot processing and
+counting, it becomes a point of centralized trust in postal voting. We propose
+DVote, a prototype system of postal voting that provides decentralized trust in
+computer vision. With blockchain and layer-2 technologies, DVote decentralizes
+the computation and model training of computer vision to a group of scrutineers
+that hold the AnyTrust assumption, i.e., at least one member is honest.
+Consequently, the computational integrity is anchored to the trustworthiness of
+a large public blockchain such as Ethereum.",2202.09122v1,['cs.CR'],2022-02-18 11:00:10+00:00,"[arxiv.Result.Author('Peichen Xie'), arxiv.Result.Author('Zihan Zheng'), arxiv.Result.Author('Xian Zhang'), arxiv.Result.Author('Shuo Chen')]"
+4,Physical Cryptographic Signatures for Absentee Ballots,"Physical signature verification on absentee ballots became a major flashpoint
+in the 2018 midterm elections in the United States, especially in states like
+Georgia, Florida, and Arizona, where close election margins resulted in
+heightened attention to the counting of absentee ballots. As vote-by-mail
+solutions are becoming more prevalent across the U.S., these issues are sure to
+continue affecting elections in the United States. Signature verification is an
+inexact science; often times guidelines can vary widely from jurisdiction to
+jurisdiction. In this paper we provide a cryptographic remedy to this solution
+that is usable, secure, and easily integrated into existing election
+infrastructure.",1812.09423v1,['cs.CR'],2018-12-22 00:43:31+00:00,[arxiv.Result.Author('Matthew Bernhard')]
+5,Security Survey and Analysis of Vote-by-Mail Systems,"Voting by mail has been gaining traction for decades in the United States and
+has emerged as the preferred voting method during the COVID-19 pandemic. In
+this paper, we examine the security of electronic systems used in the process
+of voting by mail, including online voter registration and online ballot
+tracking systems. The goals of these systems, to facilitate voter registration
+and increase public confidence in elections, are laudable. They indisputably
+provide a critical public good. It is for these reasons that understanding the
+security and privacy posture of the mail-in voting process is paramount. We
+find that online voter registration systems in some states have vulnerabilities
+that allow adversaries to alter or effectively prevent a voter's registration.
+We additionally find that ballot tracking systems raise serious privacy
+questions surrounding ease of access to voter data. While the vulnerabilities
+discussed here are unlikely to enable an adversary to modify votes, several
+could have the effect of disenfranchising voters and reducing voter confidence
+in U.S. elections infrastructure, thereby undermining the very purpose of these
+systems.",2005.08427v2,"['cs.CY', 'cs.CR']",2020-05-18 02:18:15+00:00,"[arxiv.Result.Author('Jenny Blessing'), arxiv.Result.Author('Julian Gomez'), arxiv.Result.Author('McCoy Patiño'), arxiv.Result.Author('Tran Nguyen')]"
+6,Blind proxy voting,"A secret ballot mechanism that enables voting in absence is proposed. It
+amends standard vote collection methods that use ballot box as anonymizer,
+adding the option for absent voters to vote by a proxy blinded to the content
+of the ballot paper. Votes are cast under unique and hidden identification
+numbers generated solely for the purpose of that election. Voters prepare their
+ballot papers from scratch and submit them to the tallying authority in two
+parts via separate routes, each part being meaningless without the other.",1812.11128v1,['cs.CR'],2018-12-28 17:41:13+00:00,[arxiv.Result.Author('Zuzana Haniková')]
+7,RemoteVote and SAFE Vote: Towards Usable End-to-End Verification for Vote-by-Mail,"Postal voting is growing rapidly in the U.S., with 43% of voters casting
+ballots by mail in 2020, yet until recently there has been little research
+about extending the protections of end-to-end verifiable (E2E-V) election
+schemes to vote-by-mail contexts. The first - and to date, only - framework to
+focus on this setting is STROBE, which has important usability limitations. In
+this work, we present two approaches, RemoteVote and SAFE Vote, that allow
+mail-in voters to benefit from E2E-V without changing the voter experience for
+those who choose not to participate in verification. To evaluate these systems
+and compare them with STROBE, we consider an expansive set of properties,
+including novel attributes of usability and verifiability, several of which
+have applicability beyond vote-by-mail contexts. We hope that our work will
+help catalyze further progress towards universal applicability of E2E-V for
+real-world elections.",2111.08662v3,['cs.CR'],2021-11-16 17:49:54+00:00,"[arxiv.Result.Author('Braden L. Crimmins'), arxiv.Result.Author('Marshall Rhea'), arxiv.Result.Author('J. Alex Halderman')]"
+8,Precinct Size Matters - The Large Precinct Bias in US Presidential Elections,"Examination of precinct level data in US presidential elections reveals a
+correlation of large precincts and increased fraction of Republican votes. The
+large precinct bias is analyzed with respect to voter heterogeneity and voter
+inconvenience as precinct size increases. The analysis shows that voter
+inconvenience is a significant factor in election outcomes in certain states,
+and may significantly disadvantage Democratic candidates.",1410.8868v1,"['stat.OT', '91F10 (primary), 91D10 (secondary)']",2014-10-29 17:58:15+00:00,[arxiv.Result.Author('Glenn Webb')]
+9,"More style, less work: card-style data decrease risk-limiting audit sample sizes","U.S. elections rely heavily on computers such as voter registration
+databases, electronic pollbooks, voting machines, scanners, tabulators, and
+results reporting websites. These introduce digital threats to election
+outcomes. Risk-limiting audits (RLAs) mitigate threats to some of these systems
+by manually inspecting random samples of ballot cards. RLAs have a large chance
+of correcting wrong outcomes (by conducting a full manual tabulation of a
+trustworthy record of the votes), but can save labor when reported outcomes are
+correct. This efficiency is eroded when sampling cannot be targeted to ballot
+cards that contain the contest(s) under audit. If the sample is drawn from all
+cast cards, RLA sample sizes scale like the reciprocal of the fraction of
+ballot cards that contain the contest(s) under audit. That fraction shrinks as
+the number of cards per ballot grows (i.e., when elections contain more
+contests) and as the fraction of ballots that contain the contest decreases
+(i.e., when a smaller percentage of voters are eligible to vote in the
+contest). States that conduct RLAs of contests on multi-card ballots or of
+small contests can dramatically reduce sample sizes by using information about
+which ballot cards contain which contests -- by keeping track of card-style
+data (CSD). For instance, CSD reduces the expected number of draws needed to
+audit a single countywide contest on a 4-card ballot by 75%. Similarly, CSD
+reduces the expected number of draws by 95% or more for an audit of two
+contests with the same margin on a 4-card ballot if one contest is on every
+ballot and the other is on 10% of ballots. In realistic examples, the savings
+can be several orders of magnitude.",2012.03371v1,"['cs.CR', 'stat.ME']",2020-12-06 20:35:12+00:00,"[arxiv.Result.Author('Amanda K. Glazer'), arxiv.Result.Author('Jacob V. Spertus'), arxiv.Result.Author('Philip B. Stark')]"
+10,Blind proxy voting,"A secret ballot mechanism that enables voting in absence is proposed. It
+amends standard vote collection methods that use ballot box as anonymizer,
+adding the option for absent voters to vote by a proxy blinded to the content
+of the ballot paper. Votes are cast under unique and hidden identification
+numbers generated solely for the purpose of that election. Voters prepare their
+ballot papers from scratch and submit them to the tallying authority in two
+parts via separate routes, each part being meaningless without the other.",1812.11128v1,['cs.CR'],2018-12-28 17:41:13+00:00,[arxiv.Result.Author('Zuzana Haniková')]
+11,Limiting Risk by Turning Manifest Phantoms into Evil Zombies,"Drawing a random sample of ballots to conduct a risk-limiting audit generally
+requires knowing how the ballots cast in an election are organized into groups,
+for instance, how many containers of ballots there are in all and how many
+ballots are in each container. A list of the ballot group identifiers along
+with number of ballots in each group is called a ballot manifest. What if the
+ballot manifest is not accurate? Surprisingly, even if ballots are known to be
+missing from the manifest, it is not necessary to make worst-case assumptions
+about those ballots--for instance, to adjust the margin by the number of
+missing ballots--to ensure that the audit remains conservative. Rather, it
+suffices to make worst-case assumptions about the individual randomly selected
+ballots that the audit cannot find. This observation provides a simple
+modification to some risk-limiting audit procedures that makes them
+automatically become more conservative if the ballot manifest has errors. The
+modification--phantoms to evil zombies (~2EZ)--requires only an upper bound on
+the total number of ballots cast. ~2EZ makes the audit P-value stochastically
+larger than it would be had the manifest been accurate, automatically requiring
+more than enough ballots to be audited to offset the manifest errors. This
+ensures that the true risk limit remains smaller than the nominal risk limit.
+On the other hand, if the manifest is in fact accurate and the upper bound on
+the total number of ballots equals the total according to the manifest, ~2EZ
+has no effect at all on the number of ballots audited nor on the true risk
+limit.",1207.3413v1,['stat.AP'],2012-07-14 11:26:02+00:00,"[arxiv.Result.Author('Jorge H. Banuelos'), arxiv.Result.Author('Philip B. Stark')]"
+12,A Complete Enumeration of Ballot Permutations Avoiding Sets of Small Patterns,"Permutations whose prefixes contain at least as many ascents as descents are
+called ballot permutations. Lin, Wang, and Zhao have previously enumerated
+ballot permutations avoiding small patterns and have proposed the problem of
+enumerating ballot permutations avoiding a pair of permutations of length $3$.
+We completely enumerate ballot permutations avoiding two patterns of length $3$
+and we relate these avoidance classes with their respective recurrence
+relations and formulas, which leads to an interesting bijection between ballot
+permutations avoiding $132$ and $312$ with left factors of Dyck paths. In
+addition, we also conclude the Wilf-classification of ballot permutations
+avoiding sets of two patterns of length $3$, and we then extend our results to
+completely enumerate ballot permutations avoiding three patterns of length $3$.",2209.06087v1,"['math.CO', '05A05']",2022-09-13 15:37:45+00:00,[arxiv.Result.Author('Nathan Sun')]
+13,Can Voters Detect Errors on Their Printed Ballots? Absolutely,"There is still debate on whether voters can detect malicious changes in their
+printed ballot after making their selections on a Ballot Marking Device (BMD).
+In this study, we altered votes on a voter's ballot after they had made their
+selections on a BMD. We then required them to examine their ballots for any
+changes from the slate they used to vote. Overall accuracy was exceptionally
+high. Participants saw 1440 total contests, and of those 1440, there were a
+total of 4 errors, so total accuracy was 99.8%. Participants were able to
+perform with near-perfect accuracy regardless of ballot length, ballot type,
+number of altered races, and location of altered races. Detection performance
+was extremely robust. We conclude that with proper direction and resources,
+voters can be near-perfect detectors of ballot changes on printed paper ballots
+after voting with a BMD. This finding has significant implications for the
+voting community as BMD use continues to grow. Research should now focus on
+identifying administrative and behavioral methods that will prompt and
+encourage voters to check their BMD-generated ballots before they drop them in
+the ballot box.",2204.09780v1,"['cs.HC', 'cs.CR', 'H.1.2; J.4']",2022-04-20 20:40:32+00:00,"[arxiv.Result.Author('Philip Kortum'), arxiv.Result.Author('Michael D. Byrne'), arxiv.Result.Author('Chidera O. Azubike'), arxiv.Result.Author('Laura E. Roty')]"
+14,Ballot tilings and increasing trees,"We study enumerations of Dyck and ballot tilings, which are tilings of a
+region determined by two Dyck or ballot paths. We give bijective proofs to two
+formulae of enumerations of Dyck tilings through Hermite histories. We show
+that one of the formulae is equal to a certain Kazhdan--Lusztig polynomial. For
+a ballot tiling, we establish formulae which are analogues of formulae for Dyck
+tilings. Especially, the generating functions have factorized expressions. The
+key tool is a planted plane tree and its increasing labellings. We also
+introduce a generalized perfect matching which is bijective to an Hermite
+history for a ballot tiling. By combining these objects, we obtain various
+expressions of a generating function of ballot tilings with a fixed lower path.",1705.06434v1,"['math-ph', 'math.CO', 'math.MP']",2017-05-18 06:46:09+00:00,[arxiv.Result.Author('Keiichi Shigechi')]
+15,Sophisticated Attacks on Decoy Ballots: The Devil's Menu and the Market for Lemons,"Decoy ballots do not count in election outcomes, but otherwise they are
+indistinguishable from real ballots. By means of a game-theoretical model, we
+show that decoy ballots may not provide effective protection against a
+malevolent adversary trying to buy real ballots. If the citizenry is divided
+into subgroups (or districts), the adversary can construct a so-called ""Devil's
+Menu"" consisting of several prices. In equilibrium, the adversary can buy the
+real ballots of any strict subset of districts at a price corresponding to the
+willingness to sell on the part of the citizens holding such ballots. By
+contrast, decoy voters are trapped into selling their ballots at a low, or even
+negligible, price. Blowing up the adversary's budget by introducing decoy
+ballots may thus turn out to be futile. The Devil's Menu can also be applied to
+the well-known ""Lemons Problem"".",1712.05477v1,['cs.GT'],2017-12-14 23:54:58+00:00,"[arxiv.Result.Author('Hans Gersbach'), arxiv.Result.Author('Akaki Mamageishvili'), arxiv.Result.Author('Oriol Tejada')]"
+16,The ATHENA Class of Risk-Limiting Ballot Polling Audits,"The main risk-limiting ballot polling audit in use today, BRAVO, is designed
+for use when single ballots are drawn at random and a decision regarding
+whether to stop the audit or draw another ballot is taken after each ballot
+draw (ballot-by-ballot (B2) audits). On the other hand, real ballot polling
+audits draw many ballots in a single round before determining whether to stop
+(round-by-round (R2) audits). We show that BRAVO results in significant
+inefficiency when directly applied to real R2 audits. We present the ATHENA
+class of R2 stopping rules, which we show are risk-limiting if the round
+schedule is pre-determined (before the audit begins). We prove that each rule
+is at least as efficient as the corresponding BRAVO stopping rule applied at
+the end of the round. We have open-source software libraries implementing most
+of our results.
+  We show that ATHENA halves the number of ballots required, for all state
+margins in the 2016 US Presidential election and a first round with $90\%$
+stopping probability, when compared to BRAVO (stopping rule applied at the end
+of the round). We present simulation results supporting the 90% stopping
+probability claims and our claims for the risk accrued in the first round.
+Further, ATHENA reduces the number of ballots by more than a quarter for low
+margins, when compared to the BRAVO stopping rule applied on ballots in
+selection order. This implies that keeping track of the order when drawing
+ballots R2 is not beneficial, because ATHENA is more efficient even without
+information on selection order. These results are significant because current
+approaches to real ballot polling election audits use the B2 BRAVO rules,
+requiring about twice as much work on the part of election officials. Applying
+the rules in selection order requires fewer ballots, but keeping track of the
+order, and entering it into audit software, adds to the effort.",2008.02315v5,"['cs.CR', 'stat.AP']",2020-08-05 18:47:37+00:00,"[arxiv.Result.Author('Filip Zagórski'), arxiv.Result.Author('Grant McClearn'), arxiv.Result.Author('Sarah Morin'), arxiv.Result.Author('Neal McBurnett'), arxiv.Result.Author('Poorvi L. Vora')]"
+17,$k$-Cut: A Simple Approximately-Uniform Method for Sampling Ballots in Post-Election Audits,"We present an approximate sampling framework and discuss how risk-limiting
+audits can compensate for these approximations, while maintaining their
+""risk-limiting"" properties. Our framework is general and can compensate for
+counting mistakes made during audits.
+  Moreover, we present and analyze a simple approximate sampling
+method,""$k$-cut"", for picking a ballot randomly from a stack, without counting.
+Our method involves doing $k$ ""cuts"", each involving moving a random portion of
+ballots from the top to the bottom of the stack, and then picking the ballot on
+top. Unlike conventional methods of picking a ballot at random, $k$-cut does
+not require identification numbers on the ballots or counting many ballots per
+draw. We analyze how close the distribution of chosen ballots is to the uniform
+distribution, and design different mitigation procedures. We show that $k=6$
+cuts is enough for an risk-limiting election audit, based on empirical data,
+which would provide a significant increase in efficiency.",1811.08811v3,['cs.DS'],2018-11-21 16:26:33+00:00,"[arxiv.Result.Author('Mayuri Sridhar'), arxiv.Result.Author('Ronald L. Rivest')]"
+18,Bernoulli Ballot Polling: A Manifest Improvement for Risk-Limiting Audits,"We present a method and software for ballot-polling risk-limiting audits
+(RLAs) based on Bernoulli sampling: ballots are included in the sample with
+probability $p$, independently. Bernoulli sampling has several advantages: (1)
+it does not require a ballot manifest; (2) it can be conducted independently at
+different locations, rather than requiring a central authority to select the
+sample from the whole population of cast ballots or requiring stratified
+sampling; (3) it can start in polling places on election night, before margins
+are known. If the reported margins for the 2016 U.S. Presidential election are
+correct, a Bernoulli ballot-polling audit with a risk limit of 5% and a
+sampling rate of $p_0 = 1\%$ would have had at least a 99% probability of
+confirming the outcome in 42 states. (The other states were more likely to have
+needed to examine additional ballots.) Logistical and security advantages that
+auditing in the polling place affords may outweigh the cost of examining more
+ballots than some other methods might require.",1812.06361v1,['stat.AP'],2018-12-15 21:57:23+00:00,"[arxiv.Result.Author('Kellie Ottoboni'), arxiv.Result.Author('Matthew Bernhard'), arxiv.Result.Author('J. Alex Halderman'), arxiv.Result.Author('Ronald L. Rivest'), arxiv.Result.Author('Philip B. Stark')]"
+19,"Symmetric Dyck tilings, ballot tableaux and tree-like tableaux of shifted shapes","Symmetric Dyck tilings and ballot tilings are certain tilings in the region
+surrounded by two ballot paths. We study the relations of combinatorial objects
+which are bijective to symmetric Dyck tilings such as labeled trees, Hermite
+histories, and perfect matchings. We also introduce two operations on labeled
+trees for symmetric Dyck tilings: symmetric Dyck tiling strip (symDTS) and
+symmetric Dyck tiling ribbon (symDTR). We give two definitions of Hermite
+histories for symmetric Dyck tilings, and show that they are equivalent by use
+of the correspondence between symDTS operation and an Hermite history. Since
+ballot tilings form a subset in the set of symmetric Dyck tilings, we construct
+an inclusive map from labeled trees for ballot tilings to labeled trees for
+symmetric Dyck tilings. By this inclusive map, the results for symmetric Dyck
+tilings can be applied to those of ballot tilings. We introduce and study the
+notions of ballot tableaux and tree-like tableaux of shifted shapes, which are
+generalizations of Dyck tableaux and tree-like tableaux, respectively. The
+correspondence between ballot tableaux and tree-like tableaux of shifted shapes
+is given by using the symDTR operation and the structure of labeled trees for
+symmetric Dyck tilings.",2011.07296v1,"['math.CO', 'math-ph', 'math.MP']",2020-11-14 13:15:14+00:00,[arxiv.Result.Author('Keiichi Shigechi')]
+20,Reputation-Driven Voting Dynamics,"We introduce the reputational voter model (RVM) to account for the
+time-varying abilities of individuals to influence their neighbors. To
+understand of the RVM, we first discuss the fitness voter model (FVM), in which
+each voter has a fixed and distinct fitness. In a voting event where voter $i$
+is fitter than voter $j$, only $j$ changes opinion. We show that the dynamics
+of the FVM and the voter model are identical. We next discuss the adaptive
+voter model (AVM), in which the influencing voter in a voting event increases
+its fitness by a fixed amount. The dynamics of the AVM is non-stationary and
+slowly crosses over to that of FVM because of the gradual broadening of the
+fitness distribution of the population. Finally, we treat the RVM, in which the
+voter $i$ is endowed with a reputational rank $r_i$ that ranges from 1 (highest
+rank) to $N$ (lowest), where $N$ is the population size. In a voting event in
+which voter $i$ outranks $j$, only the opinion of $j$ changes. Concomitantly,
+the rank of $i$ increases, while that of $j$ does not change. The rank
+distribution remains uniform on the integers $1,2,3,\ldots,N$, leading to
+stationary dynamics. For equal number of voters in the two voting states with
+these two subpopulations having the same average rand, the time to reach
+consensus in the mean-field limit scales as $\exp(\sqrt{N})$. This long
+consensus time arises because the average rank of the minority population is
+typically higher than that of the majority. Thus whenever consensus is
+approached, this highly ranked minority tends to drive the population away from
+consensus.",1902.09371v2,"['physics.soc-ph', 'cond-mat.stat-mech']",2019-02-22 18:19:16+00:00,"[arxiv.Result.Author('D. Bhat'), arxiv.Result.Author('S. Redner')]"
+21,Gerrymandering: A Briber's Perspective,"We initiate the study of bribery problem in the context of gerrymandering and
+reverse gerrymandering. In our most general problem, the input is a set of
+voters having votes over a set of alternatives, a graph on the voters, a
+partition of voters into connected districts, cost of every voter for changing
+her district, a budget for the briber, and a favorite alternative of the
+briber. The briber needs to compute if the given partition can be modified so
+that (i) the favorite alternative of the briber wins the resulting election,
+(ii) the modification is budget feasible, and (iii) every new district is
+connected. We study four natural variants of the above problem -- the graph on
+voter being arbitrary vs complete graph (corresponds to removing connectedness
+requirement for districts) and the cost of bribing every voter being uniform vs
+non-uniform. We show that all the four problems are NP-complete even under
+quite restrictive scenarios. Hence our results show that district based
+elections are quite resistant under this new kind of electoral attack. We
+complement our hardness results with polynomial time algorithms in some other
+cases.",1909.01583v1,"['cs.GT', 'cs.DS', 'cs.MA', 'cs.SI']",2019-09-04 07:21:15+00:00,[arxiv.Result.Author('Palash Dey')]
+22,Who Votes for Library Bonds? A Principal Component Exploration,"Previous research has shown a relationship between voter characteristics and
+voter support for tax bonds. These findings, however, are difficult to
+interpret because of the high degree of collinearity across the measures. From
+13 demographic measures of voters in a library bond election, seven independent
+principal components were extracted which accounted for 95 percent of the
+variance. Whereas the direct demographic measures showed inconsistent
+relationships with voting, the principal components of low SES, college
+experience, female and service job were related to affirmative voting, while
+high home value was related to negative voting.",2107.01095v1,"['physics.soc-ph', 'econ.GN', 'q-fin.EC', 'stat.AP']",2021-06-26 22:01:59+00:00,[arxiv.Result.Author('Eric Jacobson')]
+23,Blind proxy voting,"A secret ballot mechanism that enables voting in absence is proposed. It
+amends standard vote collection methods that use ballot box as anonymizer,
+adding the option for absent voters to vote by a proxy blinded to the content
+of the ballot paper. Votes are cast under unique and hidden identification
+numbers generated solely for the purpose of that election. Voters prepare their
+ballot papers from scratch and submit them to the tallying authority in two
+parts via separate routes, each part being meaningless without the other.",1812.11128v1,['cs.CR'],2018-12-28 17:41:13+00:00,[arxiv.Result.Author('Zuzana Haniková')]
+24,Incomplete ordering of the voter model on small-world networks,"We investigate how the topology of small-world networks affects the dynamics
+of the voter model for opinion formation. We show that, contrary to what occurs
+on regular topologies with local interactions, the voter model on small-world
+networks does not display the emergence of complete order in the thermodynamic
+limit. The system settles in a stationary state with coexisting opinions whose
+lifetime diverges with the system size. Hence the nontrivial connectivity
+pattern leads to the counterintuitive conclusion that long-range connections
+inhibit the ordering process. However, for networks of finite size, for which
+full uniformity is reached, the ordering process takes a time shorter than on a
+regular lattice of the same size.",cond-mat/0210465v2,['cond-mat.stat-mech'],2002-10-21 16:48:45+00:00,"[arxiv.Result.Author('Claudio Castellano'), arxiv.Result.Author('Daniele Vilone'), arxiv.Result.Author('Alessandro Vespignani')]"
+25,Sharp benefit-to-cost rules for the evolution of cooperation on regular graphs,"We study two of the simple rules on finite graphs under the death-birth
+updating and the imitation updating discovered by Ohtsuki, Hauert, Lieberman
+and Nowak [Nature 441 (2006) 502-505]. Each rule specifies a payoff-ratio
+cutoff point for the magnitude of fixation probabilities of the underlying
+evolutionary game between cooperators and defectors. We view the Markov chains
+associated with the two updating mechanisms as voter model perturbations. Then
+we present a first-order approximation for fixation probabilities of general
+voter model perturbations on finite graphs subject to small perturbation in
+terms of the voter model fixation probabilities. In the context of regular
+graphs, we obtain algebraically explicit first-order approximations for the
+fixation probabilities of cooperators distributed as certain uniform
+distributions. These approximations lead to a rigorous proof that both of the
+rules of Ohtsuki et al. are valid and are sharp.",1107.1513v3,['math.PR'],2011-07-07 20:28:41+00:00,[arxiv.Result.Author('Yu-Ting Chen')]
+26,Fluctuation versus fixation in the one-dimensional constrained voter model,"The constrained voter model describes the dynamics of opinions in a
+population of individuals located on a connected graph. Each agent is
+characterized by her opinion, where the set of opinions is represented by a
+finite sequence of consecutive integers, and each pair of neighbors, as defined
+by the edge set of the graph, interact at a constant rate. The dynamics depends
+on two parameters: the number of opinions denoted by $F$ and a so-called
+confidence threshold denoted by $\theta$. If the opinion distance between two
+interacting agents exceeds the confidence threshold then nothing happens,
+otherwise one of the two agents mimics the other one just as in the classical
+voter model. Our main result shows that the one-dimensional system starting
+from any product measures with a positive density of each opinion fluctuates
+and clusters if and only if $F \leq 2 \theta + 1$. Sufficient conditions for
+fixation in one dimension when the initial distribution is uniform and lower
+bounds for the probability of consensus for the process on finite connected
+graphs are also proved.",1310.0401v1,"['math.PR', '60K35']",2013-10-01 17:30:12+00:00,"[arxiv.Result.Author('Nicolas Lanchier'), arxiv.Result.Author('Stylianos Scarlatos')]"
+27,How Likely A Coalition of Voters Can Influence A Large Election?,"For centuries, it has been widely believed that the influence of a small
+coalition of voters is negligible in a large election. Consequently, there is a
+large body of literature on characterizing the asymptotic likelihood for an
+election to be influenced, especially by the manipulation of a single voter,
+establishing an $O(\frac{1}{\sqrt n})$ upper bound and an
+$\Omega(\frac{1}{n^{67}})$ lower bound for many commonly studied voting rules
+under the i.i.d.~uniform distribution, known as Impartial Culture (IC) in
+social choice, where $n$ is the number is voters.
+  In this paper, we extend previous studies in three aspects: (1) we consider a
+more general and realistic semi-random model, where a distribution adversary
+chooses a worst-case distribution and then a data adversary modifies up to
+$\psi$ portion of the data, (2) we consider many coalitional influence
+problems, including coalitional manipulation, margin of victory, and various
+vote controls and bribery, and (3) we consider arbitrary and variable coalition
+size $B$. Our main theorem provides asymptotically tight bounds on the
+semi-random likelihood of the existence of a size-$B$ coalition that can
+successfully influence the election under a wide range of voting rules.
+Applications of the main theorem and its proof techniques resolve long-standing
+open questions about the likelihood of coalitional manipulability under IC, by
+showing that the likelihood is $\Theta\left(\min\left\{\frac{B}{\sqrt n},
+1\right\}\right)$ for many commonly studied voting rules.
+  The main technical contribution is a characterization of the semi-random
+likelihood for a Poisson multinomial variable (PMV) to be unstable, which we
+believe to be a general and useful technique with independent interest.",2202.06411v2,"['econ.TH', 'cs.AI', 'cs.GT']",2022-02-13 21:27:22+00:00,[arxiv.Result.Author('Lirong Xia')]
+28,On the probability of a Condorcet winner among a large number of alternatives,"Consider $2k-1$ voters, each of which has a preference ranking between $n$
+given alternatives. An alternative $A$ is called a Condorcet winner, if it wins
+against every other alternative $B$ in majority voting (meaning that for every
+other alternative $B$ there are at least $k$ voters who prefer $A$ over $B$).
+The notion of Condorcet winners has been studied intensively for many decades,
+yet some basic questions remain open. In this paper, we consider a model where
+each voter chooses their ranking randomly according to some probability
+distribution among all rankings. One may then ask about the probability to have
+a Condorcet winner with these randomly chosen rankings (which, of course,
+depends on $n$ and $k$, and the underlying probability distribution on the set
+of rankings). In the case of the uniform probability distribution over all
+rankings, which has received a lot of attention and is often referred to as the
+setting of an ""impartial culture"", we asymptotically determine the probability
+of having a Condorcet winner for a fixed number $2k-1$ of voters and $n$
+alternatives with $n\to \infty$. This question has been open for around fifty
+years. While some authors suggested that the impartial culture should exhibit
+the lowest possible probability of having a Condorcet winner, in fact the
+probability can be much smaller for other distributions. We determine, for all
+values of $n$ and $k$, the smallest possible probability of having a Condorcet
+winner (and give an example of a probability distribution over all rankings
+which achieves this minimum possible probability).",2203.13713v1,"['econ.TH', 'math.CO']",2022-03-25 15:32:08+00:00,[arxiv.Result.Author('Lisa Sauermann')]
+29,E-Voting with Blockchain: An E-Voting Protocol with Decentralisation and Voter Privacy,"Technology has positive impacts on many aspects of our social life. Designing
+a 24hour globally connected architecture enables ease of access to a variety of
+resources and services. Furthermore, technology like Internet has been a
+fertile ground for innovation and creativity. One of such disruptive innovation
+is blockchain -- a keystone of cryptocurrencies. The blockchain technology is
+presented as a game changer for many of the existing and emerging
+technologies/services. With its immutability property and decentralised
+architecture, it is taking centre stage in many services as an equalisation
+factor to the current parity between consumers and large
+corporations/governments. One of such potential applications of the blockchain
+is in e-voting schemes. The objective of such a scheme would be to provide a
+decentralised architecture to run and support a voting scheme that is open,
+fair and independently verifiable. In this paper, we propose potentially a new
+e-voting protocol that utilises the blockchain as a transparent ballot box. The
+protocol has been designed with adhering to the fundamental e-voting properties
+in mind as well as offering a degree of decentralisation and allowing for the
+voter to change/update their vote (within the permissible voting period). The
+paper highlights the pros and cons of using blockchain for such a proposal from
+practical point view in both development/deployment and usage contexts.
+Concluding the paper with a potential roadmap for blockchain technology to be
+able to support complex applications.",1805.10258v2,"['cs.CR', 'cs.CY']",2018-05-25 17:18:25+00:00,"[arxiv.Result.Author('Freya Sheer Hardwick'), arxiv.Result.Author('Apostolos Gioulis'), arxiv.Result.Author('Raja Naeem Akram'), arxiv.Result.Author('Konstantinos Markantonakis')]"
+30,"More style, less work: card-style data decrease risk-limiting audit sample sizes","U.S. elections rely heavily on computers such as voter registration
+databases, electronic pollbooks, voting machines, scanners, tabulators, and
+results reporting websites. These introduce digital threats to election
+outcomes. Risk-limiting audits (RLAs) mitigate threats to some of these systems
+by manually inspecting random samples of ballot cards. RLAs have a large chance
+of correcting wrong outcomes (by conducting a full manual tabulation of a
+trustworthy record of the votes), but can save labor when reported outcomes are
+correct. This efficiency is eroded when sampling cannot be targeted to ballot
+cards that contain the contest(s) under audit. If the sample is drawn from all
+cast cards, RLA sample sizes scale like the reciprocal of the fraction of
+ballot cards that contain the contest(s) under audit. That fraction shrinks as
+the number of cards per ballot grows (i.e., when elections contain more
+contests) and as the fraction of ballots that contain the contest decreases
+(i.e., when a smaller percentage of voters are eligible to vote in the
+contest). States that conduct RLAs of contests on multi-card ballots or of
+small contests can dramatically reduce sample sizes by using information about
+which ballot cards contain which contests -- by keeping track of card-style
+data (CSD). For instance, CSD reduces the expected number of draws needed to
+audit a single countywide contest on a 4-card ballot by 75%. Similarly, CSD
+reduces the expected number of draws by 95% or more for an audit of two
+contests with the same margin on a 4-card ballot if one contest is on every
+ballot and the other is on 10% of ballots. In realistic examples, the savings
+can be several orders of magnitude.",2012.03371v1,"['cs.CR', 'stat.ME']",2020-12-06 20:35:12+00:00,"[arxiv.Result.Author('Amanda K. Glazer'), arxiv.Result.Author('Jacob V. Spertus'), arxiv.Result.Author('Philip B. Stark')]"
+31,Blind proxy voting,"A secret ballot mechanism that enables voting in absence is proposed. It
+amends standard vote collection methods that use ballot box as anonymizer,
+adding the option for absent voters to vote by a proxy blinded to the content
+of the ballot paper. Votes are cast under unique and hidden identification
+numbers generated solely for the purpose of that election. Voters prepare their
+ballot papers from scratch and submit them to the tallying authority in two
+parts via separate routes, each part being meaningless without the other.",1812.11128v1,['cs.CR'],2018-12-28 17:41:13+00:00,[arxiv.Result.Author('Zuzana Haniková')]
+32,Non(c)esuch Ballot-Level Risk-Limiting Audits for Precinct-Count Voting Systems,"Risk-limiting audits (RLAs) guarantee a high probability of correcting
+incorrect reported outcomes before the outcomes are certified. The most
+efficient use ballot-level comparison, comparing the voting system's
+interpretation of individual ballot cards sampled at random (cast-vote records,
+CVRs) from a trustworthy paper trail to a human interpretation of the same
+cards. Such comparisons require the voting system to create and export CVRs in
+a way that can be linked to the individual ballots the CVRs purport to
+represent. Such links can be created by keeping the ballots in the order in
+which they are scanned or by printing a unique serial number on each ballot.
+But for precinct-count systems (PCOS), these strategies may compromise vote
+anonymity: the order in which ballots are cast may identify the voters who cast
+them. Printing a unique pseudo-random number (""cryptographic nonce"") on each
+ballot card after the voter last touches it could reduce such privacy risks.
+But what if the system does not in fact print a unique number on each ballot or
+does not accurately report the numbers it printed? This paper gives two ways to
+conduct an RLA so that even if the system does not print a genuine nonce on
+each ballot or misreports the nonces it used, the audit's risk limit is not
+compromised (however, the anonymity of votes might be compromised). One method
+allows untrusted technology to be used to imprint and to retrieve ballot cards.
+The method is adaptive: if the technology behaves properly, this protection
+does not increase the audit workload. But if the imprinting or retrieval system
+misbehaves, the sample size the RLA requires to confirm the reported results
+when the results are correct is generally larger than if the imprinting and
+retrieval were accurate.",2207.01362v1,"['cs.CR', 'stat.AP']",2022-07-04 12:35:42+00:00,[arxiv.Result.Author('Philip B. Stark')]
+33,Can Voters Detect Errors on Their Printed Ballots? Absolutely,"There is still debate on whether voters can detect malicious changes in their
+printed ballot after making their selections on a Ballot Marking Device (BMD).
+In this study, we altered votes on a voter's ballot after they had made their
+selections on a BMD. We then required them to examine their ballots for any
+changes from the slate they used to vote. Overall accuracy was exceptionally
+high. Participants saw 1440 total contests, and of those 1440, there were a
+total of 4 errors, so total accuracy was 99.8%. Participants were able to
+perform with near-perfect accuracy regardless of ballot length, ballot type,
+number of altered races, and location of altered races. Detection performance
+was extremely robust. We conclude that with proper direction and resources,
+voters can be near-perfect detectors of ballot changes on printed paper ballots
+after voting with a BMD. This finding has significant implications for the
+voting community as BMD use continues to grow. Research should now focus on
+identifying administrative and behavioral methods that will prompt and
+encourage voters to check their BMD-generated ballots before they drop them in
+the ballot box.",2204.09780v1,"['cs.HC', 'cs.CR', 'H.1.2; J.4']",2022-04-20 20:40:32+00:00,"[arxiv.Result.Author('Philip Kortum'), arxiv.Result.Author('Michael D. Byrne'), arxiv.Result.Author('Chidera O. Azubike'), arxiv.Result.Author('Laura E. Roty')]"
+34,"Voter Verification of BMD Ballots Is a Two-Part Question: Can They? Mostly, They Can. Do They? Mostly, They Don't","The question of whether or not voters actually verify ballots produced by
+ballot marking devices (BMDs) is presently the subject of some controversy.
+Recent studies (e.g., Bernhard, et al. 2020) suggest the verification rate is
+low. What is not clear from previous research is whether this is more a result
+of voters being unable to do so accurately or whether this is because voters
+simply choose not to attempt verification in the first place. In order to
+understand this problem, we conducted an experiment in which 108 participants
+participated in a mock election where the BMD displayed the voters' true
+choices, but then changed a subset of those choices on the printed ballot. The
+design of the printed ballot, the length of the ballot, the number of changes
+that were made to the ballot, the location of those changes, and the
+instructions provided to the voters were manipulated as part of the experiment.
+Results indicated that of those voters who chose to examine the printed ballot,
+76% detected anomalies, indicating that voters can reliably detect errors on
+their ballot if they will simply review it. This suggests that administrative
+remedies, rather than attempts to alter fundamental human perceptual
+capabilities, could be employed to encourage voters to check their ballots,
+which could prove as an effective countermeasure.",2003.04997v1,"['cs.HC', 'cs.CR', 'H.1.2; J.4']",2020-03-10 21:06:42+00:00,"[arxiv.Result.Author('Philip Kortum'), arxiv.Result.Author('Michael D. Byrne'), arxiv.Result.Author('Julie Whitmore')]"
+35,Exploiting re-voting in the Helios election system,"Election systems must ensure that representatives are chosen by voters.
+Moreover, each voter should have equal influence. Traditionally, this has been
+achieved by permitting voters to cast at most one ballot. More recently, this
+has been achieved by tallying the last ballot cast by each voter. We show this
+is not achieved by the Helios election system, because an adversary can cause a
+ballot other than a voter's last to be tallied. Moreover, we show how the
+adversary can choose the contents of such a ballot, thus the adversary can
+unduly influence the selection of representatives.",1612.04099v3,['cs.CR'],2016-12-13 11:07:22+00:00,"[arxiv.Result.Author('Maxime Meyer'), arxiv.Result.Author('Ben Smyth')]"
+36,On the security of ballot marking devices,"A recent debate among election experts has considered whether electronic
+ballot marking devices (BMDs) have adequate security against the risks of
+malware. A malicious BMD might produce a printed ballot that disagrees with a
+voter's actual intent, with the hope that voters would be unlikely to detect
+this subterfuge. This essay considers how an election administrator can create
+reasonable auditing procedures to gain confidence that their fleet of BMDs is
+operating correctly, allowing voters to benefit from the usability and
+accessibility features of BMDs while the overall election still benefits from
+the same security and reliability properties we expect from hand-marked paper
+ballots.",1908.01897v2,['cs.CR'],2019-08-05 23:04:16+00:00,[arxiv.Result.Author('Dan S. Wallach')]
+37,Ballot Length in Instant Runoff Voting,"Instant runoff voting (IRV) is an increasingly-popular alternative to
+traditional plurality voting in which voters submit rankings over the
+candidates rather than single votes. In practice, elections using IRV often
+restrict the ballot length, the number of candidates a voter is allowed to rank
+on their ballot. We theoretically and empirically analyze how ballot length can
+influence the outcome of an election, given fixed voter preferences. We show
+that there exist preference profiles over $k$ candidates such that up to $k-1$
+different candidates win at different ballot lengths. We derive exact lower
+bounds on the number of voters required for such profiles and provide a
+construction matching the lower bound for unrestricted voter preferences.
+Additionally, we characterize which sequences of winners are possible over
+ballot lengths and provide explicit profile constructions achieving any
+feasible winner sequence. We also examine how classic preference restrictions
+influence our results--for instance, single-peakedness makes $k-1$ different
+winners impossible but still allows at least $\Omega(\sqrt k)$. Finally, we
+analyze a collection of 168 real-world elections, where we truncate rankings to
+simulate shorter ballots. We find that shorter ballots could have changed the
+outcome in one quarter of these elections. Our results highlight ballot length
+as a consequential degree of freedom in the design of IRV elections.",2207.08958v3,"['cs.MA', 'econ.TH']",2022-07-18 22:01:13+00:00,"[arxiv.Result.Author('Kiran Tomlinson'), arxiv.Result.Author('Johan Ugander'), arxiv.Result.Author('Jon Kleinberg')]"
+38,SOBA: Secrecy-preserving Observable Ballot-level Audit,"SOBA is an approach to election verification that provides observers with
+justifiably high confidence that the reported results of an election are
+consistent with an audit trail (""ballots""), which can be paper or electronic.
+SOBA combines three ideas: (1) publishing cast vote records (CVRs) separately
+for each contest, so that anyone can verify that each reported contest outcome
+is correct, if the CVRs reflect voters' intentions with sufficient accuracy;
+(2) shrouding a mapping between ballots and the CVRs for those ballots to
+prevent the loss of privacy that could occur otherwise; (3) assessing the
+accuracy with which the CVRs reflect voters' intentions for a collection of
+contests while simultaneously assessing the integrity of the shrouded mapping
+between ballots and CVRs by comparing randomly selected ballots to the CVRs
+that purport to represent them. Step (1) is related to work by the Humboldt
+County Election Transparency Project, but publishing CVRs separately for
+individual contests rather than images of entire ballots preserves privacy.
+Step (2) requires a cryptographic commitment from elections officials.
+Observers participate in step (3), which relies on the ""super-simple
+simultaneous single-ballot risk-limiting audit."" Step (3) is designed to reveal
+relatively few ballots if the shrouded mapping is proper and the CVRs
+accurately reflect voter intent. But if the reported outcomes of the contests
+differ from the outcomes that a full hand count would show, step (3) is
+guaranteed to have a large chance of requiring all the ballots to be counted by
+hand, thereby limiting the risk that an incorrect outcome will become official
+and final.",1105.5803v2,"['stat.AP', 'cs.CR', 'cs.CY']",2011-05-29 17:00:20+00:00,"[arxiv.Result.Author('Josh Benaloh'), arxiv.Result.Author('Douglas Jones'), arxiv.Result.Author('Eric Lazarus'), arxiv.Result.Author('Mark Lindeman'), arxiv.Result.Author('Philip B. Stark')]"
+39,Quantum anonymous voting with anonymity check,"We propose a new protocol for quantum anonymous voting having serious
+advantages over the existing protocols: it protects both the voters from a
+curious tallyman and all the participants from a dishonest voter in
+unconditional way. The central idea of the protocol is that the ballots are
+given back to the voters after the voting process, which gives a possibility
+for two voters to check the anonymity of the vote counting process by preparing
+a special entangled state of two ballots. Any attempt of cheating from the side
+of the tallyman results in destroying the entanglement, which can be detected
+by the voters.",0911.5605v1,['quant-ph'],2009-11-30 10:39:14+00:00,"[arxiv.Result.Author('Dmitri Horoshko'), arxiv.Result.Author('Sergei Kilin')]"
+40,Recognizing distributed approval voting forms and correspondences,"Each voter $i \in I$ has $\alpha_i$ cards that (s)he distributes among the
+candidates $a \in A$ as a measure of approval. One (or several) candidate(s)
+who received the maximum number of cards is (are) elected. We provide
+polynomial algorithms to recognize voting forms and voting correspondences
+generated by such voting schemes in cases when either the number of candidates
+or the number of voters is equal to $2$. We prove that for two voters, if
+$\alpha_2 \geq \alpha_1-2\geq 0$ then the unique voting correspondence has
+distinct rows. We also characterize voting forms with distinct rows.",2010.15730v1,['math.CO'],2020-10-29 16:28:33+00:00,"[arxiv.Result.Author('Endre Boros'), arxiv.Result.Author('Ondrej Cepek'), arxiv.Result.Author('Vladimir Gurvich'), arxiv.Result.Author('Kazuhisa Makino')]"
+41,"More style, less work: card-style data decrease risk-limiting audit sample sizes","U.S. elections rely heavily on computers such as voter registration
+databases, electronic pollbooks, voting machines, scanners, tabulators, and
+results reporting websites. These introduce digital threats to election
+outcomes. Risk-limiting audits (RLAs) mitigate threats to some of these systems
+by manually inspecting random samples of ballot cards. RLAs have a large chance
+of correcting wrong outcomes (by conducting a full manual tabulation of a
+trustworthy record of the votes), but can save labor when reported outcomes are
+correct. This efficiency is eroded when sampling cannot be targeted to ballot
+cards that contain the contest(s) under audit. If the sample is drawn from all
+cast cards, RLA sample sizes scale like the reciprocal of the fraction of
+ballot cards that contain the contest(s) under audit. That fraction shrinks as
+the number of cards per ballot grows (i.e., when elections contain more
+contests) and as the fraction of ballots that contain the contest decreases
+(i.e., when a smaller percentage of voters are eligible to vote in the
+contest). States that conduct RLAs of contests on multi-card ballots or of
+small contests can dramatically reduce sample sizes by using information about
+which ballot cards contain which contests -- by keeping track of card-style
+data (CSD). For instance, CSD reduces the expected number of draws needed to
+audit a single countywide contest on a 4-card ballot by 75%. Similarly, CSD
+reduces the expected number of draws by 95% or more for an audit of two
+contests with the same margin on a 4-card ballot if one contest is on every
+ballot and the other is on 10% of ballots. In realistic examples, the savings
+can be several orders of magnitude.",2012.03371v1,"['cs.CR', 'stat.ME']",2020-12-06 20:35:12+00:00,"[arxiv.Result.Author('Amanda K. Glazer'), arxiv.Result.Author('Jacob V. Spertus'), arxiv.Result.Author('Philip B. Stark')]"
+42,Blind proxy voting,"A secret ballot mechanism that enables voting in absence is proposed. It
+amends standard vote collection methods that use ballot box as anonymizer,
+adding the option for absent voters to vote by a proxy blinded to the content
+of the ballot paper. Votes are cast under unique and hidden identification
+numbers generated solely for the purpose of that election. Voters prepare their
+ballot papers from scratch and submit them to the tallying authority in two
+parts via separate routes, each part being meaningless without the other.",1812.11128v1,['cs.CR'],2018-12-28 17:41:13+00:00,[arxiv.Result.Author('Zuzana Haniková')]
+43,Non(c)esuch Ballot-Level Risk-Limiting Audits for Precinct-Count Voting Systems,"Risk-limiting audits (RLAs) guarantee a high probability of correcting
+incorrect reported outcomes before the outcomes are certified. The most
+efficient use ballot-level comparison, comparing the voting system's
+interpretation of individual ballot cards sampled at random (cast-vote records,
+CVRs) from a trustworthy paper trail to a human interpretation of the same
+cards. Such comparisons require the voting system to create and export CVRs in
+a way that can be linked to the individual ballots the CVRs purport to
+represent. Such links can be created by keeping the ballots in the order in
+which they are scanned or by printing a unique serial number on each ballot.
+But for precinct-count systems (PCOS), these strategies may compromise vote
+anonymity: the order in which ballots are cast may identify the voters who cast
+them. Printing a unique pseudo-random number (""cryptographic nonce"") on each
+ballot card after the voter last touches it could reduce such privacy risks.
+But what if the system does not in fact print a unique number on each ballot or
+does not accurately report the numbers it printed? This paper gives two ways to
+conduct an RLA so that even if the system does not print a genuine nonce on
+each ballot or misreports the nonces it used, the audit's risk limit is not
+compromised (however, the anonymity of votes might be compromised). One method
+allows untrusted technology to be used to imprint and to retrieve ballot cards.
+The method is adaptive: if the technology behaves properly, this protection
+does not increase the audit workload. But if the imprinting or retrieval system
+misbehaves, the sample size the RLA requires to confirm the reported results
+when the results are correct is generally larger than if the imprinting and
+retrieval were accurate.",2207.01362v1,"['cs.CR', 'stat.AP']",2022-07-04 12:35:42+00:00,[arxiv.Result.Author('Philip B. Stark')]
+44,Java Card for PayTv Application,"Smart cards are widely used along with PayTV receivers to store secret user
+keys and to perform security functions to prevent any unauthorized viewing of
+PayTV channels. Java Card technology enables programs written in the Java
+programming language to run on smart cards. Smart cards represent one of the
+smallest computing platforms in use today. The memory configuration of a smart
+card are of the order of 4K of RAM, 72K of EEPROM, and 24K of ROM. Using Java
+card provides advantages to the industry in terms of ease of coding, faster
+time to market and faster upgrades as compared to plain smart cards . Also
+different applications like payTV, e-commerce, health-card can easily be
+implemented in a single java card as multiple applets corresponding to each
+application can coexists in a single java card. But there are security concerns
+in java cards and also the performance issues. In this paper, we analyse the
+suitability of using Java card for PayTV applications as part of conditional
+access system in place of plain smart cards.",1306.5507v1,['cs.CR'],2013-06-24 04:01:52+00:00,[arxiv.Result.Author('Pallab Dutta')]
+45,OCEAN: Open-source Collation of eGovernment data And Networks - Understanding Privacy Leaks in Open Government Data,"The awareness and sense of privacy has increased in the minds of people over
+the past few years. Earlier, people were not very restrictive in sharing their
+personal information, but now they are more cautious in sharing it with
+strangers, either in person or online. With such privacy expectations and
+attitude of people, it is difficult to embrace the fact that a lot of
+information is publicly available on the web. Information portals in the form
+of the e-governance websites run by Delhi Government in India provide access to
+such PII without any anonymization. Several databases e.g., Voterrolls, Driving
+Licence number, MTNL phone directory, PAN card serve as repositories of
+personal information of Delhi residents. This large amount of available
+personal information can be exploited due to the absence of proper written law
+on privacy in India. PII can also be collected from various social networking
+sites like Facebook, Twitter, GooglePlus etc. where the users share some
+information about them. Since users themselves put this information, it may not
+be considered as a privacy breach, but if the information is aggregated, it may
+give out much more information resulting in a bigger threat. To bring such
+issues to public notice, we developed Open-source Collation of eGovernment data
+And Networks (OCEAN), a system where the user enters little information (e.g.
+Name) about a person and gets large amount of personal information about him /
+her like name, age, address, date of birth, mother's name, father's name, voter
+ID, driving licence number, PAN.",1312.2784v1,['cs.CY'],2013-12-10 12:39:06+00:00,"[arxiv.Result.Author('Srishti Gupta'), arxiv.Result.Author('Ponnurangam Kumaraguru')]"
+46,Optimal Guessing Strategies in a Quantum Card Game,"Three different quantum cards which are non-orthogonal quantum bits are sent
+to two different players, Alice and Bob, randomly. Alice receives one of the
+three cards, and Bob receives the remaining two cards. We find that Bob could
+know better than Alice does on guessing Alice's card, no matter what Bob
+chooses to measure his two cards collectively or separately. We also find that
+Bob's best strategy for guessing Alice's card is to measure his two cards
+collectively.",quant-ph/0206167v1,['quant-ph'],2002-06-24 08:12:48+00:00,"[arxiv.Result.Author('Chih-Lung Chou'), arxiv.Result.Author('Li-Yi Hsu')]"
+47,No Feedback Card Guessing for Top to Random Shuffles,"Consider n cards that are labeled 1 through n with n an even integer. The
+cards are put face down and their ordering starts with card labeled 1 on top
+through card labeled n at the bottom. The cards are top to random shuffled m
+times and placed face down on the table. Starting from the top the cards are
+guessed without feedback (i.e. whether the guess was correct or false and what
+the guessed card was) one at a time. For m > 4nlog n+cn we find a guessing
+strategy that maximizes the expected number of correct guesses.",1006.1321v1,['math.PR'],2010-06-07 18:28:29+00:00,[arxiv.Result.Author('Lerna Pehlivan')]
+48,A Random Card Shuffling Process,"Consider a randomly shuffled deck of $2n$ cards with $n$ red cards and $n$
+black cards. We study the average number of moves it takes to go from a
+randomly shuffled deck to a deck that alternates in color by performing the
+following move: If the top card and the bottom card of the deck differ in color
+place the top card at the bottom of the deck, otherwise, insert the top card
+randomly in the deck. We use tools from combinatorics, probability, and linear
+algebra to model this process as a finite Markov chain.",2206.04614v1,"['math.PR', 'math.CO']",2022-06-09 17:02:14+00:00,"[arxiv.Result.Author('Joel Brewster Lewis'), arxiv.Result.Author('Mehr Rai')]"
+49,Password Protected Smart Card and Memory Stick Authentication Against Off-line Dictionary Attacks,"In this paper, we study the security requirements for remote authentication
+with password protected smart card. In recent years, several protocols for
+password-based authenticated key exchange have been proposed. These protocols
+are used for the protection of password based authentication between a client
+and a remote server. In this paper, we will focus on the password based
+authentication between a smart card owner and smart card via an untrusted card
+reader. In a typical scenario, a smart card owner inserts the smart card into
+an untrusted card reader and input the password via the card reader in order
+for the smart card to carry out the process of authentication with a remote
+server. In this case, we want to guarantee that the card reader will not be
+able to impersonate the card owner in future without the smart card itself.
+Furthermore, the smart card could be stolen. If this happens, we want the
+assurance that an adversary could not use the smart card to impersonate the
+card owner even though the sample space of passwords may be small enough to be
+enumerated by an off-line adversary. At the end of this paper, we further
+extend our results to credential storage on portable non-tamper resistant
+storage devices such as USB memory sticks.",1207.5497v1,['cs.CR'],2012-07-23 19:49:57+00:00,[arxiv.Result.Author('Yongge Wang')]
+50,"Voter Verification of BMD Ballots Is a Two-Part Question: Can They? Mostly, They Can. Do They? Mostly, They Don't","The question of whether or not voters actually verify ballots produced by
+ballot marking devices (BMDs) is presently the subject of some controversy.
+Recent studies (e.g., Bernhard, et al. 2020) suggest the verification rate is
+low. What is not clear from previous research is whether this is more a result
+of voters being unable to do so accurately or whether this is because voters
+simply choose not to attempt verification in the first place. In order to
+understand this problem, we conducted an experiment in which 108 participants
+participated in a mock election where the BMD displayed the voters' true
+choices, but then changed a subset of those choices on the printed ballot. The
+design of the printed ballot, the length of the ballot, the number of changes
+that were made to the ballot, the location of those changes, and the
+instructions provided to the voters were manipulated as part of the experiment.
+Results indicated that of those voters who chose to examine the printed ballot,
+76% detected anomalies, indicating that voters can reliably detect errors on
+their ballot if they will simply review it. This suggests that administrative
+remedies, rather than attempts to alter fundamental human perceptual
+capabilities, could be employed to encourage voters to check their ballots,
+which could prove as an effective countermeasure.",2003.04997v1,"['cs.HC', 'cs.CR', 'H.1.2; J.4']",2020-03-10 21:06:42+00:00,"[arxiv.Result.Author('Philip Kortum'), arxiv.Result.Author('Michael D. Byrne'), arxiv.Result.Author('Julie Whitmore')]"
+51,Blind proxy voting,"A secret ballot mechanism that enables voting in absence is proposed. It
+amends standard vote collection methods that use ballot box as anonymizer,
+adding the option for absent voters to vote by a proxy blinded to the content
+of the ballot paper. Votes are cast under unique and hidden identification
+numbers generated solely for the purpose of that election. Voters prepare their
+ballot papers from scratch and submit them to the tallying authority in two
+parts via separate routes, each part being meaningless without the other.",1812.11128v1,['cs.CR'],2018-12-28 17:41:13+00:00,[arxiv.Result.Author('Zuzana Haniková')]
+52,Can Voters Detect Errors on Their Printed Ballots? Absolutely,"There is still debate on whether voters can detect malicious changes in their
+printed ballot after making their selections on a Ballot Marking Device (BMD).
+In this study, we altered votes on a voter's ballot after they had made their
+selections on a BMD. We then required them to examine their ballots for any
+changes from the slate they used to vote. Overall accuracy was exceptionally
+high. Participants saw 1440 total contests, and of those 1440, there were a
+total of 4 errors, so total accuracy was 99.8%. Participants were able to
+perform with near-perfect accuracy regardless of ballot length, ballot type,
+number of altered races, and location of altered races. Detection performance
+was extremely robust. We conclude that with proper direction and resources,
+voters can be near-perfect detectors of ballot changes on printed paper ballots
+after voting with a BMD. This finding has significant implications for the
+voting community as BMD use continues to grow. Research should now focus on
+identifying administrative and behavioral methods that will prompt and
+encourage voters to check their BMD-generated ballots before they drop them in
+the ballot box.",2204.09780v1,"['cs.HC', 'cs.CR', 'H.1.2; J.4']",2022-04-20 20:40:32+00:00,"[arxiv.Result.Author('Philip Kortum'), arxiv.Result.Author('Michael D. Byrne'), arxiv.Result.Author('Chidera O. Azubike'), arxiv.Result.Author('Laura E. Roty')]"
+53,Exploiting re-voting in the Helios election system,"Election systems must ensure that representatives are chosen by voters.
+Moreover, each voter should have equal influence. Traditionally, this has been
+achieved by permitting voters to cast at most one ballot. More recently, this
+has been achieved by tallying the last ballot cast by each voter. We show this
+is not achieved by the Helios election system, because an adversary can cause a
+ballot other than a voter's last to be tallied. Moreover, we show how the
+adversary can choose the contents of such a ballot, thus the adversary can
+unduly influence the selection of representatives.",1612.04099v3,['cs.CR'],2016-12-13 11:07:22+00:00,"[arxiv.Result.Author('Maxime Meyer'), arxiv.Result.Author('Ben Smyth')]"
+54,Implement Liquid Democracy on Ethereum: A Fast Algorithm for Realtime Self-tally Voting System,"We study the liquid democracy problem, where each voter can either directly
+vote to a candidate or delegate his voting power to a proxy. We consider the
+implementation of liquid democracy on the blockchain through Ethereum smart
+contract and to be compatible with the realtime self-tallying property, where
+the contract itself can record ballots and update voting status upon receiving
+each voting massage. A challenge comes due to the gas fee limitation of
+Ethereum mainnet, that the number of instruction for processing a voting
+massage can not exceed a certain amount, which restrict the application
+scenario with respect to algorithms whose time complexity is linear to the
+number of voters. We propose a fast algorithm to overcome the challenge, such
+that i) shifts the on-chain initialization to off-chain and ii) the on-chain
+complexity for processing each voting massage is O(\log n), where n is the
+number of voters.",1911.08774v2,['cs.CR'],2019-11-20 09:00:24+00:00,"[arxiv.Result.Author('Xuepeng Fan'), arxiv.Result.Author('Peng Li'), arxiv.Result.Author('Yulong Zeng'), arxiv.Result.Author('Xiaoping Zhou')]"
+55,On the security of ballot marking devices,"A recent debate among election experts has considered whether electronic
+ballot marking devices (BMDs) have adequate security against the risks of
+malware. A malicious BMD might produce a printed ballot that disagrees with a
+voter's actual intent, with the hope that voters would be unlikely to detect
+this subterfuge. This essay considers how an election administrator can create
+reasonable auditing procedures to gain confidence that their fleet of BMDs is
+operating correctly, allowing voters to benefit from the usability and
+accessibility features of BMDs while the overall election still benefits from
+the same security and reliability properties we expect from hand-marked paper
+ballots.",1908.01897v2,['cs.CR'],2019-08-05 23:04:16+00:00,[arxiv.Result.Author('Dan S. Wallach')]
+56,Ballot Length in Instant Runoff Voting,"Instant runoff voting (IRV) is an increasingly-popular alternative to
+traditional plurality voting in which voters submit rankings over the
+candidates rather than single votes. In practice, elections using IRV often
+restrict the ballot length, the number of candidates a voter is allowed to rank
+on their ballot. We theoretically and empirically analyze how ballot length can
+influence the outcome of an election, given fixed voter preferences. We show
+that there exist preference profiles over $k$ candidates such that up to $k-1$
+different candidates win at different ballot lengths. We derive exact lower
+bounds on the number of voters required for such profiles and provide a
+construction matching the lower bound for unrestricted voter preferences.
+Additionally, we characterize which sequences of winners are possible over
+ballot lengths and provide explicit profile constructions achieving any
+feasible winner sequence. We also examine how classic preference restrictions
+influence our results--for instance, single-peakedness makes $k-1$ different
+winners impossible but still allows at least $\Omega(\sqrt k)$. Finally, we
+analyze a collection of 168 real-world elections, where we truncate rankings to
+simulate shorter ballots. We find that shorter ballots could have changed the
+outcome in one quarter of these elections. Our results highlight ballot length
+as a consequential degree of freedom in the design of IRV elections.",2207.08958v3,"['cs.MA', 'econ.TH']",2022-07-18 22:01:13+00:00,"[arxiv.Result.Author('Kiran Tomlinson'), arxiv.Result.Author('Johan Ugander'), arxiv.Result.Author('Jon Kleinberg')]"
+57,SOBA: Secrecy-preserving Observable Ballot-level Audit,"SOBA is an approach to election verification that provides observers with
+justifiably high confidence that the reported results of an election are
+consistent with an audit trail (""ballots""), which can be paper or electronic.
+SOBA combines three ideas: (1) publishing cast vote records (CVRs) separately
+for each contest, so that anyone can verify that each reported contest outcome
+is correct, if the CVRs reflect voters' intentions with sufficient accuracy;
+(2) shrouding a mapping between ballots and the CVRs for those ballots to
+prevent the loss of privacy that could occur otherwise; (3) assessing the
+accuracy with which the CVRs reflect voters' intentions for a collection of
+contests while simultaneously assessing the integrity of the shrouded mapping
+between ballots and CVRs by comparing randomly selected ballots to the CVRs
+that purport to represent them. Step (1) is related to work by the Humboldt
+County Election Transparency Project, but publishing CVRs separately for
+individual contests rather than images of entire ballots preserves privacy.
+Step (2) requires a cryptographic commitment from elections officials.
+Observers participate in step (3), which relies on the ""super-simple
+simultaneous single-ballot risk-limiting audit."" Step (3) is designed to reveal
+relatively few ballots if the shrouded mapping is proper and the CVRs
+accurately reflect voter intent. But if the reported outcomes of the contests
+differ from the outcomes that a full hand count would show, step (3) is
+guaranteed to have a large chance of requiring all the ballots to be counted by
+hand, thereby limiting the risk that an incorrect outcome will become official
+and final.",1105.5803v2,"['stat.AP', 'cs.CR', 'cs.CY']",2011-05-29 17:00:20+00:00,"[arxiv.Result.Author('Josh Benaloh'), arxiv.Result.Author('Douglas Jones'), arxiv.Result.Author('Eric Lazarus'), arxiv.Result.Author('Mark Lindeman'), arxiv.Result.Author('Philip B. Stark')]"
+58,Quantum anonymous voting with anonymity check,"We propose a new protocol for quantum anonymous voting having serious
+advantages over the existing protocols: it protects both the voters from a
+curious tallyman and all the participants from a dishonest voter in
+unconditional way. The central idea of the protocol is that the ballots are
+given back to the voters after the voting process, which gives a possibility
+for two voters to check the anonymity of the vote counting process by preparing
+a special entangled state of two ballots. Any attempt of cheating from the side
+of the tallyman results in destroying the entanglement, which can be detected
+by the voters.",0911.5605v1,['quant-ph'],2009-11-30 10:39:14+00:00,"[arxiv.Result.Author('Dmitri Horoshko'), arxiv.Result.Author('Sergei Kilin')]"
+59,A quantum secret ballot,"The paper concerns the protection of the secrecy of ballots, so that the
+identity of the voters cannot be matched with their vote. To achieve this we
+use an entangled quantum state to represent the ballots. Each ballot includes
+the identity of the voter, explicitly marked on the ""envelope"" containing it.
+Measuring the content of the envelope yields a random number which reveals no
+information about the vote. However, the outcome of the elections can be
+unambiguously decided after adding the random numbers from all envelopes. We
+consider a few versions of the protocol and their complexity of implementation.",quant-ph/0602087v2,"['quant-ph', 'cs.CC']",2006-02-09 21:03:35+00:00,"[arxiv.Result.Author('Shahar Dolev'), arxiv.Result.Author('Itamar Pitowsky'), arxiv.Result.Author('Boaz Tamir')]"
+60,Blind proxy voting,"A secret ballot mechanism that enables voting in absence is proposed. It
+amends standard vote collection methods that use ballot box as anonymizer,
+adding the option for absent voters to vote by a proxy blinded to the content
+of the ballot paper. Votes are cast under unique and hidden identification
+numbers generated solely for the purpose of that election. Voters prepare their
+ballot papers from scratch and submit them to the tallying authority in two
+parts via separate routes, each part being meaningless without the other.",1812.11128v1,['cs.CR'],2018-12-28 17:41:13+00:00,[arxiv.Result.Author('Zuzana Haniková')]
+61,"Polarization, Abstention, and the Median Voter Theorem","The median voter theorem has long been the default model of voter behavior
+and candidate choice. While contemporary work on the distribution of political
+opinion has emphasized polarization and an increasing gap between the ""left""
+and the ""right"" in democracies, the median voter theorem presents a model of
+anti-polarization: competing candidates move to the center of the ideological
+distribution to maximize vote share, regardless of the underlying ideological
+distribution of voters. These anti-polar results, however, largely depend on
+the ""singled-peakedness"" of voter preferences, an assumption that is rapidly
+loosing relevance in the age of polarization. This article presents a model of
+voter choice that examines three potential mechanisms that can undermine this
+finding: a relative cost of voting that deters voters who are sufficiently
+indifferent to both candidates, ideologically motivated third-party
+alternatives that attract extreme voters, and a bimodal distribution of voter
+ideology. Under reasonable sets of conditions and empirically observed voter
+opinion distributions, these mechanisms can be sufficient to cause
+strategically-minded candidates to fail to converge to the center, or to even
+become more polarized than their electorate.",2103.12847v1,"['physics.soc-ph', 'math.OC']",2021-03-23 21:14:22+00:00,"[arxiv.Result.Author('Matthew I. Jones'), arxiv.Result.Author('Antonio D. Sirianni'), arxiv.Result.Author('Feng Fu')]"
+62,A Fault Tolerance Improved Majority Voter for TMR System Architectures,"For digital system designs, triple modular redundancy (TMR), which is a
+3-tuple version of N-modular redundancy is widely preferred for many
+mission-control and safety-critical applications. The TMR scheme involves
+two-times duplication of the simplex system hardware, with a majority voter
+ensuring correctness provided at least two out of three copies of the system
+remain operational. Thus the majority voter plays a pivotal role in ensuring
+the correct operation of the system. The fundamental assumption implicit in the
+TMR scheme is that the majority voter does not become faulty, which may not
+hold well for implementations based on latest technology nodes with dimensions
+of the order of just tens of nanometers. To overcome the drawbacks of the
+classical majority voter some new voter designs were put forward in the
+literature with the aim of enhancing the fault tolerance. However, these voter
+designs generally ensure the correct system operation in the presence of either
+a faulty function module or the faulty voter, considered only in isolation.
+Since multiple faults may no longer be excluded in the nanoelectronics regime,
+simultaneous fault occurrences on both the function module and the voter should
+be considered, and the fault tolerance of the voters have to be analyzed under
+such a scenario. In this context, this article proposes a new fault-tolerant
+majority voter which is found to be more robust to faults than the existing
+voters in the presence of faults occurring internally and/or externally to the
+voter. Moreover, the proposed voter features less power dissipation, delay, and
+area metrics based on the simulation results obtained by using a 32/28nm CMOS
+process.",1605.03771v2,['cs.AR'],2016-05-12 11:54:44+00:00,"[arxiv.Result.Author('P Balasubramanian'), arxiv.Result.Author('K Prasad')]"
+63,On the Computational Complexity of Variants of Combinatorial Voter Control in Elections,"Voter control problems model situations in which an external agent tries
+toaffect the result of an election by adding or deleting the fewest number of
+voters. The goal of the agent is to make a specific candidate either win
+(\emph{constructive} control) or lose (\emph{destructive} control) the
+election. We study the constructive and destructive voter control problems
+whenadding and deleting voters have a \emph{combinatorial flavor}: If we add
+(resp.\ delete) a voter~$v$, we also add (resp.\ delete) a bundle~$\kappa(v) $
+of voters that are associated with~$v$. While the bundle~$\kappa(v)$ may have
+more than one voter, a voter may also be associated with more than one voter.
+We analyze the computational complexity of the four voter control problems for
+the Plurality rule. We obtain that, in general, making a candidate lose is
+computationally easier than making her win. In particular, if the bundling
+relation is symmetric (i.e.\ $\forall w\colon w \in \kappa(v) \Leftrightarrow v
+\in \kappa(w) $), and if each voter has at most two voters associated with him,
+then destructive control is polynomial-time solvable while the constructive
+variant remains $\NP$-hard. Even if the bundles are disjoint (i.e.\ $\forall
+w\colon w \in \kappa(v) \Leftrightarrow \kappa(v) = \kappa(w) $), the
+constructive problem variants remain intractable. Finally, the minimization
+variant of constructive control by adding voters does not admit an efficient
+approximation algorithm, unless P=NP.",1701.05108v1,['cs.MA'],2017-01-18 15:36:46+00:00,"[arxiv.Result.Author('Leon Kellerhals'), arxiv.Result.Author('Viatcheslav Korenwein'), arxiv.Result.Author('Philipp Zschoche'), arxiv.Result.Author('Robert Bredereck'), arxiv.Result.Author('Jiehua Chen')]"
+64,Ranking Swing Voters in Congressional Elections,"We present a model for quantitatively identifying swing voters in
+congressional elections. This is achieved by predicting an individual voter's
+likelihood to vote and an individual voter's likelihood to vote for a given
+party, if he votes. We make a rough prediction of these values. We then update
+these predictions by incorporating information on a municipality wide basis via
+aggregate data to enhance our estimate under the assumption that nearby voters
+have similar behavior, which could be due to social interaction or common
+external factors. Finally, we use a ranking scheme on these predictions to
+identify two key types of voter: 1) Voters who are likely to vote that we can
+convince to vote for a given party; and, 2) Voters who are likely to vote for a
+given party, if they vote, that we can convince to actually turn out to vote.
+Once these voters have been identified, a political campaign can use this
+information to micro-target voters and win more votes.",1405.5111v1,"['physics.soc-ph', 'math.PR', 'stat.AP']",2014-05-19 06:30:42+00:00,[arxiv.Result.Author('Steven Ambadjes')]
+65,2-Dimensional Euclidean Preferences,"A preference profile with m alternatives and n voters is 2-dimensional
+Euclidean if both the alternatives and the voters can be placed into a
+2-dimensional space such that for each pair of alternatives, every voter
+prefers the one which has a shorter Euclidean distance to the voter. We study
+how 2-dimensional Euclidean preference profiles depend on the values m and n.
+We find that any profile with at most two voters or at most three alternatives
+is 2-dimensional Euclidean while for three voters, we can show this property
+for up to seven alternatives. The results are tight in terms of Bogomolnaia and
+Laslier [2, Proposition 15(1)].",2205.14687v1,"['cs.GT', 'cs.MA']",2022-05-29 15:06:14+00:00,"[arxiv.Result.Author('Laurent Bulteau'), arxiv.Result.Author('Jiehua Chen')]"
+66,TRIP: Trustless Coercion-Resistant In-Person Voter Registration,"Most existing remote electronic voting systems are vulnerable to voter
+coercion and vote buying. While coercion-resistant voting systems address this
+challenge, current schemes assume that the voter has access to an untappable,
+incorruptible device during voter registration. We present TRIP, an in-person
+voter registration scheme enabling voters to create verifiable and
+indistinguishable real and fake credentials using an untrusted kiosk inside a
+privacy booth at a supervised location, e.g., the registrar's office. TRIP
+ensures the integrity of the voter's real credential while enabling the
+creation of fake credentials using interactive zero-knowledge proofs between
+the voter as the verifier and the kiosk as the prover, unbeknownst to the
+average voter. TRIP ensures that even voters who are under extreme coercion,
+and cannot leave the booth with a real credential, can delegate their vote to a
+political party, with the caveat that they must then trust the kiosk. TRIP
+optimizes the tallying process by limiting the number of credentials a voter
+can receive and capping the number of votes that a credential can cast per
+election. We conduct a preliminary usability study among 41 participants at a
+university and found that 42.5% of participants rated TRIP a B or higher in
+usability, a promising result for a voter registration scheme that
+substantially reduces trust in the registrar.",2202.06692v1,"['cs.CR', 'cs.CY', 'cs.HC']",2022-02-14 13:35:46+00:00,"[arxiv.Result.Author('Louis-Henri Merino'), arxiv.Result.Author('Simone Colombo'), arxiv.Result.Author('Jeff Allen'), arxiv.Result.Author('Vero Estrada-Galiñanes'), arxiv.Result.Author('Bryan Ford')]"
+67,Combinatorial Voter Control in Elections,"Voter control problems model situations such as an external agent trying to
+affect the result of an election by adding voters, for example by convincing
+some voters to vote who would otherwise not attend the election. Traditionally,
+voters are added one at a time, with the goal of making a distinguished
+alternative win by adding a minimum number of voters. In this paper, we
+initiate the study of combinatorial variants of control by adding voters: In
+our setting, when we choose to add a voter~$v$, we also have to add a whole
+bundle $\kappa(v)$ of voters associated with $v$. We study the computational
+complexity of this problem for two of the most basic voting rules, namely the
+Plurality rule and the Condorcet rule.",1406.6859v1,"['cs.MA', 'cs.GT']",2014-06-26 11:55:44+00:00,"[arxiv.Result.Author('Laurent Bulteau'), arxiv.Result.Author('Jiehua Chen'), arxiv.Result.Author('Piotr Faliszewski'), arxiv.Result.Author('Rolf Niedermeier'), arxiv.Result.Author('Nimrod Talmon')]"
+68,A Parameterized Perspective on Protecting Elections,"We study the parameterized complexity of the optimal defense and optimal
+attack problems in voting. In both the problems, the input is a set of voter
+groups (every voter group is a set of votes) and two integers $k_a$ and $k_d$
+corresponding to respectively the number of voter groups the attacker can
+attack and the number of voter groups the defender can defend. A voter group
+gets removed from the election if it is attacked but not defended. In the
+optimal defense problem, we want to know if it is possible for the defender to
+commit to a strategy of defending at most $k_d$ voter groups such that, no
+matter which $k_a$ voter groups the attacker attacks, the outcome of the
+election does not change. In the optimal attack problem, we want to know if it
+is possible for the attacker to commit to a strategy of attacking $k_a$ voter
+groups such that, no matter which $k_d$ voter groups the defender defends, the
+outcome of the election is always different from the original (without any
+attack) one.",1905.11838v1,"['cs.MA', 'cs.AI', 'cs.CY', 'cs.DS', 'cs.GT']",2019-05-28 14:20:33+00:00,"[arxiv.Result.Author('Palash Dey'), arxiv.Result.Author('Neeldhara Misra'), arxiv.Result.Author('Swaprava Nath'), arxiv.Result.Author('Garima Shakya')]"
+69,Wisdom of the Crowd Voting: Truthful Aggregation of Voter Information and Preferences,"We consider two-alternative elections where voters' preferences depend on a
+state variable that is not directly observable. Each voter receives a private
+signal that is correlated to the state variable. Voters may be ""contingent""
+with different preferences in different states; or predetermined with the same
+preference in every state. In this setting, even if every voter is a contingent
+voter, agents voting according to their private information need not result in
+the adoption of the universally preferred alternative, because the signals can
+be systematically biased.
+  We present an easy-to-deploy mechanism that elicits and aggregates the
+private signals from the voters, and outputs the alternative that is favored by
+the majority. In particular, voters truthfully reporting their signals forms a
+strong Bayes Nash equilibrium (where no coalition of voters can deviate and
+receive a better outcome).",2108.03749v1,"['cs.GT', '91A06, 91A27', 'J.4']",2021-08-08 22:20:15+00:00,"[arxiv.Result.Author('Grant Schoenebeck'), arxiv.Result.Author('Biaoshuai Tao')]"
+70,Physical Cryptographic Signatures for Absentee Ballots,"Physical signature verification on absentee ballots became a major flashpoint
+in the 2018 midterm elections in the United States, especially in states like
+Georgia, Florida, and Arizona, where close election margins resulted in
+heightened attention to the counting of absentee ballots. As vote-by-mail
+solutions are becoming more prevalent across the U.S., these issues are sure to
+continue affecting elections in the United States. Signature verification is an
+inexact science; often times guidelines can vary widely from jurisdiction to
+jurisdiction. In this paper we provide a cryptographic remedy to this solution
+that is usable, secure, and easily integrated into existing election
+infrastructure.",1812.09423v1,['cs.CR'],2018-12-22 00:43:31+00:00,[arxiv.Result.Author('Matthew Bernhard')]
+71,Identifying Possible Winners in Ranked Choice Voting Elections with Outstanding Ballots,"Several election districts in the US have recently moved to ranked-choice
+voting (RCV) to decide the results of local elections. RCV allows voters to
+rank their choices, and the results are computed in rounds, eliminating one
+candidate at a time. RCV ensures fairer elections and has been shown to
+increase elected representation of women and people of color. A main drawback
+of RCV is that the round-by-round process requires all the ballots to be
+tallied before the results of an election can be calculated. With increasingly
+large portions of ballots coming from absentee voters, RCV election outcomes
+are not always apparent on election night, and can take several weeks to be
+published, leading to a loss of trust in the electoral process from the public.
+In this paper, we present an algorithm for efficiently computing possible
+winners of RCV elections from partially known ballots and evaluate it on data
+from the recent New York City Primary elections. We show that our techniques
+allow to significantly narrow down the field of possible election winners, and
+in some case identify the winner as soon as election night despite a number of
+yet-unaccounted absentee ballots, providing more transparency in the electoral
+process.",2206.12741v1,['cs.CY'],2022-06-25 22:08:15+00:00,"[arxiv.Result.Author('Alborz Jelvani'), arxiv.Result.Author('Amélie Marian')]"
+72,PROVIDENCE: a Flexible Round-by-Round Risk-Limiting Audit,"A Risk-Limiting Audit (RLA) is a statistical election tabulation audit with a
+rigorous error guarantee. We present ballot polling RLA PROVIDENCE, an audit
+with the efficiency of MINERVA and flexibility of BRAVO. We prove that
+PROVIDENCE is risk-limiting in the presence of an adversary who can choose
+subsequent round sizes given knowledge of previous samples. We describe a
+measure of audit workload as a function of the number of rounds, precincts
+touched, and ballots drawn.We quantify the problem of obtaining a misleading
+audit sample when rounds are too small, demonstrating the importance of the
+resulting constraint on audit planning. We present simulation results
+demonstrating the superiority of PROVIDENCE using these measures and describing
+an approach to planning audit round schedules.
+  We describe the use of PROVIDENCE by the Rhode Island Board of Elections in a
+tabulation audit of the 2021 election. Our implementation of PROVIDENCE and
+audit planning tools in the open source R2B2 library should be useful to the
+states of Georgia and Pennsylvania, which are planning pre-certification ballot
+polling RLAs for the 2022 general election.",2210.08717v1,['cs.CR'],2022-10-17 03:14:46+00:00,"[arxiv.Result.Author('Oliver Broadrick'), arxiv.Result.Author('Poorvi L. Vora'), arxiv.Result.Author('Filip Zagórski')]"
+73,Towards solar activity maximum 24 as seen by GOLF and VIRGO/SPM instruments,"All p-mode parameters vary with time as a response to the changes induced by
+the cyclic behavior of solar magnetic activity. After the unusual long
+solar-activity minimum between cycles 23 and 24, where the p-mode parameters
+have shown a different behavior than the surface magnetic proxies, we analyze
+the temporal variation of low-degree p-mode parameters measured by GOLF (in
+velocity) and VIRGO (in intensity) Sun-as-a-star instruments on board SoHO. We
+then compared our results with other activity proxies.",1301.6930v1,['astro-ph.SR'],2013-01-29 14:30:12+00:00,"[arxiv.Result.Author('R. A. Garcia'), arxiv.Result.Author('D. Salabert'), arxiv.Result.Author('S. Mathur'), arxiv.Result.Author('C. Regulo'), arxiv.Result.Author('J. Ballot'), arxiv.Result.Author('G. R. Davies'), arxiv.Result.Author('A. Jimenez'), arxiv.Result.Author('R. Simoniello')]"
+74,On Covering a Solid Sphere with Concentric Spheres in ${\mathbb Z}^3$,"We show that a digital sphere, constructed by the circular sweep of a digital
+semicircle (generatrix) around its diameter, consists of some holes
+(absentee-voxels), which appear on its spherical surface of revolution. This
+incompleteness calls for a proper characterization of the absentee-voxels whose
+restoration will yield a complete spherical surface without any holes. In this
+paper, we present a characterization of such absentee-voxels using certain
+techniques of digital geometry and show that their count varies quadratically
+with the radius of the semicircular generatrix. Next, we design an algorithm to
+fill these absentee-voxels so as to generate a spherical surface of revolution,
+which is more realistic from the viewpoint of visual perception. We further
+show that covering a solid sphere by a set of complete spheres also results in
+an asymptotically larger count of absentees, which is cubic in the radius of
+the sphere. The characterization and generation of complete solid spheres
+without any holes can also be accomplished in a similar fashion. We furnish
+test results to substantiate our theoretical findings.",1411.1395v1,"['cs.CG', 'cs.DM']",2014-10-23 05:05:23+00:00,"[arxiv.Result.Author('Sahadev Bera'), arxiv.Result.Author('Partha Bhowmick'), arxiv.Result.Author('Bhargab B. Bhattacharya')]"
+75,Limiting Risk by Turning Manifest Phantoms into Evil Zombies,"Drawing a random sample of ballots to conduct a risk-limiting audit generally
+requires knowing how the ballots cast in an election are organized into groups,
+for instance, how many containers of ballots there are in all and how many
+ballots are in each container. A list of the ballot group identifiers along
+with number of ballots in each group is called a ballot manifest. What if the
+ballot manifest is not accurate? Surprisingly, even if ballots are known to be
+missing from the manifest, it is not necessary to make worst-case assumptions
+about those ballots--for instance, to adjust the margin by the number of
+missing ballots--to ensure that the audit remains conservative. Rather, it
+suffices to make worst-case assumptions about the individual randomly selected
+ballots that the audit cannot find. This observation provides a simple
+modification to some risk-limiting audit procedures that makes them
+automatically become more conservative if the ballot manifest has errors. The
+modification--phantoms to evil zombies (~2EZ)--requires only an upper bound on
+the total number of ballots cast. ~2EZ makes the audit P-value stochastically
+larger than it would be had the manifest been accurate, automatically requiring
+more than enough ballots to be audited to offset the manifest errors. This
+ensures that the true risk limit remains smaller than the nominal risk limit.
+On the other hand, if the manifest is in fact accurate and the upper bound on
+the total number of ballots equals the total according to the manifest, ~2EZ
+has no effect at all on the number of ballots audited nor on the true risk
+limit.",1207.3413v1,['stat.AP'],2012-07-14 11:26:02+00:00,"[arxiv.Result.Author('Jorge H. Banuelos'), arxiv.Result.Author('Philip B. Stark')]"
+76,A Complete Enumeration of Ballot Permutations Avoiding Sets of Small Patterns,"Permutations whose prefixes contain at least as many ascents as descents are
+called ballot permutations. Lin, Wang, and Zhao have previously enumerated
+ballot permutations avoiding small patterns and have proposed the problem of
+enumerating ballot permutations avoiding a pair of permutations of length $3$.
+We completely enumerate ballot permutations avoiding two patterns of length $3$
+and we relate these avoidance classes with their respective recurrence
+relations and formulas, which leads to an interesting bijection between ballot
+permutations avoiding $132$ and $312$ with left factors of Dyck paths. In
+addition, we also conclude the Wilf-classification of ballot permutations
+avoiding sets of two patterns of length $3$, and we then extend our results to
+completely enumerate ballot permutations avoiding three patterns of length $3$.",2209.06087v1,"['math.CO', '05A05']",2022-09-13 15:37:45+00:00,[arxiv.Result.Author('Nathan Sun')]
+77,Modeling Voters in Multi-Winner Approval Voting,"In many real world situations, collective decisions are made using voting
+and, in scenarios such as committee or board elections, employing voting rules
+that return multiple winners. In multi-winner approval voting (AV), an agent
+submits a ballot consisting of approvals for as many candidates as they wish,
+and winners are chosen by tallying up the votes and choosing the top-$k$
+candidates receiving the most approvals. In many scenarios, an agent may
+manipulate the ballot they submit in order to achieve a better outcome by
+voting in a way that does not reflect their true preferences. In complex and
+uncertain situations, agents may use heuristics instead of incurring the
+additional effort required to compute the manipulation which most favors them.
+In this paper, we examine voting behavior in single-winner and multi-winner
+approval voting scenarios with varying degrees of uncertainty using behavioral
+data obtained from Mechanical Turk. We find that people generally manipulate
+their vote to obtain a better outcome, but often do not identify the optimal
+manipulation. There are a number of predictive models of agent behavior in the
+COMSOC and psychology literature that are based on cognitively plausible
+heuristic strategies. We show that the existing approaches do not adequately
+model real-world data. We propose a novel model that takes into account the
+size of the winning set and human cognitive constraints, and demonstrate that
+this model is more effective at capturing real-world behaviors in multi-winner
+approval voting scenarios.",2012.02811v1,"['cs.GT', 'cs.AI', 'cs.MA', '91A80, 91B10, 91B12, 91B14', 'J.4; I.2']",2020-12-04 19:24:28+00:00,"[arxiv.Result.Author('Jaelle Scheuerman'), arxiv.Result.Author('Jason Harman'), arxiv.Result.Author('Nicholas Mattei'), arxiv.Result.Author('K. Brent Venable')]"
+78,Can Voters Detect Errors on Their Printed Ballots? Absolutely,"There is still debate on whether voters can detect malicious changes in their
+printed ballot after making their selections on a Ballot Marking Device (BMD).
+In this study, we altered votes on a voter's ballot after they had made their
+selections on a BMD. We then required them to examine their ballots for any
+changes from the slate they used to vote. Overall accuracy was exceptionally
+high. Participants saw 1440 total contests, and of those 1440, there were a
+total of 4 errors, so total accuracy was 99.8%. Participants were able to
+perform with near-perfect accuracy regardless of ballot length, ballot type,
+number of altered races, and location of altered races. Detection performance
+was extremely robust. We conclude that with proper direction and resources,
+voters can be near-perfect detectors of ballot changes on printed paper ballots
+after voting with a BMD. This finding has significant implications for the
+voting community as BMD use continues to grow. Research should now focus on
+identifying administrative and behavioral methods that will prompt and
+encourage voters to check their BMD-generated ballots before they drop them in
+the ballot box.",2204.09780v1,"['cs.HC', 'cs.CR', 'H.1.2; J.4']",2022-04-20 20:40:32+00:00,"[arxiv.Result.Author('Philip Kortum'), arxiv.Result.Author('Michael D. Byrne'), arxiv.Result.Author('Chidera O. Azubike'), arxiv.Result.Author('Laura E. Roty')]"
+79,On the Bee-Identification Error Exponent with Absentee Bees,"The ""bee-identification problem"" was formally defined by Tandon, Tan and
+Varshney [IEEE Trans. Commun. (2019) [Online early access]], and the error
+exponent was studied. This work extends the results for the ""absentee bees""
+scenario, where a small fraction of the bees are absent in the beehive image
+used for identification. For this setting, we present an exact characterization
+of the bee-identification error exponent, and show that independent barcode
+decoding is optimal, i.e., joint decoding of the bee barcodes does not result
+in a better error exponent relative to independent decoding of each noisy
+barcode. This is in contrast to the result without absentee bees, where joint
+barcode decoding results in a significantly higher error exponent than
+independent barcode decoding. We also define and characterize the ""capacity""
+for the bee-identification problem with absentee bees, and prove the strong
+converse for the same.",1910.10333v1,"['cs.IT', 'math.IT']",2019-10-23 03:57:35+00:00,"[arxiv.Result.Author('Anshoo Tandon'), arxiv.Result.Author('Vincent Y. F. Tan'), arxiv.Result.Author('Lav R. Varshney')]"
+80,Physical Cryptographic Signatures for Absentee Ballots,"Physical signature verification on absentee ballots became a major flashpoint
+in the 2018 midterm elections in the United States, especially in states like
+Georgia, Florida, and Arizona, where close election margins resulted in
+heightened attention to the counting of absentee ballots. As vote-by-mail
+solutions are becoming more prevalent across the U.S., these issues are sure to
+continue affecting elections in the United States. Signature verification is an
+inexact science; often times guidelines can vary widely from jurisdiction to
+jurisdiction. In this paper we provide a cryptographic remedy to this solution
+that is usable, secure, and easily integrated into existing election
+infrastructure.",1812.09423v1,['cs.CR'],2018-12-22 00:43:31+00:00,[arxiv.Result.Author('Matthew Bernhard')]
+81,Identifying Possible Winners in Ranked Choice Voting Elections with Outstanding Ballots,"Several election districts in the US have recently moved to ranked-choice
+voting (RCV) to decide the results of local elections. RCV allows voters to
+rank their choices, and the results are computed in rounds, eliminating one
+candidate at a time. RCV ensures fairer elections and has been shown to
+increase elected representation of women and people of color. A main drawback
+of RCV is that the round-by-round process requires all the ballots to be
+tallied before the results of an election can be calculated. With increasingly
+large portions of ballots coming from absentee voters, RCV election outcomes
+are not always apparent on election night, and can take several weeks to be
+published, leading to a loss of trust in the electoral process from the public.
+In this paper, we present an algorithm for efficiently computing possible
+winners of RCV elections from partially known ballots and evaluate it on data
+from the recent New York City Primary elections. We show that our techniques
+allow to significantly narrow down the field of possible election winners, and
+in some case identify the winner as soon as election night despite a number of
+yet-unaccounted absentee ballots, providing more transparency in the electoral
+process.",2206.12741v1,['cs.CY'],2022-06-25 22:08:15+00:00,"[arxiv.Result.Author('Alborz Jelvani'), arxiv.Result.Author('Amélie Marian')]"
+82,On Covering a Solid Sphere with Concentric Spheres in ${\mathbb Z}^3$,"We show that a digital sphere, constructed by the circular sweep of a digital
+semicircle (generatrix) around its diameter, consists of some holes
+(absentee-voxels), which appear on its spherical surface of revolution. This
+incompleteness calls for a proper characterization of the absentee-voxels whose
+restoration will yield a complete spherical surface without any holes. In this
+paper, we present a characterization of such absentee-voxels using certain
+techniques of digital geometry and show that their count varies quadratically
+with the radius of the semicircular generatrix. Next, we design an algorithm to
+fill these absentee-voxels so as to generate a spherical surface of revolution,
+which is more realistic from the viewpoint of visual perception. We further
+show that covering a solid sphere by a set of complete spheres also results in
+an asymptotically larger count of absentees, which is cubic in the radius of
+the sphere. The characterization and generation of complete solid spheres
+without any holes can also be accomplished in a similar fashion. We furnish
+test results to substantiate our theoretical findings.",1411.1395v1,"['cs.CG', 'cs.DM']",2014-10-23 05:05:23+00:00,"[arxiv.Result.Author('Sahadev Bera'), arxiv.Result.Author('Partha Bhowmick'), arxiv.Result.Author('Bhargab B. Bhattacharya')]"
+83,$k$-Cut: A Simple Approximately-Uniform Method for Sampling Ballots in Post-Election Audits,"We present an approximate sampling framework and discuss how risk-limiting
+audits can compensate for these approximations, while maintaining their
+""risk-limiting"" properties. Our framework is general and can compensate for
+counting mistakes made during audits.
+  Moreover, we present and analyze a simple approximate sampling
+method,""$k$-cut"", for picking a ballot randomly from a stack, without counting.
+Our method involves doing $k$ ""cuts"", each involving moving a random portion of
+ballots from the top to the bottom of the stack, and then picking the ballot on
+top. Unlike conventional methods of picking a ballot at random, $k$-cut does
+not require identification numbers on the ballots or counting many ballots per
+draw. We analyze how close the distribution of chosen ballots is to the uniform
+distribution, and design different mitigation procedures. We show that $k=6$
+cuts is enough for an risk-limiting election audit, based on empirical data,
+which would provide a significant increase in efficiency.",1811.08811v3,['cs.DS'],2018-11-21 16:26:33+00:00,"[arxiv.Result.Author('Mayuri Sridhar'), arxiv.Result.Author('Ronald L. Rivest')]"
+84,Sophisticated Attacks on Decoy Ballots: The Devil's Menu and the Market for Lemons,"Decoy ballots do not count in election outcomes, but otherwise they are
+indistinguishable from real ballots. By means of a game-theoretical model, we
+show that decoy ballots may not provide effective protection against a
+malevolent adversary trying to buy real ballots. If the citizenry is divided
+into subgroups (or districts), the adversary can construct a so-called ""Devil's
+Menu"" consisting of several prices. In equilibrium, the adversary can buy the
+real ballots of any strict subset of districts at a price corresponding to the
+willingness to sell on the part of the citizens holding such ballots. By
+contrast, decoy voters are trapped into selling their ballots at a low, or even
+negligible, price. Blowing up the adversary's budget by introducing decoy
+ballots may thus turn out to be futile. The Devil's Menu can also be applied to
+the well-known ""Lemons Problem"".",1712.05477v1,['cs.GT'],2017-12-14 23:54:58+00:00,"[arxiv.Result.Author('Hans Gersbach'), arxiv.Result.Author('Akaki Mamageishvili'), arxiv.Result.Author('Oriol Tejada')]"
+85,SOBA: Secrecy-preserving Observable Ballot-level Audit,"SOBA is an approach to election verification that provides observers with
+justifiably high confidence that the reported results of an election are
+consistent with an audit trail (""ballots""), which can be paper or electronic.
+SOBA combines three ideas: (1) publishing cast vote records (CVRs) separately
+for each contest, so that anyone can verify that each reported contest outcome
+is correct, if the CVRs reflect voters' intentions with sufficient accuracy;
+(2) shrouding a mapping between ballots and the CVRs for those ballots to
+prevent the loss of privacy that could occur otherwise; (3) assessing the
+accuracy with which the CVRs reflect voters' intentions for a collection of
+contests while simultaneously assessing the integrity of the shrouded mapping
+between ballots and CVRs by comparing randomly selected ballots to the CVRs
+that purport to represent them. Step (1) is related to work by the Humboldt
+County Election Transparency Project, but publishing CVRs separately for
+individual contests rather than images of entire ballots preserves privacy.
+Step (2) requires a cryptographic commitment from elections officials.
+Observers participate in step (3), which relies on the ""super-simple
+simultaneous single-ballot risk-limiting audit."" Step (3) is designed to reveal
+relatively few ballots if the shrouded mapping is proper and the CVRs
+accurately reflect voter intent. But if the reported outcomes of the contests
+differ from the outcomes that a full hand count would show, step (3) is
+guaranteed to have a large chance of requiring all the ballots to be counted by
+hand, thereby limiting the risk that an incorrect outcome will become official
+and final.",1105.5803v2,"['stat.AP', 'cs.CR', 'cs.CY']",2011-05-29 17:00:20+00:00,"[arxiv.Result.Author('Josh Benaloh'), arxiv.Result.Author('Douglas Jones'), arxiv.Result.Author('Eric Lazarus'), arxiv.Result.Author('Mark Lindeman'), arxiv.Result.Author('Philip B. Stark')]"
+86,Ballot Paths Avoiding Depth Zero Patterns,"In a paper by Sapounakis, Tasoulas, and Tsikouras \cite{stt}, the authors
+count the number of occurrences of patterns of length four in Dyck paths. In
+this paper we specify in one direction and generalize in another. We only count
+ballot paths that avoid a given pattern, where a ballot path stays weakly above
+the diagonal $y=x$, starts at the origin, and takes steps from the set
+$\{\uparrow ,\to \}=\{u,r\}$. A pattern is a finite string made from the same
+step set; it is also a path. Notice that a ballot path ending at a point along
+the diagonal is a Dyck path.",1004.2710v1,['math.CO'],2010-04-15 20:23:45+00:00,"[arxiv.Result.Author('Heinrich Niederhausen'), arxiv.Result.Author('Shaun Sullivan')]"
+87,RAIRE: Risk-Limiting Audits for IRV Elections,"Risk-limiting post election audits guarantee a high probability of correcting
+incorrect election results, independent of why the result was incorrect.
+Ballot-polling audits select ballots at random and interpret those ballots as
+evidence for and against the reported result, continuing this process until
+either they support the recorded result, or they fall back to a full manual
+recount. For elections with digitised scanning and counting of ballots, a
+comparison audit compares randomly selected digital ballots with their paper
+versions. Discrepancies are referred to as errors, and are used to build
+evidence against or in support of the recorded result. Risk-limiting audits for
+first-past-the-post elections are well understood, and used in some US
+elections. We define a number of approaches to ballot-polling and comparison
+risk-limiting audits for Instant Runoff Voting (IRV) elections. We show that
+for almost all real elections we found, we can perform a risk-limiting audit by
+looking at only a small fraction of the total ballots (assuming no errors were
+made in the tallying and distribution of votes).",1903.08804v2,['cs.DS'],2019-03-20 06:19:10+00:00,"[arxiv.Result.Author('Michelle Blom'), arxiv.Result.Author('Peter J. Stuckey'), arxiv.Result.Author('Vanessa Teague')]"
+88,Non(c)esuch Ballot-Level Risk-Limiting Audits for Precinct-Count Voting Systems,"Risk-limiting audits (RLAs) guarantee a high probability of correcting
+incorrect reported outcomes before the outcomes are certified. The most
+efficient use ballot-level comparison, comparing the voting system's
+interpretation of individual ballot cards sampled at random (cast-vote records,
+CVRs) from a trustworthy paper trail to a human interpretation of the same
+cards. Such comparisons require the voting system to create and export CVRs in
+a way that can be linked to the individual ballots the CVRs purport to
+represent. Such links can be created by keeping the ballots in the order in
+which they are scanned or by printing a unique serial number on each ballot.
+But for precinct-count systems (PCOS), these strategies may compromise vote
+anonymity: the order in which ballots are cast may identify the voters who cast
+them. Printing a unique pseudo-random number (""cryptographic nonce"") on each
+ballot card after the voter last touches it could reduce such privacy risks.
+But what if the system does not in fact print a unique number on each ballot or
+does not accurately report the numbers it printed? This paper gives two ways to
+conduct an RLA so that even if the system does not print a genuine nonce on
+each ballot or misreports the nonces it used, the audit's risk limit is not
+compromised (however, the anonymity of votes might be compromised). One method
+allows untrusted technology to be used to imprint and to retrieve ballot cards.
+The method is adaptive: if the technology behaves properly, this protection
+does not increase the audit workload. But if the imprinting or retrieval system
+misbehaves, the sample size the RLA requires to confirm the reported results
+when the results are correct is generally larger than if the imprinting and
+retrieval were accurate.",2207.01362v1,"['cs.CR', 'stat.AP']",2022-07-04 12:35:42+00:00,[arxiv.Result.Author('Philip B. Stark')]
+89,Sets of Half-Average Nulls Generate Risk-Limiting Audits: SHANGRLA,"Risk-limiting audits (RLAs) for many social choice functions can be reduced
+to testing sets of null hypotheses of the form ""the average of this list is not
+greater than 1/2"" for a collection of finite lists of nonnegative numbers. Such
+social choice functions include majority, super-majority, plurality,
+multi-winner plurality, Instant Runoff Voting (IRV), Borda count, approval
+voting, and STAR-Voting, among others. The audit stops without a full hand
+count iff all the null hypotheses are rejected. The nulls can be tested in many
+ways. Ballot-polling is particularly simple; two new ballot-polling
+risk-measuring functions for sampling without replacement are given.
+Ballot-level comparison audits transform each null into an equivalent assertion
+that the mean of re-scaled tabulation errors is not greater than 1/2. In turn,
+that null can then be tested using the same statistical methods used for ballot
+polling---but applied to different finite lists of nonnegative numbers.
+SHANGRLA comparison audits are more efficient than previous comparison audits
+for two reasons: (i) for most social choice functions, the conditions tested
+are both necessary and sufficient for the reported outcome to be correct, while
+previous methods tested conditions that were sufficient but not necessary, and
+(ii) the tests avoid a conservative approximation. The SHANGRLA abstraction
+simplifies stratified audits, including audits that combine ballot polling with
+ballot-level comparisons, producing sharper audits than the ""SUITE"" approach.
+SHANGRLA works with the ""phantoms to evil zombies"" strategy to treat missing
+ballot cards and missing or redacted cast vote records. That also facilitates
+sampling from ""ballot-style manifests,"" which can dramatically improve
+efficiency when the audited contests do not appear on every ballot card.
+Open-source software implementing SHANGRLA ballot-level comparison audits is
+available.",1911.10035v4,"['stat.AP', 'cs.CR']",2019-11-22 13:32:46+00:00,[arxiv.Result.Author('Philip B. Stark')]
+90,Physical Cryptographic Signatures for Absentee Ballots,"Physical signature verification on absentee ballots became a major flashpoint
+in the 2018 midterm elections in the United States, especially in states like
+Georgia, Florida, and Arizona, where close election margins resulted in
+heightened attention to the counting of absentee ballots. As vote-by-mail
+solutions are becoming more prevalent across the U.S., these issues are sure to
+continue affecting elections in the United States. Signature verification is an
+inexact science; often times guidelines can vary widely from jurisdiction to
+jurisdiction. In this paper we provide a cryptographic remedy to this solution
+that is usable, secure, and easily integrated into existing election
+infrastructure.",1812.09423v1,['cs.CR'],2018-12-22 00:43:31+00:00,[arxiv.Result.Author('Matthew Bernhard')]
+91,Identifying Possible Winners in Ranked Choice Voting Elections with Outstanding Ballots,"Several election districts in the US have recently moved to ranked-choice
+voting (RCV) to decide the results of local elections. RCV allows voters to
+rank their choices, and the results are computed in rounds, eliminating one
+candidate at a time. RCV ensures fairer elections and has been shown to
+increase elected representation of women and people of color. A main drawback
+of RCV is that the round-by-round process requires all the ballots to be
+tallied before the results of an election can be calculated. With increasingly
+large portions of ballots coming from absentee voters, RCV election outcomes
+are not always apparent on election night, and can take several weeks to be
+published, leading to a loss of trust in the electoral process from the public.
+In this paper, we present an algorithm for efficiently computing possible
+winners of RCV elections from partially known ballots and evaluate it on data
+from the recent New York City Primary elections. We show that our techniques
+allow to significantly narrow down the field of possible election winners, and
+in some case identify the winner as soon as election night despite a number of
+yet-unaccounted absentee ballots, providing more transparency in the electoral
+process.",2206.12741v1,['cs.CY'],2022-06-25 22:08:15+00:00,"[arxiv.Result.Author('Alborz Jelvani'), arxiv.Result.Author('Amélie Marian')]"
+92,A Deep Reinforcement Learning Approach for the Meal Delivery Problem,"We consider a meal delivery service fulfilling dynamic customer requests
+given a set of couriers over the course of a day. A courier's duty is to
+pick-up an order from a restaurant and deliver it to a customer. We model this
+service as a Markov decision process and use deep reinforcement learning as the
+solution approach. We experiment with the resulting policies on synthetic and
+real-world datasets and compare those with the baseline policies. We also
+examine the courier utilization for different numbers of couriers. In our
+analysis, we specifically focus on the impact of the limited available
+resources in the meal delivery problem. Furthermore, we investigate the effect
+of intelligent order rejection and re-positioning of the couriers. Our
+numerical experiments show that, by incorporating the geographical locations of
+the restaurants, customers, and the depot, our model significantly improves the
+overall service quality as characterized by the expected total reward and the
+delivery times. Our results present valuable insights on both the courier
+assignment process and the optimal number of couriers for different order
+frequencies on a given day. The proposed model also shows a robust performance
+under a variety of scenarios for real-world implementation.",2104.12000v2,"['cs.LG', 'cs.AI', 'math.OC']",2021-04-24 19:01:59+00:00,"[arxiv.Result.Author('Hadi Jahanshahi'), arxiv.Result.Author('Aysun Bozanta'), arxiv.Result.Author('Mucahit Cevik'), arxiv.Result.Author('Eray Mert Kavuk'), arxiv.Result.Author('Ayşe Tosun'), arxiv.Result.Author('Sibel B. Sonuc'), arxiv.Result.Author('Bilgin Kosucu'), arxiv.Result.Author('Ayşe Başar')]"
+93,The design of courier transportation networks with a nonlinear zero-one programming model,"The courier industry is one of the most essential parts of the modern
+logistics. Meanwhile, the courier transportation network is one of the most
+important infrastructures of courier enterprises to take participate into
+operation. This paper presents a combinatorial optimization model for the
+courier transportation network design problem, and the aim of network
+optimization is to determine the transportation organization mode for each
+courier flow. A nonlinear zero-one integer programming model is formulated to
+describe the problem, the objective function of the model is intended to
+minimize the total cost including the accumulation cost, the transportation
+cost and the transfer cost. Also, we take transportation modes and types of
+transport carriers into account in the objective function. The constraints of
+the combinatorial optimization model contain capacities of transfer and sorting
+centers and delivery dates predefined.",1805.00836v1,['math.OC'],2018-05-02 14:15:02+00:00,[arxiv.Result.Author('Boliang Lin')]
+94,On Covering a Solid Sphere with Concentric Spheres in ${\mathbb Z}^3$,"We show that a digital sphere, constructed by the circular sweep of a digital
+semicircle (generatrix) around its diameter, consists of some holes
+(absentee-voxels), which appear on its spherical surface of revolution. This
+incompleteness calls for a proper characterization of the absentee-voxels whose
+restoration will yield a complete spherical surface without any holes. In this
+paper, we present a characterization of such absentee-voxels using certain
+techniques of digital geometry and show that their count varies quadratically
+with the radius of the semicircular generatrix. Next, we design an algorithm to
+fill these absentee-voxels so as to generate a spherical surface of revolution,
+which is more realistic from the viewpoint of visual perception. We further
+show that covering a solid sphere by a set of complete spheres also results in
+an asymptotically larger count of absentees, which is cubic in the radius of
+the sphere. The characterization and generation of complete solid spheres
+without any holes can also be accomplished in a similar fashion. We furnish
+test results to substantiate our theoretical findings.",1411.1395v1,"['cs.CG', 'cs.DM']",2014-10-23 05:05:23+00:00,"[arxiv.Result.Author('Sahadev Bera'), arxiv.Result.Author('Partha Bhowmick'), arxiv.Result.Author('Bhargab B. Bhattacharya')]"
+95,Limiting Risk by Turning Manifest Phantoms into Evil Zombies,"Drawing a random sample of ballots to conduct a risk-limiting audit generally
+requires knowing how the ballots cast in an election are organized into groups,
+for instance, how many containers of ballots there are in all and how many
+ballots are in each container. A list of the ballot group identifiers along
+with number of ballots in each group is called a ballot manifest. What if the
+ballot manifest is not accurate? Surprisingly, even if ballots are known to be
+missing from the manifest, it is not necessary to make worst-case assumptions
+about those ballots--for instance, to adjust the margin by the number of
+missing ballots--to ensure that the audit remains conservative. Rather, it
+suffices to make worst-case assumptions about the individual randomly selected
+ballots that the audit cannot find. This observation provides a simple
+modification to some risk-limiting audit procedures that makes them
+automatically become more conservative if the ballot manifest has errors. The
+modification--phantoms to evil zombies (~2EZ)--requires only an upper bound on
+the total number of ballots cast. ~2EZ makes the audit P-value stochastically
+larger than it would be had the manifest been accurate, automatically requiring
+more than enough ballots to be audited to offset the manifest errors. This
+ensures that the true risk limit remains smaller than the nominal risk limit.
+On the other hand, if the manifest is in fact accurate and the upper bound on
+the total number of ballots equals the total according to the manifest, ~2EZ
+has no effect at all on the number of ballots audited nor on the true risk
+limit.",1207.3413v1,['stat.AP'],2012-07-14 11:26:02+00:00,"[arxiv.Result.Author('Jorge H. Banuelos'), arxiv.Result.Author('Philip B. Stark')]"
+96,A Complete Enumeration of Ballot Permutations Avoiding Sets of Small Patterns,"Permutations whose prefixes contain at least as many ascents as descents are
+called ballot permutations. Lin, Wang, and Zhao have previously enumerated
+ballot permutations avoiding small patterns and have proposed the problem of
+enumerating ballot permutations avoiding a pair of permutations of length $3$.
+We completely enumerate ballot permutations avoiding two patterns of length $3$
+and we relate these avoidance classes with their respective recurrence
+relations and formulas, which leads to an interesting bijection between ballot
+permutations avoiding $132$ and $312$ with left factors of Dyck paths. In
+addition, we also conclude the Wilf-classification of ballot permutations
+avoiding sets of two patterns of length $3$, and we then extend our results to
+completely enumerate ballot permutations avoiding three patterns of length $3$.",2209.06087v1,"['math.CO', '05A05']",2022-09-13 15:37:45+00:00,[arxiv.Result.Author('Nathan Sun')]
+97,Can Voters Detect Errors on Their Printed Ballots? Absolutely,"There is still debate on whether voters can detect malicious changes in their
+printed ballot after making their selections on a Ballot Marking Device (BMD).
+In this study, we altered votes on a voter's ballot after they had made their
+selections on a BMD. We then required them to examine their ballots for any
+changes from the slate they used to vote. Overall accuracy was exceptionally
+high. Participants saw 1440 total contests, and of those 1440, there were a
+total of 4 errors, so total accuracy was 99.8%. Participants were able to
+perform with near-perfect accuracy regardless of ballot length, ballot type,
+number of altered races, and location of altered races. Detection performance
+was extremely robust. We conclude that with proper direction and resources,
+voters can be near-perfect detectors of ballot changes on printed paper ballots
+after voting with a BMD. This finding has significant implications for the
+voting community as BMD use continues to grow. Research should now focus on
+identifying administrative and behavioral methods that will prompt and
+encourage voters to check their BMD-generated ballots before they drop them in
+the ballot box.",2204.09780v1,"['cs.HC', 'cs.CR', 'H.1.2; J.4']",2022-04-20 20:40:32+00:00,"[arxiv.Result.Author('Philip Kortum'), arxiv.Result.Author('Michael D. Byrne'), arxiv.Result.Author('Chidera O. Azubike'), arxiv.Result.Author('Laura E. Roty')]"
+98,On the Bee-Identification Error Exponent with Absentee Bees,"The ""bee-identification problem"" was formally defined by Tandon, Tan and
+Varshney [IEEE Trans. Commun. (2019) [Online early access]], and the error
+exponent was studied. This work extends the results for the ""absentee bees""
+scenario, where a small fraction of the bees are absent in the beehive image
+used for identification. For this setting, we present an exact characterization
+of the bee-identification error exponent, and show that independent barcode
+decoding is optimal, i.e., joint decoding of the bee barcodes does not result
+in a better error exponent relative to independent decoding of each noisy
+barcode. This is in contrast to the result without absentee bees, where joint
+barcode decoding results in a significantly higher error exponent than
+independent barcode decoding. We also define and characterize the ""capacity""
+for the bee-identification problem with absentee bees, and prove the strong
+converse for the same.",1910.10333v1,"['cs.IT', 'math.IT']",2019-10-23 03:57:35+00:00,"[arxiv.Result.Author('Anshoo Tandon'), arxiv.Result.Author('Vincent Y. F. Tan'), arxiv.Result.Author('Lav R. Varshney')]"
+99,Nurse Staffing under Absenteeism: A Distributionally Robust Optimization Approach,"We study the nurse staffing problem under random nurse demand and
+absenteeism. While the demand uncertainty is exogenous (stemming from the
+random patient census), the absenteeism uncertainty is \emph{endogenous}, i.e.,
+the number of nurses who show up for work partially depends on the nurse
+staffing level. For quality of care, many hospitals have developed float pools,
+i.e., groups of hospital units, and trained nurses to be able to work in
+multiple units (termed cross-training) in response to potential nurse shortage.
+In this paper, we propose a distributionally robust nurse staffing (DRNS) model
+that considers both exogenous and endogenous uncertainties. We derive a
+separation algorithm to solve this model under a general structure of float
+pools. In addition, we identify several pool structures that often arise in
+practice and recast the corresponding DRNS model as a mixed-integer linear
+program, which facilitates off-the-shelf commercial solvers. Furthermore, we
+optimize the float pool design to reduce cross-training while achieving
+specified target staffing costs. The numerical case studies, based on the data
+of a collaborating hospital, suggest that the units with high absenteeism
+probability should be pooled together.",1909.09875v2,['math.OC'],2019-09-21 19:15:54+00:00,"[arxiv.Result.Author('Minseok Ryu'), arxiv.Result.Author('Ruiwei Jiang')]"

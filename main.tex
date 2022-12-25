@@ -1,0 +1,129 @@
+\documentclass{article}
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath, amssymb}
+\usepackage[dvipsnames]{xcolor}
+\usepackage{booktabs}
+\usepackage{tcolorbox}
+\tcbuselibrary{listings}
+% --------------------------------------------------------------------
+% crypto code
+\usepackage{environ}
+\usepackage[lambda,keys,adversary, logic, operators]{cryptocode}
+
+\createprocedurecommand{gamer}{}{}{linenumbering}
+\NewEnviron{game}[1][]{\noindent\gamer{#1}{\BODY}}
+%------------------------------------------------------------------
+
+
+\newtheorem{definition}{Definition}
+
+%%%%%%%%%% New commands %%%%%%%
+\newcommand{\note}[1]{{\bf{\color{red}#1}}}
+\newcommand{\oracle}[1]{\mathcal{O} \textsf{\scriptsize#1}}
+\newcommand{\V}{\textsf{V}}
+\newcommand{\Vzero}{\textsf{V}_0}
+\newcommand{\Vone}{\textsf{V}_1}
+\newcommand{\Vbeta}{\textsf{V}_{\beta}}
+\newcommand{\setchecked}{\textsf{Checked}}
+\newcommand{\sethappy}{\textsf{Happy}}
+\newcommand{\ids}{\mathcal{I}}
+\newcommand{\secretcredset}{\textsf{U}}
+\newcommand{\pubcredset}{\textsf{PU}}
+\newcommand{\corrcredset}{\textsf{CU}}
+\newcommand{\hcheck}{\textsf{H}_{\textsf{\scriptsize check}}}
+\newcommand{\hnotcheck}{\textsf{H}_{\overline{\textsf{\scriptsize check}}}}
+\newcommand{\bbox}{\textsf{BB}}
+\newcommand{\honestset}{\textsf{H}}
+\newcommand{\dishonestset}{\textsf{D}}
+\newcommand{\pubcred}{p}
+\newcommand{\secretcred}{c}
+\newcommand{\alg}[1]{\textsf{#1}}
+\usepackage{todonotes}
+%%%%%Labelled-MiniVoting commands %%%
+\newcommand{\extract}{\mathsf{Extract}}
+\newcommand{\validInd}{\mathsf{ValidInd}}
+\newcommand{\flabel}{\mathsf{Flabel}}
+\newcommand{\policy}{\mathsf{Policy}}
+\newcommand{\counting}{\mathsf{Count}}
+\newcommand{\publish}{\mathsf{Publish}}
+\setuptodonotes{fancyline, color=blue!30}
+\newcommand{\SignedMiniVoting}{\mathsf{SMV}}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\title{Evolution of Voting Technology by Mining Its Research Papers}
+\author{}
+\date{\today}
+
+\begin{document}
+
+\maketitle
+
+\begin{abstract}
+
+\end{abstract}
+\section{Introduction}
+
+\subsection{Importance of tracing of hot topics in research fields}
+The concept of "the rich getting richer", also known as preferential attachment in the domain of complex networks, is quite prevalent in a wide variety of fields 2,3 (for example, see the references cited in Table I); however, the scientific field is composed of scientists, a distinct group of individuals dedicated to proposing, investigating, and implementing novel and creative ideas.
+As a result, it is probable that the phenomena of "the rich getting richer" is less evident in scientific subjects than in other sectors.
+In an ideal world, scientists would pick their topics of inquiry based on their scientific interests and the scientific merit of the studied problems, not on the examined subjects' popularity.
+Using published papers from the American Physical Society's (APS) Physical Review publications from 1976 to 2009, we examine whether the topic of a new article is more likely to be in a hot field or a relatively obscure area at the time the paper is published.
+Additionally, we compare scientists from other nations.
+Such comparisons may provide enlightening and fascinating data.
+Modern scientific research in China is still in its infancy.
+Numerous experts feel that, in comparison to many other nations, China has a far higher proportion of followers than original thinkers.
+We provide direct empirical evidence for this theory in our paper.
+Finally, we examine if the degree of tracking hot fields varies between publications with varying numbers of authors or affiliations and citations.
+Interestingly, scientists who collaborate with a greater number of authors or affiliations tend to focus on hotter fields than those who collaborate with fewer authors or affiliations.
+Additionally, publications with fewer references are more interest- or value-driven on average, while articles with a big number of references are more hotness-driven.
+These empirical findings, especially if replicated in other domains and over longer time periods, may give significant information to policymakers. 
+
+
+
+\section{Evolution of scholarly data}
+We now have access to an abundance of academic materials as a result of the massive rise in research conducted in academia and business, as well as the widespread usage of scholarly networks and digital libraries.
+In 2014, the amount of these materials topped 114 million that were available over the web.
+Accordingly, the pace of freshly created academic papers has surpassed tens of thousands every day (Wu et al., 2014).
+As a result of the growing amount of academic material, it is becoming more difficult to extract relevant information and comprehend the structure and dynamics of research.
+This has recently resulted in the emergence of scholarly data mining as a significant research field, confronted with new challenges due to the inherent nature of science, taking into account the complexity of the academic landscape and the 5V characteristics of scholarly data (volume, variety, velocity, value, and veracity) (Kaisler, Armour, Espinosa, & Money, 2013; Xia, Wang, Bekele, & Liu, 2017). 
+
+
+At the moment, the primary challenge for researchers and scholars is not simply obtaining useful information from this easily accessible reservoir of data, but also comprehending the structure of scholarly communication and tracking the dynamics of science in order to provide better academic services to scholars and researchers.
+Nonetheless, this is not a trivial task, as scholarly data is quite distinct and frequently includes some unique characteristics: complexity, as it involves multiple entities (papers, authors, and journals) and their relationships; and veracity, as it results from author disambiguation and deduplication (Ferreira, Gonçalves, & Laender, 2012). 
+
+
+We put together the most cutting-edge research on applications linked to scholarly data mining and knowledge discovery from scientific data in this review.
+To this end, we conduct an examination of the methodologies employed and their application areas.
+So, we're going to answer the following questions in our study: 
+
+\todo[inline]{List of research questions that we are trying to answer them}
+
+\section{The Searching Methodology }
+Creating the lexicon about E-Voting area 
+
+
+\section{Extraction of data }
+About the process of collecting paper's information related to each keyword
+
+\todo[inline]{Using Zero-Shot Pipeline To Confirm the topic of each paper}
+\section{Python Implementation}
+
+
+\section{Analyses of research interest}
+In this part we analyze the frequency of topics in our dataset
+
+
+
+
+
+\section{Analyses of citations}
+Analysing the citation and its correlation with other features in our dataset
+
+
+
+
+\section{Conclusions} 
+
+\bibliographystyle{plain}
+\bibliography{references.bib}
+\end{document}
