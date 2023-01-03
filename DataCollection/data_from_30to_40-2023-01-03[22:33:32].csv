@@ -1,0 +1,1905 @@
+,Title,Summary,DOI,Categories,Publish Time,Authors,Journal
+0,On the security of ballot marking devices,"A recent debate among election experts has considered whether electronic
+ballot marking devices (BMDs) have adequate security against the risks of
+malware. A malicious BMD might produce a printed ballot that disagrees with a
+voter's actual intent, with the hope that voters would be unlikely to detect
+this subterfuge. This essay considers how an election administrator can create
+reasonable auditing procedures to gain confidence that their fleet of BMDs is
+operating correctly, allowing voters to benefit from the usability and
+accessibility features of BMDs while the overall election still benefits from
+the same security and reliability properties we expect from hand-marked paper
+ballots.",1908.01897v2,cs.CR,2019-08-05 23:04:16+00:00,[arxiv.Result.Author('Dan S. Wallach')],
+1,Printing and Scanning Attack for Image Counter Forensics,"Examining the authenticity of images has become increasingly important as
+manipulation tools become more accessible and advanced. Recent work has shown
+that while CNN-based image manipulation detectors can successfully identify
+manipulations, they are also vulnerable to adversarial attacks, ranging from
+simple double JPEG compression to advanced pixel-based perturbation. In this
+paper we explore another method of highly plausible attack: printing and
+scanning. We demonstrate the vulnerability of two state-of-the-art models to
+this type of attack. We also propose a new machine learning model that performs
+comparably to these state-of-the-art models when trained and validated on
+printed and scanned images. Of the three models, our proposed model outperforms
+the others when trained and validated on images from a single printer. To
+facilitate this exploration, we create a dataset of over 6,000 printed and
+scanned image blocks. Further analysis suggests that variation between images
+produced from different printers is significant, large enough that good
+validation accuracy on images from one printer does not imply similar
+validation accuracy on identical images from a different printer.",2005.02160v2,cs.CV,2020-04-27 00:32:15+00:00,"[arxiv.Result.Author('Hailey James'), arxiv.Result.Author('Otkrist Gupta'), arxiv.Result.Author('Dan Raviv')]",
+2,Locating ballot drop boxes,"For decades, voting-by-mail and the use of ballot drop boxes has
+substantially grown, and in response, many election officials have added new
+drop boxes to their voting infrastructure. However, existing guidance for
+locating drop boxes is limited. In this paper, we introduce an integer
+programming model, the drop box location problem (DBLP), to locate drop boxes.
+The DBLP considers criteria of cost, voter access, and risk. The cost of the
+drop box system is determined by the fixed cost of adding drop boxes and the
+operational cost of a collection tour by a bipartisan team who regularly
+collects ballots from selected locations. The DBLP utilizes covering sets to
+ensure each voter is in close proximity to a drop box and incorporates a novel
+measure of access to measure the ability to use multiple voting pathways to
+vote. The DBLP is shown to be NP-Hard, and we introduce a heuristic to generate
+a large number of feasible solutions for policy makers to select from a
+posteriori. Using a real-world case study of Milwaukee, WI, we study the
+benefit of the DBLP. The results demonstrate that the proposed optimization
+model identifies drop box locations that perform well across multiple criteria.
+The results also demonstrate that the trade-off between cost, access, and risk
+is non-trivial, which supports the use of the proposed optimization-based
+approach to select drop box locations.",2207.10707v2,math.OC,2022-07-21 18:41:38+00:00,"[arxiv.Result.Author('Adam P. Schmidt'), arxiv.Result.Author('Laura A. Albert')]",
+3,Open5x: Accessible 5-axis 3D printing and conformal slicing,"The common layer-by-layer deposition of regular, 3-axis 3D printing
+simplifies both the fabrication process and the 3D printer's mechanical design.
+However, the resulting 3D printed objects have some unfavourable
+characteristics including visible layers, uneven structural strength and
+support material. To overcome these, researchers have employed robotic arms and
+multi-axis CNCs to deposit materials in conformal layers. Conformal deposition
+improves the quality of the 3D printed parts through support-less printing and
+curved layer deposition. However, such multi-axis 3D printing is inaccessible
+to many individuals due to high costs and technical complexities. Furthermore,
+the limited GUI support for conformal slicers creates an additional barrier for
+users. To open multi-axis 3D printing up to more makers and researchers, we
+present a cheap and accessible way to upgrade a regular 3D printer to 5 axes.
+We have also developed a GUI-based conformal slicer, integrated within a
+popular CAD package. Together, these deliver an accessible workflow for
+designing, simulating and creating conformally-printed 3D models.",2202.11426v2,cs.HC,2022-02-23 11:14:24+00:00,"[arxiv.Result.Author('Freddie Hong'), arxiv.Result.Author('Steve Hodges'), arxiv.Result.Author('Connor Myant'), arxiv.Result.Author('David Boyle')]",
+4,Limiting Risk by Turning Manifest Phantoms into Evil Zombies,"Drawing a random sample of ballots to conduct a risk-limiting audit generally
+requires knowing how the ballots cast in an election are organized into groups,
+for instance, how many containers of ballots there are in all and how many
+ballots are in each container. A list of the ballot group identifiers along
+with number of ballots in each group is called a ballot manifest. What if the
+ballot manifest is not accurate? Surprisingly, even if ballots are known to be
+missing from the manifest, it is not necessary to make worst-case assumptions
+about those ballots--for instance, to adjust the margin by the number of
+missing ballots--to ensure that the audit remains conservative. Rather, it
+suffices to make worst-case assumptions about the individual randomly selected
+ballots that the audit cannot find. This observation provides a simple
+modification to some risk-limiting audit procedures that makes them
+automatically become more conservative if the ballot manifest has errors. The
+modification--phantoms to evil zombies (~2EZ)--requires only an upper bound on
+the total number of ballots cast. ~2EZ makes the audit P-value stochastically
+larger than it would be had the manifest been accurate, automatically requiring
+more than enough ballots to be audited to offset the manifest errors. This
+ensures that the true risk limit remains smaller than the nominal risk limit.
+On the other hand, if the manifest is in fact accurate and the upper bound on
+the total number of ballots equals the total according to the manifest, ~2EZ
+has no effect at all on the number of ballots audited nor on the true risk
+limit.",1207.3413v1,stat.AP,2012-07-14 11:26:02+00:00,"[arxiv.Result.Author('Jorge H. Banuelos'), arxiv.Result.Author('Philip B. Stark')]",
+5,Conversational User Interfaces for Blind Knowledge Workers: A Case Study,"Modern trends in interface design for office equipment using controls on
+touch surfaces create greater obstacles for blind and visually impaired users
+and contribute to an environment of dependency in work settings. We believe
+that \textit{conversational user interfaces} (CUIs) offer a reasonable
+alternative to touchscreen interactions enabling more access and most
+importantly greater independence for blind knowledge workers. We present a case
+study of our work to develop a conversational user interface for accessibility
+for multifunction printers. We also describe our approach to conversational
+interfaces in general, which emphasizes task-based collaborative interactions
+between people and intelligent agents, and we detail the specifics of the
+solution we created for multifunction printers. To guide our design, we worked
+with a group of blind and visually impaired individuals starting with focus
+group sessions to ascertain the challenges our target users face in their
+professional lives. We followed our technology development with a user study to
+assess the solution and direct our future efforts. We present our findings and
+conclusions from the study.",2006.07519v2,cs.HC,2020-06-13 00:27:14+00:00,"[arxiv.Result.Author('Kyle Dent'), arxiv.Result.Author('Kalai Ramea')]",
+6,A Complete Enumeration of Ballot Permutations Avoiding Sets of Small Patterns,"Permutations whose prefixes contain at least as many ascents as descents are
+called ballot permutations. Lin, Wang, and Zhao have previously enumerated
+ballot permutations avoiding small patterns and have proposed the problem of
+enumerating ballot permutations avoiding a pair of permutations of length $3$.
+We completely enumerate ballot permutations avoiding two patterns of length $3$
+and we relate these avoidance classes with their respective recurrence
+relations and formulas, which leads to an interesting bijection between ballot
+permutations avoiding $132$ and $312$ with left factors of Dyck paths. In
+addition, we also conclude the Wilf-classification of ballot permutations
+avoiding sets of two patterns of length $3$, and we then extend our results to
+completely enumerate ballot permutations avoiding three patterns of length $3$.",2209.06087v1,math.CO,2022-09-13 15:37:45+00:00,[arxiv.Result.Author('Nathan Sun')],
+7,"Signing Initiative Petitions Online: Possibilities, Problems and Prospects","Many people expect the Internet to change American politics, most likely in
+the direction of increasing direct citizen participation and forcing government
+officials to respond more quickly to voter concerns. A recent California
+initiative with these objectives would authorize use of encrypted digital
+signatures over the Internet to qualify candidates, initiatives, and other
+ballot measures. Proponents of Internet signature gathering say it will
+significantly lower the cost of qualifying initiatives and thereby reduce the
+influence of organized, well-financed interest groups. They also believe it
+will increase both public participation in the political process and public
+understanding about specific measures. However, opponents question whether
+Internet security is adequate to prevent widespread abuse and argue that the
+measure would create disadvantages for those who lack access to the Internet.
+Beyond issues of security, cost, and access lie larger questions about the
+effects of Internet signature gathering on direct democracy. Would it encourage
+greater and more informed public participation in the political process? Or
+would it flood voters with ballot measures and generally worsen current
+problems with the initiative process itself? Because we lack good data on these
+questions, answers to them today are largely conjectural. We can be fairly
+sure, however, that Internet petition signing, like Internet voting, will have
+unintended consequences.",cs/0109049v1,cs.CY,2001-09-22 22:57:01+00:00,[arxiv.Result.Author('Walter S. Baer')],
+8,Flexoskeleton printing for versatile insect-inspired robots,"One of the many secrets to the success and prevalence of insects is their
+versatile, robust, and complex exoskeleton morphology. A fundamental challenge
+in insect-inspired robotics has been the fabrication of robotic exoskeletons
+that can match the complexity of exoskeleton structural mechanics. Hybrid
+robots composed of rigid and soft elements have previously required access to
+expensive multi-material 3D printers, multi-step casting and machining
+processes, or limited material choice when using consumer-grade fabrication
+methods. Here we introduce a new design and fabrication process to rapidly
+construct flexible exoskeleton-inspired robots called flexoskeleton printing.
+We modify a consumer-grade fused deposition material (FDM) 3D printer to
+deposit filament directly onto a heated thermoplastic base layer which provides
+extremely strong bond strength between the deposited material and the
+inextensible, flexible base layer. This process significantly improves the
+fatigue resistance of printed components and enables a new class of
+insect-inspired robot morphologies. We demonstrate these capabilities through
+design and testing of a wide library of canonical flexoskeleton elements;
+ultimately leading to the integration of elements into a flexoskeleton walking
+legged robot.",1911.06897v2,cs.RO,2019-11-15 22:37:37+00:00,"[arxiv.Result.Author('Mingsong Jiang'), arxiv.Result.Author('Ziyi Zhou'), arxiv.Result.Author('Nicholas G. Gravish')]",
+9,Fabchain: Managing Audit-able 3D Print Job over Blockchain,"Improvements in fabrication devices such as 3D printers are becoming possible
+for personal fabrication to freely fabricate any products. To clarify who is
+liable for the product, the fabricator should keep the fabrication history in
+an immutable and sustainably accessible manner. In this paper, we propose a new
+scheme, ""Fabchain,"" that can record the fabrication history in such a manner.
+By utilizing a scheme that employs a blockchain as an audit-able communication
+channel, Fabchain manages print jobs for the fabricator's 3D printer over the
+blockchain, while maintaining a history of a print job. We implemented Fabchain
+on Ethereum and evaluated the performance for recording a print job. Our
+results demonstrate that Fabchain can complete communication of a print job
+sequence in less than 1 minute on the Ethereum test network. We conclude that
+Fabchain can manage a print job in a reasonable duration for 3D printing, while
+satisfying the requirements for immutability and sustainability.",2203.03119v1,cs.DC,2022-03-07 03:41:17+00:00,"[arxiv.Result.Author('Ryosuke Abe'), arxiv.Result.Author('Shigeya Suzuki'), arxiv.Result.Author('Kenji Saito'), arxiv.Result.Author('Hiroya Tanaka'), arxiv.Result.Author('Osamu Nakamura'), arxiv.Result.Author('Jun Murai')]",
+10,Security Survey and Analysis of Vote-by-Mail Systems,"Voting by mail has been gaining traction for decades in the United States and
+has emerged as the preferred voting method during the COVID-19 pandemic. In
+this paper, we examine the security of electronic systems used in the process
+of voting by mail, including online voter registration and online ballot
+tracking systems. The goals of these systems, to facilitate voter registration
+and increase public confidence in elections, are laudable. They indisputably
+provide a critical public good. It is for these reasons that understanding the
+security and privacy posture of the mail-in voting process is paramount. We
+find that online voter registration systems in some states have vulnerabilities
+that allow adversaries to alter or effectively prevent a voter's registration.
+We additionally find that ballot tracking systems raise serious privacy
+questions surrounding ease of access to voter data. While the vulnerabilities
+discussed here are unlikely to enable an adversary to modify votes, several
+could have the effect of disenfranchising voters and reducing voter confidence
+in U.S. elections infrastructure, thereby undermining the very purpose of these
+systems.",2005.08427v2,cs.CY,2020-05-18 02:18:15+00:00,"[arxiv.Result.Author('Jenny Blessing'), arxiv.Result.Author('Julian Gomez'), arxiv.Result.Author('McCoy Patiño'), arxiv.Result.Author('Tran Nguyen')]",
+11,Can Voters Detect Errors on Their Printed Ballots? Absolutely,"There is still debate on whether voters can detect malicious changes in their
+printed ballot after making their selections on a Ballot Marking Device (BMD).
+In this study, we altered votes on a voter's ballot after they had made their
+selections on a BMD. We then required them to examine their ballots for any
+changes from the slate they used to vote. Overall accuracy was exceptionally
+high. Participants saw 1440 total contests, and of those 1440, there were a
+total of 4 errors, so total accuracy was 99.8%. Participants were able to
+perform with near-perfect accuracy regardless of ballot length, ballot type,
+number of altered races, and location of altered races. Detection performance
+was extremely robust. We conclude that with proper direction and resources,
+voters can be near-perfect detectors of ballot changes on printed paper ballots
+after voting with a BMD. This finding has significant implications for the
+voting community as BMD use continues to grow. Research should now focus on
+identifying administrative and behavioral methods that will prompt and
+encourage voters to check their BMD-generated ballots before they drop them in
+the ballot box.",2204.09780v1,cs.HC,2022-04-20 20:40:32+00:00,"[arxiv.Result.Author('Philip Kortum'), arxiv.Result.Author('Michael D. Byrne'), arxiv.Result.Author('Chidera O. Azubike'), arxiv.Result.Author('Laura E. Roty')]",
+12,Hardware and Software manual for Evolution of Oil Droplets in a Chemo-Robotic Platform,"This manual outlines a fully automated liquid handling robot to enable
+physically-embodied evolution within a chemical oil-droplet system. The robot
+is based upon the REPRAP3D printer system and makes the droplets by mixing
+chemicals and then placing them in a petri dish after which they are recorded
+using a camera and the behaviour of the droplets analysed using image
+recognition software. This manual accompanies the open access publication
+published in Nature Communications DOI: 10.1038/ncomms6571.",1411.1953v1,cs.RO,2014-11-07 15:41:34+00:00,"[arxiv.Result.Author('Juan Manuel Parrilla Gutierrez'), arxiv.Result.Author('Trevor Hinkley'), arxiv.Result.Author('James Taylor'), arxiv.Result.Author('Kliment Yanev'), arxiv.Result.Author('Leroy Cronin')]",
+13,Designing and Building a Three-dimensional Projective Scanner for Smartphones,"One of the frustrating things in the digital fabrication era is that its
+media are neither affordable nor easily accessible and usable.
+Three-dimensional (3D) fabrication media (DFM) such as 3D Printers and 3D
+Scanners have experienced an upsurge in popularity, while the latter remain
+expensive and hard to function. With this paper, we aim to present you the
+RhoScanner Project - a an affordable and efficient Three-dimensional Projective
+Scanner for Smart-phones, hence shedding light on the extended capabilities of
+digital fabrication media on popular use.",1503.04315v1,cs.OH,2015-03-14 15:36:10+00:00,[arxiv.Result.Author('Marios Papachristou')],
+14,Spin glasses: the game,"This document presents the rules of a tactical two-player board game which is
+inspired by spin glasses. The aim is, while placing bonds and spins, to achieve
+a majority of the spins facing the chosen direction of each player. The game
+has been already successfully used in university teaching but should be
+accessible to players from age 10 and up. (Note that there is a non-physics
+version of the rules available at www.compphys.uni-oldenburg.de which
+formulates the game in terms of a comptetion between party hosts.) Material is
+included such that a cheap version of the board game can be made using a color
+printer, scissors and glue.",1312.1839v1,cond-mat.dis-nn,2013-12-06 12:20:33+00:00,[arxiv.Result.Author('Alexander K. Hartmann')],
+15,Ballot tilings and increasing trees,"We study enumerations of Dyck and ballot tilings, which are tilings of a
+region determined by two Dyck or ballot paths. We give bijective proofs to two
+formulae of enumerations of Dyck tilings through Hermite histories. We show
+that one of the formulae is equal to a certain Kazhdan--Lusztig polynomial. For
+a ballot tiling, we establish formulae which are analogues of formulae for Dyck
+tilings. Especially, the generating functions have factorized expressions. The
+key tool is a planted plane tree and its increasing labellings. We also
+introduce a generalized perfect matching which is bijective to an Hermite
+history for a ballot tiling. By combining these objects, we obtain various
+expressions of a generating function of ballot tilings with a fixed lower path.",1705.06434v1,math-ph,2017-05-18 06:46:09+00:00,[arxiv.Result.Author('Keiichi Shigechi')],
+16,Measuring and mitigating voting access disparities: a study of race and polling locations in Florida and North Carolina,"Voter suppression and associated racial disparities in access to voting are
+long-standing civil rights concerns in the United States. Barriers to voting
+have taken many forms over the decades. A history of violent explicit
+discouragement has shifted to more subtle access limitations that can include
+long lines and wait times, long travel times to reach a polling station, and
+other logistical barriers to voting. Our focus in this work is on quantifying
+disparities in voting access pertaining to the overall time-to-vote, and how
+they could be remedied via a better choice of polling location or provisioning
+more sites where voters can cast ballots. However, appropriately calibrating
+access disparities is difficult because of the need to account for factors such
+as population density and different community expectations for reasonable
+travel times.
+  In this paper, we quantify access to polling locations, developing a
+methodology for the calibrated measurement of racial disparities in polling
+location ""load"" and distance to polling locations. We apply this methodology to
+a study of real-world data from Florida and North Carolina to identify
+disparities in voting access from the 2020 election. We also introduce
+algorithms, with modifications to handle scale, that can reduce these
+disparities by suggesting new polling locations from a given list of identified
+public locations (including schools and libraries). Applying these algorithms
+on the 2020 election location data also helps to expose and explore tradeoffs
+between the cost of allocating more polling locations and the potential impact
+on access disparities. The developed voting access measurement methodology and
+algorithmic remediation technique is a first step in better polling location
+assignment.",2205.14867v1,cs.CY,2022-05-30 06:13:19+00:00,"[arxiv.Result.Author('Mohsen Abbasi'), arxiv.Result.Author('Suresh Venkatasubramanian'), arxiv.Result.Author('Sorelle A. Friedler'), arxiv.Result.Author('Kristian Lum'), arxiv.Result.Author('Calvin Barrett')]",
+17,Sophisticated Attacks on Decoy Ballots: The Devil's Menu and the Market for Lemons,"Decoy ballots do not count in election outcomes, but otherwise they are
+indistinguishable from real ballots. By means of a game-theoretical model, we
+show that decoy ballots may not provide effective protection against a
+malevolent adversary trying to buy real ballots. If the citizenry is divided
+into subgroups (or districts), the adversary can construct a so-called ""Devil's
+Menu"" consisting of several prices. In equilibrium, the adversary can buy the
+real ballots of any strict subset of districts at a price corresponding to the
+willingness to sell on the part of the citizens holding such ballots. By
+contrast, decoy voters are trapped into selling their ballots at a low, or even
+negligible, price. Blowing up the adversary's budget by introducing decoy
+ballots may thus turn out to be futile. The Devil's Menu can also be applied to
+the well-known ""Lemons Problem"".",1712.05477v1,cs.GT,2017-12-14 23:54:58+00:00,"[arxiv.Result.Author('Hans Gersbach'), arxiv.Result.Author('Akaki Mamageishvili'), arxiv.Result.Author('Oriol Tejada')]",
+18,Low-Cost Anti-Copying 2D Barcode by Exploiting Channel Noise Characteristics,"In this paper, for overcoming the drawbacks of the prior approaches, such as
+low generality, high cost, and high overhead, we propose a Low-Cost
+Anti-Copying (LCAC) 2D barcode by exploiting the difference between the noise
+characteristics of legal and illegal channels. An embedding strategy is
+proposed, and for a variant of it, we also make the corresponding analysis. For
+accurately evaluating the performance of our approach, a theoretical model of
+the noise in an illegal channel is established by using a generalized Gaussian
+distribution. By comparing with the experimental results based on various
+printers, scanners, and a mobile phone, it can be found that the sample
+histogram and curve fitting of the theoretical model match well, so it can be
+concluded that the theoretical model works well. For evaluating the security of
+the proposed LCAC code, besides the direct-copying (DC) attack, the improved
+version, which is the synthesized-copying (SC) attack, is also considered in
+this paper. Based on the theoretical model, we build a prediction function to
+optimize the parameters of our approach. The parameters optimization
+incorporates the covertness requirement, the robustness requirement and a
+tradeoff between the production cost and the cost of illegally-copying attacks
+together. The experimental results show that the proposed LCAC code with two
+printers and two scanners can detect the DC attack effectively and resist the
+SC attack up to the access of 14 legal copies.",2001.06203v1,cs.CR,2020-01-17 09:09:45+00:00,"[arxiv.Result.Author('Ning Xie'), arxiv.Result.Author('Qiqi Zhang'), arxiv.Result.Author('Ji Hu'), arxiv.Result.Author('Gang Luo'), arxiv.Result.Author('Changsheng Chen')]",
+19,A 3D printed wheel with constant mass and variable moment of inertia for lab and demonstration,"We present a versatile experimental apparatus for exploring rotational motion
+through the interplay between the moment of inertia, torque and rotational
+kinetic energy. The heart of this experiment uses a 3D printed wheel along with
+easily accessible stock components that allow for the adjustment of moment of
+inertial while keeping the total mass of the wheel constant. The wheel can act
+as a massive pulley of variable moment of inertia that allows students to
+measure the moment of inertia of the bare wheel by applying a constant torque
+to the system. The wheel can also be used to explore rotational kinetic energy
+in the form of races down ramps. The 3D printed aspect of this wheel allows
+anyone with access to a 3D printer to create, explore, and modify this wheel at
+a low cost allowing for more flexibility and accessibility for student and
+instructor exploration and modification.",1707.00032v1,physics.ed-ph,2017-06-30 19:49:14+00:00,"[arxiv.Result.Author('Eric Hazlett'), arxiv.Result.Author('Andrés Aragoneses')]",
+20,"Electryo, In-person Voting with Transparent Voter Verifiability and Eligibility Verifiability","Selene is an e-voting protocol that allows voters to directly check their
+individual vote, in cleartext, in the final tally via a tracker system, while
+providing good coercion mitigation. This is in contrast to conventional,
+end-to-end verifiable schemes in which the voter verifies the presence of an
+encryption of her vote on the bulletin board. The Selene mechanism can be
+applied to many e-voting schemes, but here we present an application to the
+polling station context, resulting in a voter-verifiable electronic tally with
+a paper audit trail. The system uses a smartcard-based public key system to
+provide the individual verification and universal eligibility verifiability.
+The paper record contains an encrypted link to the voter's identity, requiring
+stronger assumptions on ballot privacy than normal paper voting, but with the
+benefit of providing good auditability and dispute resolution as well as
+supporting (comparison) risk limiting audits.",2105.14783v1,cs.CR,2021-05-31 08:22:29+00:00,"[arxiv.Result.Author('Peter B. Roenne'), arxiv.Result.Author('Peter Y. A Ryan'), arxiv.Result.Author('Marie-Laure Zollinger')]",
+21,An AI-Powered VVPAT Counter for Elections in India,"The Election Commission of India has introduced Voter Verified Paper Audit
+Trail since 2019. This mechanism has increased voter confidence at the time of
+casting the votes. However, physical verification of the VVPATs against the
+party level counts from the EVMs is done only in 5 (randomly selected) machines
+per constituency. The time required to conduct physical verification becomes a
+bottleneck in scaling this activity for 100% of machines in all constituencies.
+We proposed an automated counter powered by image processing and machine
+learning algorithms to speed up the process and address this issue.",2212.11124v1,cs.CV,2022-12-09 14:59:40+00:00,"[arxiv.Result.Author('Prasath Murugesan'), arxiv.Result.Author('Shamshu Dharwez Saganvali')]",
+22,OpenVoting: Making E2E-V voting transparent and recoverable,"End-to-end verifiable (E2E-V) voting systems have been around for some time.
+However, their adoption in large elections is poor, seemingly because of the
+inaccessibility of their underlying complex cryptography to the general
+electorate. Meanwhile, risk-limiting audits based on voter-verified paper
+records (VVPR) have been effective in bringing easy-to-understand verifiability
+and recoverability to electronic voting, but they generally require the
+electorate to trust the post-election custody chain of the paper trail.
+  In this paper, we propose \emph{OpenVoting}, a novel polling booth voting
+protocol that publicly demonstrates a one-to-one correspondence between the
+cryptographically-secured electronic vote records and the easily understandable
+paper records, while protecting individual voter secrecy and polling
+booth-level voting statistics. This one-to-one correspondence helps each
+provide a check for the other, improves overall transparency, and also enables
+efficient and principled recovery in case of tally mismatches, by pinpointing
+mismatching votes and their associated polling booths. We propose a novel
+distributed zero-knowledge proof (ZKP) that facilitates the above.
+  To an ordinary voter \emph{OpenVoting} looks just like an old fashioned paper
+based voting system, with minimal additional cognitive overload.",1908.09557v6,cs.CR,2019-08-26 09:32:54+00:00,"[arxiv.Result.Author('Prashant Agrawal'), arxiv.Result.Author('Kabir Tomer'), arxiv.Result.Author('Abhinav Nakarmi'), arxiv.Result.Author('Mahabir Prasad Jhanwar'), arxiv.Result.Author('Subodh Sharma'), arxiv.Result.Author('Subhashis Banerjee')]",
+23,Auditing Indian Elections,"Indian Electronic Voting Machines (EVMs) will be fitted with printers that
+produce Voter-Verifiable Paper Audit Trails (VVPATs) in time for the 2019
+general election. VVPATs provide evidence that each vote was recorded as the
+voter intended, without having to trust the perfection or security of the EVMs.
+  However, confidence in election results requires more: VVPATs must be
+preserved inviolate and then actually used to check the reported election
+result in a trustworthy way that the public can verify. A full manual tally
+from the VVPATs could be prohibitively expensive and time-consuming; moreover,
+it is difficult for the public to determine whether a full hand count was
+conducted accurately. We show how Risk-Limiting Audits (RLAs) could provide
+high confidence in Indian election results. Compared to full hand recounts,
+RLAs typically require manually inspecting far fewer VVPATs when the outcome is
+correct, and are much easier for the electorate to observe in adequate detail
+to determine whether the result is trustworthy.",1901.03108v2,cs.CR,2019-01-10 11:38:41+00:00,"[arxiv.Result.Author('Vishal Mohanty'), arxiv.Result.Author('Nicholas Akinyokun'), arxiv.Result.Author('Andrew Conway'), arxiv.Result.Author('Chris Culnane'), arxiv.Result.Author('Philip B. Stark'), arxiv.Result.Author('Vanessa Teague')]",
+24,TRIP: Trustless Coercion-Resistant In-Person Voter Registration,"Most existing remote electronic voting systems are vulnerable to voter
+coercion and vote buying. While coercion-resistant voting systems address this
+challenge, current schemes assume that the voter has access to an untappable,
+incorruptible device during voter registration. We present TRIP, an in-person
+voter registration scheme enabling voters to create verifiable and
+indistinguishable real and fake credentials using an untrusted kiosk inside a
+privacy booth at a supervised location, e.g., the registrar's office. TRIP
+ensures the integrity of the voter's real credential while enabling the
+creation of fake credentials using interactive zero-knowledge proofs between
+the voter as the verifier and the kiosk as the prover, unbeknownst to the
+average voter. TRIP ensures that even voters who are under extreme coercion,
+and cannot leave the booth with a real credential, can delegate their vote to a
+political party, with the caveat that they must then trust the kiosk. TRIP
+optimizes the tallying process by limiting the number of credentials a voter
+can receive and capping the number of votes that a credential can cast per
+election. We conduct a preliminary usability study among 41 participants at a
+university and found that 42.5% of participants rated TRIP a B or higher in
+usability, a promising result for a voter registration scheme that
+substantially reduces trust in the registrar.",2202.06692v1,cs.CR,2022-02-14 13:35:46+00:00,"[arxiv.Result.Author('Louis-Henri Merino'), arxiv.Result.Author('Simone Colombo'), arxiv.Result.Author('Jeff Allen'), arxiv.Result.Author('Vero Estrada-Galiñanes'), arxiv.Result.Author('Bryan Ford')]",
+25,SOBA: Secrecy-preserving Observable Ballot-level Audit,"SOBA is an approach to election verification that provides observers with
+justifiably high confidence that the reported results of an election are
+consistent with an audit trail (""ballots""), which can be paper or electronic.
+SOBA combines three ideas: (1) publishing cast vote records (CVRs) separately
+for each contest, so that anyone can verify that each reported contest outcome
+is correct, if the CVRs reflect voters' intentions with sufficient accuracy;
+(2) shrouding a mapping between ballots and the CVRs for those ballots to
+prevent the loss of privacy that could occur otherwise; (3) assessing the
+accuracy with which the CVRs reflect voters' intentions for a collection of
+contests while simultaneously assessing the integrity of the shrouded mapping
+between ballots and CVRs by comparing randomly selected ballots to the CVRs
+that purport to represent them. Step (1) is related to work by the Humboldt
+County Election Transparency Project, but publishing CVRs separately for
+individual contests rather than images of entire ballots preserves privacy.
+Step (2) requires a cryptographic commitment from elections officials.
+Observers participate in step (3), which relies on the ""super-simple
+simultaneous single-ballot risk-limiting audit."" Step (3) is designed to reveal
+relatively few ballots if the shrouded mapping is proper and the CVRs
+accurately reflect voter intent. But if the reported outcomes of the contests
+differ from the outcomes that a full hand count would show, step (3) is
+guaranteed to have a large chance of requiring all the ballots to be counted by
+hand, thereby limiting the risk that an incorrect outcome will become official
+and final.",1105.5803v2,stat.AP,2011-05-29 17:00:20+00:00,"[arxiv.Result.Author('Josh Benaloh'), arxiv.Result.Author('Douglas Jones'), arxiv.Result.Author('Eric Lazarus'), arxiv.Result.Author('Mark Lindeman'), arxiv.Result.Author('Philip B. Stark')]",
+26,Phrase-Verified Voting: Verifiable Low-Tech Remote Boardroom Voting,"We present Phrase-Verified Voting, a voter-verifiable remote voting system
+assembled from commercial off-the-shelf software for small private elections.
+The system is transparent and enables each voter to verify that the tally
+includes their ballot selection without requiring any understanding of
+cryptography. This paper describes the system and its use in fall 2020, to vote
+remotely in promotion committees in a university. Each voter fills out a form
+in the cloud with their vote V (YES, NO, ABSTAIN) and a passphrase P-two words
+entered by the voter. The system generates a verification prompt of the (P,V)
+pairs and a tally of the votes, organized to help visualize how the votes add
+up. After the polls close, each voter verifies that this table lists their
+(P,V) pair and that the tally is computed correctly. The system is especially
+appropriate for any small group making sensitive decisions. Because the system
+would not prevent a coercer from demanding that their victim use a specified
+passphrase, it is not designed for applications where such malfeasance would be
+likely or go undetected. Results from 43 voters show that the system was
+well-accepted, performed effectively for its intended purpose, and introduced
+users to the concept of voter-verified elections. Compared to the commonly-used
+alternatives of paper ballots or voting by email, voters found the system
+easier to use, and that it provided greater privacy and outcome integrity.",2103.07180v1,cs.CR,2021-03-12 09:59:55+00:00,"[arxiv.Result.Author('Enka Blanchard'), arxiv.Result.Author('Ryan Robucci'), arxiv.Result.Author('Ted Selker'), arxiv.Result.Author('Alan Sherman')]",
+27,"STAR-Vote: A Secure, Transparent, Auditable, and Reliable Voting System","In her 2011 EVT/WOTE keynote, Travis County, Texas County Clerk Dana
+DeBeauvoir described the qualities she wanted in her ideal election system to
+replace their existing DREs. In response, in April of 2012, the authors,
+working with DeBeauvoir and her staff, jointly architected STAR-Vote, a voting
+system with a DRE-style human interface and a ""belt and suspenders"" approach to
+verifiability. It provides both a paper trail and end-to-end cryptography using
+COTS hardware. It is designed to support both ballot-level risk-limiting
+audits, and auditing by individual voters and observers. The human interface
+and process flow is based on modern usability research. This paper describes
+the STAR-Vote architecture, which could well be the next-generation voting
+system for Travis County and perhaps elsewhere.",1211.1904v1,cs.CR,2012-11-08 17:06:33+00:00,"[arxiv.Result.Author('Josh Benaloh'), arxiv.Result.Author('Mike Byrne'), arxiv.Result.Author('Philip Kortum'), arxiv.Result.Author('Neal McBurnett'), arxiv.Result.Author('Olivier Pereira'), arxiv.Result.Author('Philip B. Stark'), arxiv.Result.Author('Dan S. Wallach')]",
+28,Security Survey and Analysis of Vote-by-Mail Systems,"Voting by mail has been gaining traction for decades in the United States and
+has emerged as the preferred voting method during the COVID-19 pandemic. In
+this paper, we examine the security of electronic systems used in the process
+of voting by mail, including online voter registration and online ballot
+tracking systems. The goals of these systems, to facilitate voter registration
+and increase public confidence in elections, are laudable. They indisputably
+provide a critical public good. It is for these reasons that understanding the
+security and privacy posture of the mail-in voting process is paramount. We
+find that online voter registration systems in some states have vulnerabilities
+that allow adversaries to alter or effectively prevent a voter's registration.
+We additionally find that ballot tracking systems raise serious privacy
+questions surrounding ease of access to voter data. While the vulnerabilities
+discussed here are unlikely to enable an adversary to modify votes, several
+could have the effect of disenfranchising voters and reducing voter confidence
+in U.S. elections infrastructure, thereby undermining the very purpose of these
+systems.",2005.08427v2,cs.CY,2020-05-18 02:18:15+00:00,"[arxiv.Result.Author('Jenny Blessing'), arxiv.Result.Author('Julian Gomez'), arxiv.Result.Author('McCoy Patiño'), arxiv.Result.Author('Tran Nguyen')]",
+29,Improved Metric Distortion for Deterministic Social Choice Rules,"In this paper, we study the metric distortion of deterministic social choice
+rules that choose a winning candidate from a set of candidates based on voter
+preferences. Voters and candidates are located in an underlying metric space. A
+voter has cost equal to her distance to the winning candidate. Ordinal social
+choice rules only have access to the ordinal preferences of the voters that are
+assumed to be consistent with the metric distances. Our goal is to design an
+ordinal social choice rule with minimum distortion, which is the worst-case
+ratio, over all consistent metrics, between the social cost of the rule and
+that of the optimal omniscient rule with knowledge of the underlying metric
+space.
+  The distortion of the best deterministic social choice rule was known to be
+between $3$ and $5$. It had been conjectured that any rule that only looks at
+the weighted tournament graph on the candidates cannot have distortion better
+than $5$. In our paper, we disprove it by presenting a weighted tournament rule
+with distortion of $4.236$. We design this rule by generalizing the classic
+notion of uncovered sets, and further show that this class of rules cannot have
+distortion better than $4.236$. We then propose a new voting rule, via an
+alternative generalization of uncovered sets. We show that if a candidate
+satisfying the criterion of this voting rule exists, then choosing such a
+candidate yields a distortion bound of $3$, matching the lower bound. We
+present a combinatorial conjecture that implies distortion of $3$, and verify
+it for small numbers of candidates and voters by computer experiments. Using
+our framework, we also show that selecting any candidate guarantees distortion
+of at most $3$ when the weighted tournament graph is cyclically symmetric.",1905.01401v1,cs.GT,2019-05-04 01:14:44+00:00,"[arxiv.Result.Author('Kamesh Munagala'), arxiv.Result.Author('Kangning Wang')]",
+30,Towards non-independence of modular additions in searching differential trails of ARX ciphers: new automatic methods with application to SPECK and Chaskey,"ARX-based ciphers, constructed by the modular addition, rotation and XOR
+operations, have been receiving a lot of attention in the design of lightweight
+symmetric ciphers. For their differential cryptanalysis, most automatic search
+methods of differential trails adopt the assumption of independence of modulo
+additions. However, this assumption does not necessarily hold when the trail
+includes consecutive modular additions (CMAs). It has already been found that
+in this case some differential trails searched by automatic methods before are
+actually impossible, but the study is not in depth yet, for example, few effort
+has been paid to exploiting the root causes of non-independence between CMAs
+and accurate calculation of probabilities of the valid trails. In this paper,
+we devote to solving these two problems. By examing the differential equations
+of single and consecutive modular additions, we find that the influence of
+non-independence can be described by relationships between constraints on the
+intermediate state of two additions. Specifically, constraints of the first
+addition can make some of its output bits non-uniform, and when they meet the
+constraints of the second addition, the differential probability of the whole
+CMA may be different from the value calculated under the independence
+assumption. As a result, we can build SAT models to verify the validity of a
+given differential trail of ARX ciphers and #SAT models to calculate the exact
+probabilities of the differential propagation through CMAs in the trail,
+promising a more accurate evaluation of probability of the trail. Our automic
+methods and searching tools are applied to search related-key differential
+trails of SPECK and Chaskey including CMAs in the key schedule and the round
+function respectively.",2203.09741v1,cs.CR,2022-03-18 04:43:49+00:00,"[arxiv.Result.Author('Haiwen Qin'), arxiv.Result.Author('Baofeng Wu')]",
+31,E-voting System Using Homomorphic Encryption and Blockchain Technology to Encrypt Voter Data,"Homomorphic encryption and blockchain technology are regarded as two
+significant technologies for improving e-voting systems. In this paper, we
+suggest a novel e-voting system using homomorphic encryption and blockchain
+technology that is focused on encrypting voter data. By encrypting voter
+information rather than cast votes, the system enables various statistical
+analyses regarding the vote result while securing the credibility, privacy, and
+verifiability of overall e-voting system. We checked the efficiency of the
+overall system by comparing the speed of the proposed system with the speed of
+other e-voting systems that use homomorphic encryption and blockchain
+technology.",2111.05096v1,cs.CR,2021-11-06 01:01:13+00:00,"[arxiv.Result.Author('Hyunyeon Kim'), arxiv.Result.Author('Kyung Eun Kim'), arxiv.Result.Author('Soohan Park'), arxiv.Result.Author('Jongsoo Sohn')]",
+32,"D-DEMOS: A distributed, end-to-end verifiable, internet voting system","E-voting systems have emerged as a powerful technology for improving
+democracy by reducing election cost, increasing voter participation, and even
+allowing voters to directly verify the entire election procedure. Prior
+internet voting systems have single points of failure, which may result in the
+compromise of availability, voter secrecy, or integrity of the election
+results. In this paper, we present the design, implementation, security
+analysis, and evaluation of D-DEMOS, a complete e-voting system that is
+distributed, privacy-preserving and end-to-end verifiable. Our system includes
+a fully asynchronous vote collection subsystem that provides immediate
+assurance to the voter her vote was recorded as cast, without requiring
+cryptographic operations on behalf of the voter. We also include a distributed,
+replicated and fault-tolerant Bulletin Board component, that stores all
+necessary election-related information, and allows any party to read and verify
+the complete election process. Finally, we also incorporate trustees, i.e.,
+individuals who control election result production while guaranteeing privacy
+and end-to-end-verifiability as long as their strong majority is honest. Our
+system is the first e-voting system whose voting operation is human verifiable,
+i.e., a voter can vote over the web, even when her web client stack is
+potentially unsafe, without sacrificing her privacy, and still be assured her
+vote was recorded as cast. Additionally, a voter can outsource election
+auditing to third parties, still without sacrificing privacy. Finally, as the
+number of auditors increases, the probability of election fraud going
+undetected is diminished exponentially. We provide a model and security
+analysis of the system. We implement a prototype of the complete system, we
+measure its performance experimentally, and we demonstrate its ability to
+handle large-scale elections.",1507.06812v2,cs.CR,2015-07-24 11:29:12+00:00,"[arxiv.Result.Author('Nikos Chondros'), arxiv.Result.Author('Bingsheng Zhang'), arxiv.Result.Author('Thomas Zacharias'), arxiv.Result.Author('Panos Diamantopoulos'), arxiv.Result.Author('Stathis Maneas'), arxiv.Result.Author('Christos Patsonakis'), arxiv.Result.Author('Alex Delis'), arxiv.Result.Author('Aggelos Kiayias'), arxiv.Result.Author('Mema Roussopoulos')]",
+33,On the security of ballot marking devices,"A recent debate among election experts has considered whether electronic
+ballot marking devices (BMDs) have adequate security against the risks of
+malware. A malicious BMD might produce a printed ballot that disagrees with a
+voter's actual intent, with the hope that voters would be unlikely to detect
+this subterfuge. This essay considers how an election administrator can create
+reasonable auditing procedures to gain confidence that their fleet of BMDs is
+operating correctly, allowing voters to benefit from the usability and
+accessibility features of BMDs while the overall election still benefits from
+the same security and reliability properties we expect from hand-marked paper
+ballots.",1908.01897v2,cs.CR,2019-08-05 23:04:16+00:00,[arxiv.Result.Author('Dan S. Wallach')],
+34,E-Voting with Blockchain: An E-Voting Protocol with Decentralisation and Voter Privacy,"Technology has positive impacts on many aspects of our social life. Designing
+a 24hour globally connected architecture enables ease of access to a variety of
+resources and services. Furthermore, technology like Internet has been a
+fertile ground for innovation and creativity. One of such disruptive innovation
+is blockchain -- a keystone of cryptocurrencies. The blockchain technology is
+presented as a game changer for many of the existing and emerging
+technologies/services. With its immutability property and decentralised
+architecture, it is taking centre stage in many services as an equalisation
+factor to the current parity between consumers and large
+corporations/governments. One of such potential applications of the blockchain
+is in e-voting schemes. The objective of such a scheme would be to provide a
+decentralised architecture to run and support a voting scheme that is open,
+fair and independently verifiable. In this paper, we propose potentially a new
+e-voting protocol that utilises the blockchain as a transparent ballot box. The
+protocol has been designed with adhering to the fundamental e-voting properties
+in mind as well as offering a degree of decentralisation and allowing for the
+voter to change/update their vote (within the permissible voting period). The
+paper highlights the pros and cons of using blockchain for such a proposal from
+practical point view in both development/deployment and usage contexts.
+Concluding the paper with a potential roadmap for blockchain technology to be
+able to support complex applications.",1805.10258v2,cs.CR,2018-05-25 17:18:25+00:00,"[arxiv.Result.Author('Freya Sheer Hardwick'), arxiv.Result.Author('Apostolos Gioulis'), arxiv.Result.Author('Raja Naeem Akram'), arxiv.Result.Author('Konstantinos Markantonakis')]",
+35,A transparent referendum protocol with immutable proceedings and verifiable outcome for trustless networks,"High voter turnout in elections and referendums is very desirable in order to
+ensure a robust democracy. Secure electronic voting is a vision for the future
+of elections and referendums. Such a system can counteract factors that hinder
+strong voter turnout such as the requirement of physical presence during
+limited hours at polling stations. However, this vision brings transparency and
+confidentiality requirements that render the design of such solutions
+challenging. Specifically, the counting must be implemented in a reproducible
+way and the ballots of individual voters must remain concealed. In this paper,
+we propose and evaluate a referendum protocol that ensures transparency,
+confidentiality, and integrity, in trustless networks. The protocol is built by
+combining Secure Multi-Party Computation (SMPC) and Distributed Ledger or
+Blockchain technology. The persistence and immutability of the protocol
+communication allows verifiability of the referendum outcome on the client
+side. Voters therefore do not need to trust in third parties. We provide a
+formal description and conduct a thorough security evaluation of our proposal.",1909.06462v1,cs.CR,2019-09-13 21:41:05+00:00,"[arxiv.Result.Author('Maximilian Schiedermeier'), arxiv.Result.Author('Omar Hasan'), arxiv.Result.Author('Tobias Mayer'), arxiv.Result.Author('Lionel Brunie'), arxiv.Result.Author('Harald Kosch')]",
+36,Towards end-to-end verifiable online voting: adding verifiability to established voting systems,"Online voting for independent elections is generally supported by trusted
+election providers. Typically these providers do not offer any way in which a
+voter can verify their vote, so the providers are trusted with ballot privacy
+and ensuring correctness. Despite the desire to offer online voting for
+political elections, this lack of transparency and verifiability is often seen
+as a significant barrier to the large-scale adoption of online elections.
+Adding verifiability to an online election increases transparency and
+integrity, allowing voters to verify that their vote has been recorded
+correctly and included in the tally. However, replacing existing online systems
+with those that provide verifiable voting requires new algorithms and code to
+be deployed, and this presents a significant business risk to commercial
+election providers. In this paper we present the first step in an incremental
+approach which minimises the business risk but demonstrates the advantages of
+verifiability, by developing an implementation of key elements of a
+Selene-based verifiability layer and adding it to an operational online voting
+system. Selene is a verifiable voting protocol that uses trackers to enable
+voters to confirm that their votes have been captured correctly while
+protecting voter anonymity. This results in a system where even the election
+authority running the system cannot change the result in an undetectable way,
+and gives stronger guarantees on the integrity of the election than were
+previously present. We explore the challenges presented by adding a
+verifiability layer to an operational system. We describe the results of two
+initial trials, which obtained that survey respondents found this form of
+verifiability easy to use and that they broadly appreciated it. We conclude by
+outlining the further steps in the road-map towards the deployment of a fully
+trustworthy online voting system.",1912.00288v2,cs.CR,2019-12-01 00:06:51+00:00,"[arxiv.Result.Author('Mohammed Alsadi'), arxiv.Result.Author('Matthew Casey'), arxiv.Result.Author('Constantin Catalin Dragan'), arxiv.Result.Author('Francois Dupressoir'), arxiv.Result.Author('Luke Riley'), arxiv.Result.Author('Muntadher Sallal'), arxiv.Result.Author('Steve Schneider'), arxiv.Result.Author('Helen Treharne'), arxiv.Result.Author('Joe Wadsworth'), arxiv.Result.Author('Phil Wright')]",
+37,Dispute Resolution in Voting,"In voting, disputes arise when a voter claims that the voting authority is
+dishonest and did not correctly process his ballot while the authority claims
+to have followed the protocol. A dispute can be resolved if any third party can
+unambiguously determine who is right. We systematically characterize all
+relevant disputes for a generic, practically relevant, class of voting
+protocols. Based on our characterization, we propose a new definition of
+dispute resolution for voting that accounts for the possibility that both
+voters and the voting authority can make false claims and that voters may
+abstain from voting.
+  A central aspect of our work is timeliness: a voter should possess the
+evidence required to resolve disputes no later than the election's end. We
+characterize what assumptions are necessary and sufficient for timeliness in
+terms of a communication topology for our voting protocol class. We formalize
+the dispute resolution properties and communication topologies symbolically.
+This provides the basis for verification of dispute resolution for a broad
+class of protocols. To demonstrate the utility of our model, we analyze a
+mixnet-based voting protocol and prove that it satisfies dispute resolution as
+well as verifiability and receipt-freeness. To prove our claims, we combine
+machine-checked proofs with traditional pen-and-paper proofs.",2005.03749v2,cs.CR,2020-05-07 20:51:24+00:00,"[arxiv.Result.Author('David Basin'), arxiv.Result.Author('Sasa Radomirovic'), arxiv.Result.Author('Lara Schmid')]",
+38,Semantic Trails of City Explorations: How Do We Live a City,"The knowledge of city exploration trails of people is in short supply because
+of the complexity in defining meaningful trails representative of individual
+behaviours and in the access to actionable data. Existing datasets have only
+recorded isolated check-ins of activities featured by opaque venue types. In
+this paper, we fill the gaps in defining what is a semantic trail of city
+exploration and how it can be generated by integrating different data sources.
+Furthermore, we publicly release two datasets holding millions of semantic
+trails each and we discuss their most salient characteristics. We finally
+present an application using these datasets to build a recommender system meant
+to guide tourists while exploring a city.",1812.04367v2,cs.SI,2018-12-11 12:49:44+00:00,"[arxiv.Result.Author('Diego Monti'), arxiv.Result.Author('Enrico Palumbo'), arxiv.Result.Author('Giuseppe Rizzo'), arxiv.Result.Author('Raphaël Troncy'), arxiv.Result.Author('Thibault Ehrhart'), arxiv.Result.Author('Maurizio Morisio')]",
+39,Secure Remote Voting Using Paper Ballots,"Internet voting will probably be one of the most significant achievements of
+the future information society. It will have an enormous impact on the election
+process making it fast, reliable and inexpensive. Nonetheless, so far remote
+voting is considered to be very difficult, as one has to take into account
+susceptibility of the voter's PC to various cyber-attacks. As a result, most
+the research effort is put into developing protocols and machines for poll-site
+electronic voting. Although these solutions yield promising results, they
+cannot be directly adopted to Internet voting because of secure platform
+problem. However, the cryptographic components they utilize may be very useful.
+This paper presents a scheme based on combination of mixnets and homomorphic
+encryption borrowed from robust poll-site voting, along with techniques
+recommended for remote voting -- code sheets and test ballots. The protocol
+tries to minimize the trust put in voter's PC by making the voter responsible
+for manual encryption of his vote. To achieve this, the voter obtains a paper
+ballot that allows him to scramble the vote by performing simple operations
+(lookup in a table). Creation of paper ballots, as well as decryption of votes,
+is performed by a group of cooperating trusted servers. As a result, the scheme
+is characterized by strong asymmetry -- all computations are carried out on the
+server side. In consequence it does not require any additional hardware on the
+voter's side, and offers distributed trust, receipt-freeness and verifiability.",0804.2349v1,cs.CR,2008-04-15 10:26:40+00:00,[arxiv.Result.Author('Lukasz Nitschke')],
+40,Power-Efficient Direct-Voting Assurance for Data Fusion in Wireless Sensor Networks,"Wireless sensor networks place sensors into an area to collect data and send
+them back to a base station. Data fusion, which fuses the collected data before
+they are sent to the base station, is usually implemented over the network.
+Since the sensor is typically placed in locations accessible to malicious
+attackers, information assurance of the data fusion process is very important.
+A witness-based approach has been proposed to validate the fusion data. In this
+approach, the base station receives the fusion data and ""votes"" on the data
+from a randomly chosen sensor node. The vote comes from other sensor nodes,
+called ""witnesses,"" to verify the correctness of the fusion data. Because the
+base station obtains the vote through the chosen node, the chosen node could
+forge the vote if it is compromised. Thus, the witness node must encrypt the
+vote to prevent this forgery. Compared with the vote, the encryption requires
+more bits, increasing transmission burden from the chosen node to the base
+station. The chosen node consumes more power. This work improves the
+witness-based approach using direct voting mechanism such that the proposed
+scheme has better performance in terms of assurance, overhead, and delay. The
+witness node transmits the vote directly to the base station. Forgery is not a
+problem in this scheme. Moreover, fewer bits are necessary to represent the
+vote, significantly reducing the power consumption. Performance analysis and
+simulation results indicate that the proposed approach can achieve a 40 times
+better overhead than the witness-based approach.",0705.3683v1,cs.CR,2007-05-25 02:56:47+00:00,"[arxiv.Result.Author('H. -T. Pai'), arxiv.Result.Author('Y. S. Han')]",
+41,Measuring and mitigating voting access disparities: a study of race and polling locations in Florida and North Carolina,"Voter suppression and associated racial disparities in access to voting are
+long-standing civil rights concerns in the United States. Barriers to voting
+have taken many forms over the decades. A history of violent explicit
+discouragement has shifted to more subtle access limitations that can include
+long lines and wait times, long travel times to reach a polling station, and
+other logistical barriers to voting. Our focus in this work is on quantifying
+disparities in voting access pertaining to the overall time-to-vote, and how
+they could be remedied via a better choice of polling location or provisioning
+more sites where voters can cast ballots. However, appropriately calibrating
+access disparities is difficult because of the need to account for factors such
+as population density and different community expectations for reasonable
+travel times.
+  In this paper, we quantify access to polling locations, developing a
+methodology for the calibrated measurement of racial disparities in polling
+location ""load"" and distance to polling locations. We apply this methodology to
+a study of real-world data from Florida and North Carolina to identify
+disparities in voting access from the 2020 election. We also introduce
+algorithms, with modifications to handle scale, that can reduce these
+disparities by suggesting new polling locations from a given list of identified
+public locations (including schools and libraries). Applying these algorithms
+on the 2020 election location data also helps to expose and explore tradeoffs
+between the cost of allocating more polling locations and the potential impact
+on access disparities. The developed voting access measurement methodology and
+algorithmic remediation technique is a first step in better polling location
+assignment.",2205.14867v1,cs.CY,2022-05-30 06:13:19+00:00,"[arxiv.Result.Author('Mohsen Abbasi'), arxiv.Result.Author('Suresh Venkatasubramanian'), arxiv.Result.Author('Sorelle A. Friedler'), arxiv.Result.Author('Kristian Lum'), arxiv.Result.Author('Calvin Barrett')]",
+42,Heuristics in Multi-Winner Approval Voting,"In many real world situations, collective decisions are made using voting.
+Moreover, scenarios such as committee or board elections require voting rules
+that return multiple winners. In multi-winner approval voting (AV), an agent
+may vote for as many candidates as they wish. Winners are chosen by tallying up
+the votes and choosing the top-$k$ candidates receiving the most votes. An
+agent may manipulate the vote to achieve a better outcome by voting in a way
+that does not reflect their true preferences. In complex and uncertain
+situations, agents may use heuristics to strategize, instead of incurring the
+additional effort required to compute the manipulation which most favors them.
+In this paper, we examine voting behavior in multi-winner approval voting
+scenarios with complete information. We show that people generally manipulate
+their vote to obtain a better outcome, but often do not identify the optimal
+manipulation. Instead, voters tend to prioritize the candidates with the
+highest utilities. Using simulations, we demonstrate the effectiveness of these
+heuristics in situations where agents only have access to partial information.",1905.12104v2,cs.GT,2019-05-28 21:44:07+00:00,"[arxiv.Result.Author('Jaelle Scheuerman'), arxiv.Result.Author('Jason L. Harman'), arxiv.Result.Author('Nicholas Mattei'), arxiv.Result.Author('K. Brent Venable')]",
+43,Empirical analysis and agent-based modeling of Lithuanian parliamentary elections,"In this contribution we analyze a parties' vote share distribution across the
+polling stations during the Lithuanian parliamentary elections of 1992, 2008
+and 2012. We find that the distribution is rather well fitted by the Beta
+distribution. To reproduce this empirical observation we propose a simple
+multi-state agent-based model of the voting behavior. In the proposed model
+agents change the party they vote for either idiosyncratically or due to a
+linear recruitment mechanism. We use the model to reproduce the vote share
+distribution observed during the election of 1992. We discuss model extensions
+needed to reproduce the vote share distribution observed during the other
+elections.",1704.02101v2,physics.soc-ph,2017-04-07 06:13:48+00:00,[arxiv.Result.Author('A. Kononovicius')],Complexity 2017: 7354642
+44,Swiss Elections to the National Council: First trials with e-voting in elections at federal level,"On October 23rd 2011, around 22'000 voters will be authorized to cast their
+votes electronically in occasion of the elections to the National Council.
+These are the first trials ever with e-voting in elections at federal level in
+Switzerland. Four cantons are going to conduct trials with this new channel.
+Only Swiss voters living abroad will be authorized to participate. The Swiss
+Confederation pursues the long term goal of the introduction of e-voting as a
+third, complementary voting method - in addition to voting in person at the
+polling station and postal voting.",1109.2489v2,cs.CY,2011-09-09 15:03:01+00:00,"[arxiv.Result.Author('Anina Weber'), arxiv.Result.Author('Geo Taglioni')]",
+45,ICT and RFID in Education: Some Practical Aspects in Campus Life,"The paper summarizes our preliminary findings regarding the development and
+implementation of a newly proposed system based on ICT and RFID (Radio
+Frequency Identification) technologies for campus access and facility usage. It
+is generally acknowledged that any educational environment is highly dependent
+upon a wide range of resources or variables such as teaching staff, research
+and study areas, meeting and accommodation facilities, library services,
+restaurant and leisure facilities, etc. The system we have devised using ICT
+and RFID technologies supports not only authentic transactions among all
+university departments, but also interconnects all levels of academic life and
+activity. Thus, the utility of the system ranges from access control (student/
+staff/ visitor identification), attendance tracking, library check-out services
+and voting to grade book consulting, inventory, cashless vending, parking,
+laundry and copying services. Physically, the system consists of several RFID
+gates/readers, a data server and some network stations, all of them requiring
+specific structuring and integration solutions. The system is quite different
+from already existing ones in that it proposes an innovative access solution.
+Thus, the search of the ID card holder in a database has been replaced by local
+processing. Since one and the same card is employed to perform a variety of
+operations, the system has immediate and numerous utilizations.",1503.04286v1,cs.CY,2015-03-14 10:13:03+00:00,"[arxiv.Result.Author('Cristina Turcu'), arxiv.Result.Author('Cornel Turcu'), arxiv.Result.Author('Valentin Popa'), arxiv.Result.Author('Vasile Gaitan')]",
+46,An Overview of End-to-End Verifiable Voting Systems,"Advances in E2E verifiable voting have the potential to fundamentally restore
+trust in elections and democratic processes in society. In this chapter, we
+provide a comprehensive introduction to the field. We trace the evolution of
+privacy and verifiability properties in the research literature and describe
+the operations of current state-of-the-art E2E voting systems. We also discuss
+outstanding challenges to the deployment of E2E voting systems, including
+technical, legal, and usability constraints.
+  Our intention, in writing this chapter, has been to make the innovations in
+this domain accessible to a wider audience. We have therefore eschewed
+description of complex cryptographic mechanisms and instead attempt to
+communicate the fundamental intuition behind the design of E2E voting systems.
+We hope our work serves as a useful resource and assists in the future
+development of E2E voting.",1605.08554v1,cs.CR,2016-05-27 09:25:01+00:00,"[arxiv.Result.Author('Syed Taha Ali'), arxiv.Result.Author('Judy Murray')]",
+47,A Trustworthy Electronic Voting System for Australian Federal Elections,"The existing system for determining election results in Australia is, for the
+most part, secure, accurate and understandable by the average voter. This
+thesis explores the design of electronic voting systems designed to achieve
+these same goals, while also improving on the existing system in the areas of
+counting speed, accuracy, tamper resistance and accessibility.
+  Electronic voting systems have seen limited use within Australian elections,
+most prominently for State Elections in Victoria (2014), New South Wales (2015)
+and Western Australia (2017), along with trials of electronic voting systems in
+federal elections in 2007.
+  This thesis presents an analysis of the iVote electronic voting system used
+for the 2017 Western Australian State Election (iVote WA), outlining a number
+of security risks introduced by the use of cloud-based distributed denial of
+service mitigation. In addition, this thesis presents the results of a
+cross-sectional survey of Australian voters regarding levels of trust for three
+voting systems: the existing paper-based system used for Australian federal
+elections, the iVote WA system, and the vVote system used for the 2014
+Victorian State Election.
+  The analysis of iVote, combined with the survey results, are used to inform a
+recommendation for future research and public policy regarding the use of
+electronic voting systems in Australian federal elections.",1805.02202v1,cs.CR,2018-05-06 12:41:10+00:00,[arxiv.Result.Author('Mark Eldridge')],
+48,Testing for voter rigging in small polling stations,"Since the 1970s there has been a large number of countries that combine
+formal democratic institutions with authoritarian practices. Although in such
+countries the ruling elites may receive considerable voter support they often
+employ several manipulation tools to control election outcomes. A common
+practice of these regimes is the coercion and mobilization of a significant
+amount of voters to guarantee the electoral victory. This electoral
+irregularity is known as voter rigging, distinguishing it from vote rigging,
+which involves ballot stuffing or stealing. Here we develop a statistical test
+to quantify to which extent the results of a particular election display traces
+of voter rigging. Our key hypothesis is that small polling stations are more
+susceptible to voter rigging, because it is easier to identify opposing
+individuals, there are less eye witnesses, and supposedly less visits from
+election observers. We devise a general statistical method for testing whether
+voting behavior in small polling stations is significantly different from the
+behavior of their neighbor stations in a way that is consistent with the
+widespread occurrence of voter rigging. Based on a comparative analysis, the
+method enables to rule out whether observed differences in voting behavior
+might be explained by geographic heterogeneities in vote preferences. We
+analyze 21 elections in ten different countries and find significant anomalies
+compatible with voter rigging in Russia from 2007-2011, in Venezuela from
+2006-2013, and in Uganda 2011. Particularly disturbing is the case of Venezuela
+where these distortions have been outcome-determinative in the 2013
+presidential elections.",1604.07689v1,stat.AP,2016-04-26 14:29:08+00:00,"[arxiv.Result.Author('Raúl Jiménez'), arxiv.Result.Author('Manuel Hidalgo'), arxiv.Result.Author('Peter Klimek')]",
+49,A Local-Dominance Theory of Voting Equilibria,"It is well known that no reasonable voting rule is strategyproof. Moreover,
+the common Plurality rule is particularly prone to strategic behavior of the
+voters and empirical studies show that people often vote strategically in
+practice. Multiple game-theoretic models have been proposed to better
+understand and predict such behavior and the outcomes it induces. However,
+these models often make unrealistic assumptions regarding voters' behavior and
+the information on which they base their vote.
+  We suggest a new model for strategic voting that takes into account voters'
+bounded rationality, as well as their limited access to reliable information.
+We introduce a simple behavioral heuristic based on \emph{local dominance},
+where each voter considers a set of possible world states without assigning
+probabilities to them. This set is constructed based on prospective candidates'
+scores (e.g., available from an inaccurate poll). In a \emph{voting
+equilibrium}, all voters vote for candidates not dominated within the set of
+possible states.
+  We prove that these voting equilibria exist in the Plurality rule for a broad
+class of local dominance relations (that is, different ways to decide which
+states are possible). Furthermore, we show that in an iterative setting where
+voters may repeatedly change their vote, local dominance-based dynamics quickly
+converge to an equilibrium if voters start from the truthful state. Weaker
+convergence guarantees in more general settings are also provided.
+  Using extensive simulations of strategic voting on generated and real
+preference profiles, we show that convergence is fast and robust, that emerging
+equilibria are consistent across various starting conditions, and that they
+replicate widely known patterns of human voting behavior such as Duverger's
+law. Further, strategic voting generally improves the quality of the winner
+compared to truthful voting.",1404.4688v2,cs.GT,2014-04-18 04:40:28+00:00,"[arxiv.Result.Author('Reshef Meir'), arxiv.Result.Author('Omer Lev'), arxiv.Result.Author('Jeffrey S. Rosenschein')]",
+50,Optimized Distortion and Proportional Fairness in Voting,"A voting rule decides on a probability distribution over a set of $m$
+alternatives, based on rankings of those alternatives provided by agents. We
+assume that agents have cardinal utility functions over the alternatives, but
+voting rules have access to only the rankings induced by these utilities. We
+evaluate how well voting rules do on measures of social welfare and of
+proportional fairness, computed based on the hidden utility functions.
+  In particular, we study the distortion of voting rules, which is a worst-case
+measure. It is an approximation ratio comparing the utilitarian social welfare
+of the optimum outcome to the welfare of the outcome selected by the voting
+rule, in the worst case over possible input profiles and utility functions that
+are consistent with the input. The literature has studied distortion with
+unit-sum utility functions, and left a small asymptotic gap in the best
+possible distortion. Using tools from the theory of fair multi-winner
+elections, we propose the first voting rule which achieves the optimal
+distortion $\Theta(\sqrt{m})$ for unit-sum utilities. Our voting rule also
+achieves optimum $\Theta(\sqrt{m})$ distortion for unit-range and approval
+utilities.
+  We then take a similar worst-case approach to a quantitative measure of the
+fairness of a voting rule, called proportional fairness. Informally, it
+measures whether the influence of cohesive groups of agents on the voting
+outcome is proportional to the group size. We show that there is a voting rule
+which, without knowledge of the utilities, can achieve an $O(\log
+m)$-approximation to proportional fairness, the best possible approximation. As
+a consequence of its proportional fairness, we show that this voting rule
+achieves $O(\log m)$ distortion with respect to Nash welfare, and provides an
+$O(\log m)$-approximation to the core, making it interesting for applications
+in participatory budgeting.",2205.15760v2,cs.GT,2022-05-31 12:57:48+00:00,"[arxiv.Result.Author('Soroush Ebadian'), arxiv.Result.Author('Anson Kahng'), arxiv.Result.Author('Dominik Peters'), arxiv.Result.Author('Nisarg Shah')]",
+51,Security Survey and Analysis of Vote-by-Mail Systems,"Voting by mail has been gaining traction for decades in the United States and
+has emerged as the preferred voting method during the COVID-19 pandemic. In
+this paper, we examine the security of electronic systems used in the process
+of voting by mail, including online voter registration and online ballot
+tracking systems. The goals of these systems, to facilitate voter registration
+and increase public confidence in elections, are laudable. They indisputably
+provide a critical public good. It is for these reasons that understanding the
+security and privacy posture of the mail-in voting process is paramount. We
+find that online voter registration systems in some states have vulnerabilities
+that allow adversaries to alter or effectively prevent a voter's registration.
+We additionally find that ballot tracking systems raise serious privacy
+questions surrounding ease of access to voter data. While the vulnerabilities
+discussed here are unlikely to enable an adversary to modify votes, several
+could have the effect of disenfranchising voters and reducing voter confidence
+in U.S. elections infrastructure, thereby undermining the very purpose of these
+systems.",2005.08427v2,cs.CY,2020-05-18 02:18:15+00:00,"[arxiv.Result.Author('Jenny Blessing'), arxiv.Result.Author('Julian Gomez'), arxiv.Result.Author('McCoy Patiño'), arxiv.Result.Author('Tran Nguyen')]",
+52,Distributed Monitoring of Election Winners,"We consider distributed elections, where there is a center and $k$ sites. In
+such distributed elections, each voter has preferences over some set of
+candidates, and each voter is assigned to exactly one site such that each site
+is aware only of the voters assigned to it. The center is able to directly
+communicate with all sites. We are interested in designing
+communication-efficient protocols, allowing the center to maintain a candidate
+which, with arbitrarily high probability, is guaranteed to be a winner, or at
+least close to being a winner. We consider various single-winner voting rules,
+such as variants of Approval voting and scoring rules, tournament-based voting
+rules, and several round-based voting rules. For the voting rules we consider,
+we show that, using communication which is logarithmic in the number of voters,
+it is possible for the center to maintain such approximate winners; that is,
+upon a query at any time the center can immediately return a candidate which is
+guaranteed to be an approximate winner with high probability. We complement our
+protocols with lower bounds. Our results are theoretical in nature and relate
+to various scenarios, such as aggregating customer preferences in online
+shopping websites or supermarket chains and collecting votes from different
+polling stations of political elections.",1805.02206v2,cs.GT,2018-05-06 13:16:26+00:00,"[arxiv.Result.Author('Arnold Filtser'), arxiv.Result.Author('Nimrod Talmon')]",
+53,"Electryo, In-person Voting with Transparent Voter Verifiability and Eligibility Verifiability","Selene is an e-voting protocol that allows voters to directly check their
+individual vote, in cleartext, in the final tally via a tracker system, while
+providing good coercion mitigation. This is in contrast to conventional,
+end-to-end verifiable schemes in which the voter verifies the presence of an
+encryption of her vote on the bulletin board. The Selene mechanism can be
+applied to many e-voting schemes, but here we present an application to the
+polling station context, resulting in a voter-verifiable electronic tally with
+a paper audit trail. The system uses a smartcard-based public key system to
+provide the individual verification and universal eligibility verifiability.
+The paper record contains an encrypted link to the voter's identity, requiring
+stronger assumptions on ballot privacy than normal paper voting, but with the
+benefit of providing good auditability and dispute resolution as well as
+supporting (comparison) risk limiting audits.",2105.14783v1,cs.CR,2021-05-31 08:22:29+00:00,"[arxiv.Result.Author('Peter B. Roenne'), arxiv.Result.Author('Peter Y. A Ryan'), arxiv.Result.Author('Marie-Laure Zollinger')]",
+54,Statistical anomalies in 2011-2012 Russian elections revealed by 2D correlation analysis,"Here we perform a statistical analysis of the official data from recent
+Russian parliamentary and presidential elections (held on December 4th, 2011
+and March 4th, 2012, respectively). A number of anomalies are identified that
+persistently skew the results in favour of the pro-government party, United
+Russia (UR), and its leader Vladimir Putin. The main irregularities are: (i)
+remarkably high correlation between turnout and voting results; (ii) a large
+number of polling stations where the UR/Putin results are given by a round
+number of percent; (iii) constituencies showing improbably low or (iv)
+anomalously high dispersion of results across polling stations; (v) substantial
+difference between results at paper-based and electronic polling stations.
+These anomalies, albeit less prominent in the presidential elections, hardly
+conform to the assumptions of fair and free voting. The approaches proposed
+here can be readily extended to quantify fingerprints of electoral fraud in any
+other problematic elections.",1205.0741v2,physics.soc-ph,2012-05-03 15:46:04+00:00,"[arxiv.Result.Author('Dmitry Kobak'), arxiv.Result.Author('Sergey Shpilkin'), arxiv.Result.Author('Maxim S. Pshenichnikov')]",
+55,Objective Social Choice: Using Auxiliary Information to Improve Voting Outcomes,"How should one combine noisy information from diverse sources to make an
+inference about an objective ground truth? This frequently recurring, normative
+question lies at the core of statistics, machine learning, policy-making, and
+everyday life. It has been called ""combining forecasts"", ""meta-analysis"",
+""ensembling"", and the ""MLE approach to voting"", among other names. Past studies
+typically assume that noisy votes are identically and independently distributed
+(i.i.d.), but this assumption is often unrealistic. Instead, we assume that
+votes are independent but not necessarily identically distributed and that our
+ensembling algorithm has access to certain auxiliary information related to the
+underlying model governing the noise in each vote. In our present work, we: (1)
+define our problem and argue that it reflects common and socially relevant real
+world scenarios, (2) propose a multi-arm bandit noise model and count-based
+auxiliary information set, (3) derive maximum likelihood aggregation rules for
+ranked and cardinal votes under our noise model, (4) propose, alternatively, to
+learn an aggregation rule using an order-invariant neural network, and (5)
+empirically compare our rules to common voting rules and naive
+experience-weighted modifications. We find that our rules successfully use
+auxiliary information to outperform the naive baselines.",2001.10092v1,cs.MA,2020-01-27 21:21:19+00:00,"[arxiv.Result.Author('Silviu Pitis'), arxiv.Result.Author('Michael R. Zhang')]",
+56,Exact Complexity of the Winner Problem for Young Elections,"In 1977, Young proposed a voting scheme that extends the Condorcet Principle
+based on the fewest possible number of voters whose removal yields a Condorcet
+winner. We prove that both the winner and the ranking problem for Young
+elections is complete for the class of problems solvable in polynomial time by
+parallel access to NP. Analogous results for Lewis Carroll's 1876 voting scheme
+were recently established by Hemaspaandra et al. In contrast, we prove that the
+winner and ranking problems in Fishburn's homogeneous variant of Carroll's
+voting scheme can be solved efficiently by linear programming.",cs/0112021v1,cs.CC,2001-12-20 11:37:33+00:00,"[arxiv.Result.Author('Jörg Rothe'), arxiv.Result.Author('Holger Spakowski'), arxiv.Result.Author('Jörg Vogel')]",
+57,Slotted Aloha for Networked Base Stations,"We study multiple base station, multi-access systems in which the user-base
+station adjacency is induced by geographical proximity. At each slot, each user
+transmits (is active) with a certain probability, independently of other users,
+and is heard by all base stations within the distance $r$. Both the users and
+base stations are placed uniformly at random over the (unit) area. We first
+consider a non-cooperative decoding where base stations work in isolation, but
+a user is decoded as soon as one of its nearby base stations reads a clean
+signal from it. We find the decoding probability and quantify the gains
+introduced by multiple base stations. Specifically, the peak throughput
+increases linearly with the number of base stations $m$ and is roughly $m/4$
+larger than the throughput of a single-base station that uses standard slotted
+Aloha. Next, we propose a cooperative decoding, where the mutually close base
+stations inform each other whenever they decode a user inside their coverage
+overlap. At each base station, the messages received from the nearby stations
+help resolve collisions by the interference cancellation mechanism. Building
+from our exact formulas for the non-cooperative case, we provide a heuristic
+formula for the cooperative decoding probability that reflects well the actual
+performance. Finally, we demonstrate by simulation significant gains of
+cooperation with respect to the non-cooperative decoding.",1401.6799v1,cs.IT,2014-01-27 10:51:34+00:00,"[arxiv.Result.Author('Dragana Bajovic'), arxiv.Result.Author('Dusan Jakovetic'), arxiv.Result.Author('Dejan Vukobratovic'), arxiv.Result.Author('Vladimir Crnojevic')]",
+58,Election forensic analysis of the Turkish Constitutional Referendum 2017,"With a majority of 'Yes' votes in the Constitutional Referendum of 2017,
+Turkey continues its transition from democracy to autocracy. By the will of the
+Turkish people, this referendum transferred practically all executive power to
+president Erdogan. However, the referendum was confronted with a substantial
+number of allegations of electoral misconducts and irregularities, ranging from
+state coercion of 'No' supporters to the controversial validity of unstamped
+ballots. In this note we report the results of an election forensic analysis of
+the 2017 referendum to clarify to what extent these voting irregularities were
+present and if they were able to influence the outcome of the referendum. We
+specifically apply novel statistical forensics tests to further identify the
+specific nature of electoral malpractices. In particular, we test whether the
+data contains fingerprints for ballot-stuffing (submission of multiple ballots
+per person during the vote) and voter rigging (coercion and intimidation of
+voters). Additionally, we perform tests to identify numerical anomalies in the
+election results. We find systematic and highly significant support for the
+presence of both, ballot-stuffing and voter rigging. In 6% of stations we find
+signs for ballot-stuffing with an error (probability of ballot-stuffing not
+happening) of 0.15% (3 sigma event). The influence of these vote distortions
+were large enough to tip the overall balance from 'No' to a majority of 'Yes'
+votes.",1706.09839v2,stat.AP,2017-06-29 16:33:28+00:00,"[arxiv.Result.Author('Peter Klimek'), arxiv.Result.Author('Raul Jimenez'), arxiv.Result.Author('Manuel Hidalgo'), arxiv.Result.Author('Abraham Hinteregger'), arxiv.Result.Author('Stefan Thurner')]",
+59,Approval-Based Elections and Distortion of Voting Rules,"We consider elections where both voters and candidates can be associated with
+points in a metric space and voters prefer candidates that are closer to those
+that are farther away. It is often assumed that the optimal candidate is the
+one that minimizes the total distance to the voters. Yet, the voting rules
+often do not have access to the metric space $M$ and only see preference
+rankings induced by $M$.Consequently, they often are incapable of selecting the
+optimal candidate. The distortion of a voting rule measures the worst-case loss
+of the quality being the result of having access only to preference rankings.
+We extend the idea of distortion to approval-based preferences. First, we
+compute the distortion of Approval Voting. Second, we introduce the concept of
+acceptability-based distortion---the main idea behind is that the optimal
+candidate is the one that is acceptable to most voters. We determine
+acceptability-distortion for a number of rules, including Plurality, Borda,
+$k$-Approval, Veto, the Copeland's rule, Ranked Pairs, the Schulze's method,
+and STV.",1901.06709v1,cs.GT,2019-01-20 18:22:58+00:00,"[arxiv.Result.Author('Grzegorz Pierczyński'), arxiv.Result.Author('Piotr Skowron')]",
+60,I'll be back: Examining Restored Accounts On Twitter,"Online social networks like Twitter actively monitor their platform to
+identify accounts that go against their rules. Twitter enforces account level
+moderation, i.e. suspension of a Twitter account in severe cases of platform
+abuse. A point of note is that these suspensions are sometimes temporary and
+even incorrect. Twitter provides a redressal mechanism to 'restore' suspended
+accounts. We refer to all suspended accounts who later have their suspension
+reversed as 'restored accounts'. In this paper, we release the firstever
+dataset and methodology 1 to identify restored accounts. We inspect account
+properties and tweets of these restored accounts to get key insights into the
+effects of suspension.We build a prediction model to classify an account into
+normal, suspended or restored. We use SHAP values to interpret this model and
+identify important features. SHAP (SHapley Additive exPlanations) is a method
+to explain individual predictions. We show that profile features like date of
+account creation and the ratio of retweets to total tweets are more important
+than content-based features like sentiment scores and Ekman emotion scores when
+it comes to classification of an account as normal, suspended or restored. We
+investigate restored accounts further in the pre-suspension and
+post-restoration phases. We see that the number of tweets per account drop by
+53.95% in the post-restoration phase, signifying less 'spammy' behaviour after
+reversal of suspension. However, there was no substantial difference in the
+content of the tweets posted in the pre-suspension and post-restoration phases.",2111.12395v1,cs.SI,2021-11-24 10:28:46+00:00,"[arxiv.Result.Author('Arnav Kapoor'), arxiv.Result.Author('Rishi Raj Jain'), arxiv.Result.Author('Avinash Prabhu'), arxiv.Result.Author('Tanvi Karandikar'), arxiv.Result.Author('Ponnurangam Kumaraguru')]",
+61,A Review of Financial Accounting Fraud Detection based on Data Mining Techniques,"With an upsurge in financial accounting fraud in the current economic
+scenario experienced, financial accounting fraud detection (FAFD) has become an
+emerging topic of great importance for academic, research and industries. The
+failure of internal auditing system of the organization in identifying the
+accounting frauds has lead to use of specialized procedures to detect financial
+accounting fraud, collective known as forensic accounting. Data mining
+techniques are providing great aid in financial accounting fraud detection,
+since dealing with the large data volumes and complexities of financial data
+are big challenges for forensic accounting. This paper presents a comprehensive
+review of the literature on the application of data mining techniques for the
+detection of financial accounting fraud and proposes a framework for data
+mining techniques based accounting fraud detection. The systematic and
+comprehensive literature review of the data mining techniques applicable to
+financial accounting fraud detection may provide a foundation to future
+research in this field. The findings of this review show that data mining
+techniques like logistic models, neural networks, Bayesian belief network, and
+decision trees have been applied most extensively to provide primary solutions
+to the problems inherent in the detection and classification of fraudulent
+data.",1309.3944v1,cs.CY,2013-09-16 13:20:10+00:00,"[arxiv.Result.Author('Anuj Sharma'), arxiv.Result.Author('Prabin Kumar Panigrahi')]",
+62,"Theories of Accounting: Evolution & Developments, Income-Determination and Diversities in Use","Accounting frameworks follow stipulations of existing Accounting Theories.
+This exploratory research sets out to trace the evolution of accounting
+theories of Charge and Discharge Syndrome and the Corollary of Double Entry.
+Furthermore, it dives into the theories of Income Determination, garnishing it
+with areas of diversities in the use of Accounting Information while review of
+theories of recent growths and developments in Accounting are not left out. The
+method of research adopted is exploratory review of existing accounting
+literature. It is observed that the emergence of these theories exist to
+minimize fraud, errors, misappropriations and pilfering of Corporate assets. It
+is recommended that implementation prescriptions of these theories by
+International Financial Reporting Standard Committee and Practicing Accountants
+should be adhered to and simplified so as to avoid confusing and scandalous
+reporting of financial statements",1411.4633v1,q-fin.GN,2014-11-03 10:00:26+00:00,[arxiv.Result.Author('Angus O. Unegbu')],"Research Journal of Finance and Accounting, Vol. 5(19), 2014.
+  http://www.iiste.org/Journals/index.php/RJFA/article/download/16836/17176"
+63,Email Babel: Does Language Affect Criminal Activity in Compromised Webmail Accounts?,"We set out to understand the effects of differing language on the ability of
+cybercriminals to navigate webmail accounts and locate sensitive information in
+them. To this end, we configured thirty Gmail honeypot accounts with English,
+Romanian, and Greek language settings. We populated the accounts with email
+messages in those languages by subscribing them to selected online newsletters.
+We hid email messages about fake bank accounts in fifteen of the accounts to
+mimic real-world webmail users that sometimes store sensitive information in
+their accounts. We then leaked credentials to the honey accounts via paste
+sites on the Surface Web and the Dark Web, and collected data for fifteen days.
+Our statistical analyses on the data show that cybercriminals are more likely
+to discover sensitive information (bank account information) in the Greek
+accounts than the remaining accounts, contrary to the expectation that Greek
+ought to constitute a barrier to the understanding of non-Greek visitors to the
+Greek accounts. We also extracted the important words among the emails that
+cybercriminals accessed (as an approximation of the keywords that they searched
+for within the honey accounts), and found that financial terms featured among
+the top words. In summary, we show that language plays a significant role in
+the ability of cybercriminals to access sensitive information hidden in
+compromised webmail accounts.",1704.07759v1,cs.CY,2017-04-25 16:07:34+00:00,"[arxiv.Result.Author('Emeric Bernard-Jones'), arxiv.Result.Author('Jeremiah Onaolapo'), arxiv.Result.Author('Gianluca Stringhini')]",
+64,SMS Goes Nuclear: Fortifying SMS-Based MFA in Online Account Ecosystem,"With the rapid growth of online services, the number of online accounts
+proliferates. The security of a single user account no longer depends merely on
+its own service provider but also the accounts on other service platforms(We
+refer to this online account environment as Online Account Ecosystem). In this
+paper, we first uncover the vulnerability of Online Account Ecosystem, which
+stems from the defective multi-factor authentication (MFA), specifically the
+ones with SMS-based verification, and dependencies among accounts on different
+platforms. We propose Chain Reaction Attack that exploits the weakest point in
+Online Account Ecosystem and can ultimately compromise the most secure
+platform. Furthermore, we design and implement ActFort, a systematic approach
+to detect the vulnerability of Online Account Ecosystem by analyzing the
+authentication credential factors and sensitive personal information as well as
+evaluating the dependency relationships among online accounts. We evaluate our
+system on hundreds of representative online services listed in Alexa in
+diversified fields. Based on the analysis from ActFort, we provide several
+pragmatic insights into the current Online Account Ecosystem and propose
+several feasible countermeasures including the online account exposed
+information protection mechanism and the built-in authentication to fortify the
+security of Online Account Ecosystem.",2104.08651v2,cs.CR,2021-04-17 22:20:16+00:00,"[arxiv.Result.Author('Weizhao Jin'), arxiv.Result.Author('Xiaoyu Ji'), arxiv.Result.Author('Ruiwen He'), arxiv.Result.Author('Zhou Zhuang'), arxiv.Result.Author('Wenyuan Xu'), arxiv.Result.Author('Yuan Tian')]",
+65,Expressing Accountability Patterns using Structural Causal Models,"While the exact definition and implementation of accountability depend on the
+specific context, at its core accountability describes a mechanism that will
+make decisions transparent and often provides means to sanction ""bad""
+decisions. As such, accountability is specifically relevant for Cyber-Physical
+Systems, such as robots or drones, that embed themselves into a human society,
+take decisions and might cause lasting harm. Without a notion of
+accountability, such systems could behave with impunity and would not fit into
+society. Despite its relevance, there is currently no agreement on its meaning
+and, more importantly, no way to express accountability properties for these
+systems. As a solution we propose to express the accountability properties of
+systems using Structural Causal Models. They can be represented as
+human-readable graphical models while also offering mathematical tools to
+analyze and reason over them. Our central contribution is to show how
+Structural Causal Models can be used to express and analyze the accountability
+properties of systems and that this approach allows us to identify
+accountability patterns. These accountability patterns can be catalogued and
+used to improve systems and their architectures.",2005.03294v2,cs.SE,2020-05-07 07:32:05+00:00,"[arxiv.Result.Author('Severin Kacianka'), arxiv.Result.Author('Amjad Ibrahim'), arxiv.Result.Author('Alexander Pretschner')]",
+66,Characterizing Erasable Accounts in Ethereum,"Being the most popular permissionless blockchain that supports smart
+contracts, Ethereum allows any user to create accounts on it. However, not all
+accounts matter. For example, the accounts due to attacks can be removed. In
+this paper, we conduct the first investigation on erasable accounts that can be
+removed to save system resources and even users' money (i.e., ETH or gas). In
+particular, we propose and develop a novel tool named GLASER, which analyzes
+the State DataBase of Ethereum to discover five kinds of erasable accounts. The
+experimental results show that GLASER can accurately reveal 508,482 erasable
+accounts and these accounts lead to users wasting more than 106 million
+dollars. GLASER can help stop further economic loss caused by these detected
+accounts. Moreover, GLASER characterizes the attacks/behaviors related to
+detected erasable accounts through graph analysis.",2009.00607v1,cs.CR,2020-09-01 17:57:47+00:00,"[arxiv.Result.Author('Xiaoqi Li'), arxiv.Result.Author('Ting Chen'), arxiv.Result.Author('Xiapu Luo'), arxiv.Result.Author('Jiangshan Yu')]",
+67,Detecting Changed-Hands Online Review Accounts,"A reputable social media or review account can be a good cover for spamming
+activities. It has become prevalent that spammers buy/sell such accounts openly
+on the Web. We call these sold/bought accounts the changed-hands (CH) accounts.
+They are hard to detect by existing spam detection algorithms as their spamming
+activities are under the disguise of clean histories. In this paper, we first
+propose the problem of detecting CH accounts, and then design an effective
+detection algorithm which exploits changes in content and writing styles of
+individual accounts, and a proposed novel feature selection method that works
+at a fine-grained level within each individual account. The proposed method not
+only determines if an account has changed hands, but also pinpoints the change
+point. Experimental results with online review accounts demonstrate the high
+effectiveness of our approach.",2106.15352v1,cs.SI,2021-06-25 16:41:32+00:00,"[arxiv.Result.Author('Geli Fei'), arxiv.Result.Author('Shuai Wang'), arxiv.Result.Author('Bing Liu'), arxiv.Result.Author('Leman Akoglu')]",
+68,"Twitter has a Binary Privacy Setting, are Users Aware of How It Works?","Twitter accounts are public by default, but Twitter gives the option to
+create protected accounts, where only approved followers can see their tweets.
+The publicly visible information changes based on the account type and the
+visibility of tweets also depends solely on the poster's account type which can
+cause unintended disclosures especially when users interact. We surveyed 336
+Twitter users to understand users' awareness of account information visibility,
+as well as the tweet visibility when users interact. We find that our
+participants are aware of the visibility of their profile information and
+individual tweets. However, the visibility of followed topics, lists, and
+interactions with protected accounts is confusing. Only 31% of the participants
+were aware that a reply by a public account to a protected account's tweet
+would be publicly visible. Surprisingly, having a protected account does not
+result in a better understanding of the account information or tweet
+visibility.",2211.12206v1,cs.SI,2022-11-22 11:58:55+00:00,"[arxiv.Result.Author('Dilara Keküllüoğlu'), arxiv.Result.Author('Kami Vaniea'), arxiv.Result.Author('Maria K. Wolters'), arxiv.Result.Author('Walid Magdy')]",
+69,Predicting Popularity of Twitter Accounts through the Discovery of Link-Propagating Early Adopters,"In this paper, we propose a method of ranking recently created Twitter
+accounts according to their prospective popularity. Early detection of new
+promising accounts is useful for trend prediction, viral marketing, user
+recommendation, and so on. New accounts are, however, difficult to evaluate
+because they have not established their reputations, and we cannot apply
+existing link-based or other popularity-based account evaluation methods. Our
+method first finds ""early adopters"", i.e., users who often find new good
+information sources earlier than others. Our method then regards new accounts
+followed by good early adopters as promising, even if they do not have many
+followers now. In order to find good early adopters, we estimate the frequency
+of link propagation from each account, i.e., how many times the follow links
+from the account have been copied by its followers. If its followers have
+copied many of its follow links in the past, the account must be an early
+adopter, who find good information sources earlier than its followers. We
+develop a method of inferring which links are created by copying which links.
+One advantage of our method is that our method only uses information that can
+be easily obtained only by crawling neighbors of the target accounts in the
+current Twitter graph. We evaluated our method by an experiment on Twitter
+data. We chose then-new accounts from an old snapshot of Twitter, compute their
+ranking by our method, and compare it with the number of followers the accounts
+currently have. The result shows that our method produces better rankings than
+various baseline methods, especially for new accounts that have only a few
+followers.",1512.02341v1,cs.SI,2015-12-08 06:01:41+00:00,"[arxiv.Result.Author('Daichi Imamori'), arxiv.Result.Author('Keishi Tajima')]",
+70,Mining Bad Credit Card Accounts from OLAP and OLTP,"Credit card companies classify accounts as a good or bad based on historical
+data where a bad account may default on payments in the near future. If an
+account is classified as a bad account, then further action can be taken to
+investigate the actual nature of the account and take preventive actions. In
+addition, marking an account as ""good"" when it is actually bad, could lead to
+loss of revenue - and marking an account as ""bad"" when it is actually good,
+could lead to loss of business. However, detecting bad credit card accounts in
+real time from Online Transaction Processing (OLTP) data is challenging due to
+the volume of data needed to be processed to compute the risk factor. We
+propose an approach which precomputes and maintains the risk probability of an
+account based on historical transactions data from offline data or data from a
+data warehouse. Furthermore, using the most recent OLTP transactional data,
+risk probability is calculated for the latest transaction and combined with the
+previously computed risk probability from the data warehouse. If accumulated
+risk probability crosses a predefined threshold, then the account is treated as
+a bad account and is flagged for manual verification.",1807.00819v1,cs.DB,2018-07-02 14:24:10+00:00,"[arxiv.Result.Author('Sheikh Rabiul Islam'), arxiv.Result.Author('William Eberle'), arxiv.Result.Author('Sheikh Khaled Ghafoor')]","Islam, S. R., Eberle, W., & Ghafoor, S. K. (2017, May). Mining Bad
+  Credit Card Accounts from OLAP and OLTP. In Proceedings of the International
+  Conference on Compute and Data Analysis (pp. 129-137). ACM"
+71,TROLLMAGNIFIER: Detecting State-Sponsored Troll Accounts on Reddit,"Growing evidence points to recurring influence campaigns on social media,
+often sponsored by state actors aiming to manipulate public opinion on
+sensitive political topics. Typically, campaigns are performed through
+instrumented accounts, known as troll accounts; despite their prominence,
+however, little work has been done to detect these accounts in the wild. In
+this paper, we present TROLLMAGNIFIER, a detection system for troll accounts.
+Our key observation, based on analysis of known Russian-sponsored troll
+accounts identified by Reddit, is that they show loose coordination, often
+interacting with each other to further specific narratives. Therefore, troll
+accounts controlled by the same actor often show similarities that can be
+leveraged for detection. TROLLMAGNIFIER learns the typical behavior of known
+troll accounts and identifies more that behave similarly. We train
+TROLLMAGNIFIER on a set of 335 known troll accounts and run it on a large
+dataset of Reddit accounts. Our system identifies 1,248 potential troll
+accounts; we then provide a multi-faceted analysis to corroborate the
+correctness of our classification. In particular, 66% of the detected accounts
+show signs of being instrumented by malicious actors (e.g., they were created
+on the same exact day as a known troll, they have since been suspended by
+Reddit, etc.). They also discuss similar topics as the known troll accounts and
+exhibit temporal synchronization in their activity. Overall, we show that using
+TROLLMAGNIFIER, one can grow the initial knowledge of potential trolls provided
+by Reddit by over 300%.",2112.00443v1,cs.CR,2021-12-01 12:10:24+00:00,"[arxiv.Result.Author('Mohammad Hammas Saeed'), arxiv.Result.Author('Shiza Ali'), arxiv.Result.Author('Jeremy Blackburn'), arxiv.Result.Author('Emiliano De Cristofaro'), arxiv.Result.Author('Savvas Zannettou'), arxiv.Result.Author('Gianluca Stringhini')]",
+72,Mining Anonymity: Identifying Sensitive Accounts on Twitter,"We explore the feasibility of automatically finding accounts that publish
+sensitive content on Twitter. One natural approach to this problem is to first
+create a list of sensitive keywords, and then identify Twitter accounts that
+use these words in their tweets. But such an approach may overlook sensitive
+accounts that are not covered by the subjective choice of keywords. In this
+paper, we instead explore finding sensitive accounts by examining the
+percentage of anonymous and identifiable followers the accounts have. This
+approach is motivated by an earlier study showing that sensitive accounts
+typically have a large percentage of anonymous followers and a small percentage
+of identifiable followers.
+  To this end, we first considered the problem of automatically determining if
+a Twitter account is anonymous or identifiable. We find that simple techniques,
+such as checking for name-list membership, perform poorly. We designed a
+machine learning classifier that classifies accounts as anonymous or
+identifiable. We then classified an account as sensitive based on the
+percentages of anonymous and identifiable followers the account has. We applied
+our approach to approximately 100,000 accounts with 404 million active
+followers. The approach uncovered accounts that were sensitive for a diverse
+number of reasons. These accounts span across varied themes, including those
+that are not commonly proposed as sensitive or those that relate to socially
+stigmatized topics. To validate our approach, we applied Latent Dirichlet
+Allocation (LDA) topic analysis to the tweets in the detected sensitive and
+non-sensitive accounts. LDA showed that the sensitive and non-sensitive
+accounts obtained from the methodology are tweeting about distinctly different
+topics. Our results show that it is indeed possible to objectively identify
+sensitive accounts at the scale of Twitter.",1702.00164v1,cs.SI,2017-02-01 08:52:08+00:00,"[arxiv.Result.Author('Sai Teja Peddinti'), arxiv.Result.Author('Keith W. Ross'), arxiv.Result.Author('Justin Cappos')]",
+73,Discovering similar Twitter accounts using semantics,"On daily basis, millions of Twitter accounts post a vast number of tweets
+including numerous Twitter entities (mentions, replies, hashtags, photos,
+URLs). Many of these entities are used in common by many accounts. The more
+common entities are found in the messages of two different accounts, the more
+similar, in terms of content or interest, they tend to be. Towards this
+direction, we introduce a methodology for discovering and suggesting similar
+Twitter accounts, based entirely on their disseminated content in terms of
+Twitter entities used. The methodology is based exclusively on semantic
+representation protocols and related technologies. An ontological schema is
+also described towards the semantification of the Twitter accounts and their
+entities.",1506.00100v1,cs.SI,2015-05-30 10:11:20+00:00,"[arxiv.Result.Author('Gerasimos Razis'), arxiv.Result.Author('Ioannis Anagnostopoulos')]",
+74,A Large-Scale Analysis of Attacker Activity in Compromised Enterprise Accounts,"We present a large-scale characterization of attacker activity across 111
+real-world enterprise organizations. We develop a novel forensic technique for
+distinguishing between attacker activity and benign activity in compromised
+enterprise accounts that yields few false positives and enables us to perform
+fine-grained analysis of attacker behavior. Applying our methods to a set of
+159 compromised enterprise accounts, we quantify the duration of time attackers
+are active in accounts and examine thematic patterns in how attackers access
+and leverage these hijacked accounts. We find that attackers frequently dwell
+in accounts for multiple days to weeks, suggesting that delayed (non-real-time)
+detection can still provide significant value. Based on an analysis of the
+attackers' timing patterns, we observe two distinct modalities in how attackers
+access compromised accounts, which could be explained by the existence of a
+specialized market for hijacked enterprise accounts: where one class of
+attackers focuses on compromising and selling account access to another class
+of attackers who exploit the access such hijacked accounts provide. Ultimately,
+our analysis sheds light on the state of enterprise account hijacking and
+highlights fruitful directions for a broader space of detection methods,
+ranging from new features that home in on malicious account behavior to the
+development of non-real-time detection methods that leverage malicious activity
+after an attack's initial point of compromise to more accurately identify
+attacks.",2007.14030v1,cs.CR,2020-07-28 07:20:37+00:00,"[arxiv.Result.Author('Neil Shah'), arxiv.Result.Author('Grant Ho'), arxiv.Result.Author('Marco Schweighauser'), arxiv.Result.Author('M. H. Afifi'), arxiv.Result.Author('Asaf Cidon'), arxiv.Result.Author('David Wagner')]",
+75,Pre-hijacked accounts: An Empirical Study of Security Failures in User Account Creation on the Web,"The ubiquity of user accounts in websites and online services makes account
+hijacking a serious security concern. Although previous research has studied
+various techniques through which an attacker can gain access to a victim's
+account, relatively little attention has been directed towards the process of
+account creation. The current trend towards federated authentication (e.g.,
+Single Sign-On) adds an additional layer of complexity because many services
+now support both the classic approach in which the user directly sets a
+password, and the federated approach in which the user authenticates via an
+identity provider.
+  Inspired by previous work on preemptive account hijacking [Ghasemisharif et
+al., USENIX SEC 2018], we show that there exists a whole class of account
+pre-hijacking attacks. The distinctive feature of these attacks is that the
+attacker performs some action before the victim creates an account, which makes
+it trivial for the attacker to gain access after the victim has
+created/recovered the account. Assuming a realistic attacker who knows only the
+victim's email address, we identify and discuss five different types of account
+pre-hijacking attacks.
+  To ascertain the prevalence of such vulnerabilities in the wild, we analyzed
+75 popular services and found that at least 35 of these were vulnerable to one
+or more account pre-hijacking attacks. Whilst some of these may be noticed by
+attentive users, others were completely undetectable from the victim's
+perspective. Finally, we investigated the root cause of these vulnerabilities
+and present a set of security requirements to prevent such vulnerabilities
+arising in future.",2205.10174v1,cs.CR,2022-05-20 13:27:37+00:00,"[arxiv.Result.Author('Avinash Sudhodanan'), arxiv.Result.Author('Andrew Paverd')]",
+76,Automated Verification of Accountability in Security Protocols,"Accountability is a recent paradigm in security protocol design which aims to
+eliminate traditional trust assumptions on parties and hold them accountable
+for their misbehavior. It is meant to establish trust in the first place and to
+recognize and react if this trust is violated. In this work, we discuss a
+protocol agnostic definition of accountability: a protocol provides
+accountability (w.r.t. some security property) if it can identify all
+misbehaving parties, where misbehavior is defined as a deviation from the
+protocol that causes a security violation. We provide a mechanized method for
+the verification of accountability and demonstrate its use for verification and
+attack finding on various examples from the accountability and causality
+literature, including Certificate Transparency and Kroll Accountable Algorithms
+protocol. We reach a high degree of automation by expressing accountability in
+terms of a set of trace properties and show their soundness and completeness.",1805.10891v3,cs.CR,2018-05-28 12:38:56+00:00,"[arxiv.Result.Author('Robert Künnemann'), arxiv.Result.Author('Ilkan Esiyok'), arxiv.Result.Author('Michael Backes')]",
+77,Semantic Text Analysis for Detection of Compromised Accounts on Social Networks,"Compromised accounts on social networks are regular user accounts that have
+been taken over by an entity with malicious intent. Since the adversary
+exploits the already established trust of a compromised account, it is crucial
+to detect these accounts to limit the damage they can cause. We propose a novel
+general framework for semantic analysis of text messages coming out from an
+account to detect compromised accounts. Our framework is built on the
+observation that normal users will use language that is measurably different
+from the language that an adversary would use when the account is compromised.
+We propose to use the difference of language models of users and adversaries to
+define novel interpretable semantic features for measuring semantic incoherence
+in a message stream. We study the effectiveness of the proposed semantic
+features using a Twitter data set. Evaluation results show that the proposed
+framework is effective for discovering compromised accounts on social networks
+and a KL-divergence-based language model feature works best.",1804.07247v4,cs.SI,2018-04-19 16:06:29+00:00,"[arxiv.Result.Author('Dominic Seyler'), arxiv.Result.Author('Lunan Li'), arxiv.Result.Author('ChengXiang Zhai')]",
+78,Modern tontine with bequest: innovation in pooled annuity products,"We introduce a new pension product that offers retirees the opportunity for a
+lifelong income and a bequest for their estate. Based on a tontine mechanism,
+the product divides pension savings between a tontine account and a bequest
+account. The tontine account is given up to a tontine pool upon death while the
+bequest account value is paid to the retiree's estate. The values of these two
+accounts are continuously re-balanced to the same proportion, which is the key
+feature of our new product. Our main research question about the new product is
+what proportion of pension savings should a retiree allocate to the tontine
+account. Under a power utility function, we show that more risk averse retirees
+allocate a fairly stable proportion of their pension savings to the tontine
+account, regardless of the strength of their bequest motive. The proportion
+declines as the retiree becomes less risk averse for a while. However, for the
+least risk averse retirees, a high proportion of their pension savings is
+optimally allocated to the tontine account. This surprising result is explained
+by the least risk averse retirees seeking the potentially high value of the
+bequest account at very old ages.",1903.05990v1,q-fin.PM,2019-03-14 13:37:23+00:00,"[arxiv.Result.Author('Thomas Bernhardt'), arxiv.Result.Author('Catherine Donnelly')]",Insurance: Mathematics and Economics 86 (2019) 168-188
+79,The Availability-Accountability Dilemma and its Resolution via Accountability Gadgets,"For applications of Byzantine fault tolerant (BFT) consensus protocols where
+the participants are economic agents, recent works highlighted the importance
+of accountability: the ability to identify participants who provably violate
+the protocol. At the same time, being able to reach consensus under dynamic
+levels of participation is desirable for censorship resistance. We identify an
+availability-accountability dilemma: in an environment with dynamic
+participation, no protocol can simultaneously be accountably-safe and live. We
+provide a resolution to this dilemma by constructing a provably secure
+optimally-resilient accountability gadget to checkpoint a longest chain
+protocol, such that the full ledger is live under dynamic participation and the
+checkpointed prefix ledger is accountable. Our accountability gadget
+construction is black-box and can use any BFT protocol which is accountable
+under static participation. Using HotStuff as the black box, we implemented our
+construction as a protocol for the Ethereum 2.0 beacon chain, and our
+Internet-scale experiments with more than 4000 nodes show that the protocol
+achieves the required scalability and has better latency than the current
+solution Gasper, which was shown insecure by recent attacks.",2105.06075v3,cs.CR,2021-05-13 04:45:04+00:00,"[arxiv.Result.Author('Joachim Neu'), arxiv.Result.Author('Ertem Nusret Tas'), arxiv.Result.Author('David Tse')]",
+80,A Trustworthy Electronic Voting System for Australian Federal Elections,"The existing system for determining election results in Australia is, for the
+most part, secure, accurate and understandable by the average voter. This
+thesis explores the design of electronic voting systems designed to achieve
+these same goals, while also improving on the existing system in the areas of
+counting speed, accuracy, tamper resistance and accessibility.
+  Electronic voting systems have seen limited use within Australian elections,
+most prominently for State Elections in Victoria (2014), New South Wales (2015)
+and Western Australia (2017), along with trials of electronic voting systems in
+federal elections in 2007.
+  This thesis presents an analysis of the iVote electronic voting system used
+for the 2017 Western Australian State Election (iVote WA), outlining a number
+of security risks introduced by the use of cloud-based distributed denial of
+service mitigation. In addition, this thesis presents the results of a
+cross-sectional survey of Australian voters regarding levels of trust for three
+voting systems: the existing paper-based system used for Australian federal
+elections, the iVote WA system, and the vVote system used for the 2014
+Victorian State Election.
+  The analysis of iVote, combined with the survey results, are used to inform a
+recommendation for future research and public policy regarding the use of
+electronic voting systems in Australian federal elections.",1805.02202v1,cs.CR,2018-05-06 12:41:10+00:00,[arxiv.Result.Author('Mark Eldridge')],
+81,Learning to Elect,"Voting systems have a wide range of applications including recommender
+systems, web search, product design and elections. Limited by the lack of
+general-purpose analytical tools, it is difficult to hand-engineer desirable
+voting rules for each use case. For this reason, it is appealing to
+automatically discover voting rules geared towards each scenario. In this
+paper, we show that set-input neural network architectures such as Set
+Transformers, fully-connected graph networks and DeepSets are both
+theoretically and empirically well-suited for learning voting rules. In
+particular, we show that these network models can not only mimic a number of
+existing voting rules to compelling accuracy -- both position-based (such as
+Plurality and Borda) and comparison-based (such as Kemeny, Copeland and
+Maximin) -- but also discover near-optimal voting rules that maximize different
+social welfare functions. Furthermore, the learned voting rules generalize well
+to different voter utility distributions and election sizes unseen during
+training.",2108.02768v3,cs.LG,2021-08-05 17:55:46+00:00,"[arxiv.Result.Author('Cem Anil'), arxiv.Result.Author('Xuchan Bao')]",
+82,Making Code Voting Secure against Insider Threats using Unconditionally Secure MIX Schemes and Human PSMT Protocols,"Code voting was introduced by Chaum as a solution for using a possibly
+infected-by-malware device to cast a vote in an electronic voting application.
+Chaum's work on code voting assumed voting codes are physically delivered to
+voters using the mail system, implicitly requiring to trust the mail system.
+This is not necessarily a valid assumption to make - especially if the mail
+system cannot be trusted. When conspiring with the recipient of the cast
+ballots, privacy is broken.
+  It is clear to the public that when it comes to privacy, computers and
+""secure"" communication over the Internet cannot fully be trusted. This
+emphasizes the importance of using: (1) Unconditional security for secure
+network communication. (2) Reduce reliance on untrusted computers.
+  In this paper we explore how to remove the mail system trust assumption in
+code voting. We use PSMT protocols (SCN 2012) where with the help of visual
+aids, humans can carry out $\mod 10$ addition correctly with a 99\% degree of
+accuracy. We introduce an unconditionally secure MIX based on the combinatorics
+of set systems.
+  Given that end users of our proposed voting scheme construction are humans we
+\emph{cannot use} classical Secure Multi Party Computation protocols.
+  Our solutions are for both single and multi-seat elections achieving:
+\begin{enumerate}[i)]
+  \item An anonymous and perfectly secure communication network secure against
+a $t$-bounded passive adversary used to deliver voting,
+  \item The end step of the protocol can be handled by a human to evade the
+threat of malware. \end{enumerate} We do not focus on active adversaries.",1506.04429v1,cs.CR,2015-06-14 19:07:51+00:00,"[arxiv.Result.Author('Yvo Desmedt'), arxiv.Result.Author('Stelios Erotokritou')]",
+83,Strategic Voting Under Uncertainty About the Voting Method,"Much of the theoretical work on strategic voting makes strong assumptions
+about what voters know about the voting situation. A strategizing voter is
+typically assumed to know how other voters will vote and to know the rules of
+the voting method. A growing body of literature explores strategic voting when
+there is uncertainty about how others will vote. In this paper, we study
+strategic voting when there is uncertainty about the voting method. We
+introduce three notions of manipulability for a set of voting methods: sure,
+safe, and expected manipulability. With the help of a computer program, we
+identify voting scenarios in which uncertainty about the voting method may
+reduce or even eliminate a voter's incentive to misrepresent her preferences.
+Thus, it may be in the interest of an election designer who wishes to reduce
+strategic voting to leave voters uncertain about which of several reasonable
+voting methods will be used to determine the winners of an election.",1907.09110v1,cs.MA,2019-07-22 03:17:19+00:00,"[arxiv.Result.Author('Wesley H. Holliday'), arxiv.Result.Author('Eric Pacuit')]","EPTCS 297, 2019, pp. 252-272"
+84,Designing Stable Elections: A Survey,"We survey the design of elections that are resilient to attempted
+interference by third parties. For example, suppose votes have been cast in an
+election between two candidates, and then each vote is randomly changed with a
+small probability, independently of the other votes. It is desirable to keep
+the outcome of the election the same, regardless of the changes to the votes.
+It is well known that the US electoral college system is about 5 times more
+likely to have a changed outcome due to vote corruption, when compared to a
+majority vote. In fact, Mossel, O'Donnell and Oleszkiewicz proved in 2005 that
+the majority voting method is most stable to this random vote corruption, among
+voting methods where each person has a small influence on the election. We
+discuss some recent progress on the analogous result for elections between more
+than two candidates. In this case, plurality should be most stable to
+corruption in votes. We also survey results on adversarial election
+manipulation (where an adversary can select particular votes to change, perhaps
+in a non-random way), and we briefly discuss ranked choice voting methods
+(where a vote is a ranked list of candidates).",2006.05460v2,math.PR,2020-06-09 18:59:48+00:00,[arxiv.Result.Author('Steven Heilman')],
+85,Transparent Voting Platform Based on Permissioned Blockchain,"Since 2004, different research was handling the challenges in the centralized
+voting systems, e-voting protocols and recently the decentralized voting. So
+electronic voting puts forward some difficulties regarding the voter anonymity,
+the secure casting of the votes and to prevent the voting process from
+frauding. The Decentralized property of the technology called ""blockchain""
+could have the solution for many of the challenges in voting research area and
+brings a new secure mechanism of safe and transparent voting. In this paper, a
+broad comparison between ongoing voting systems has studied by analyzing their
+structure and the drawbacks that should consider in future to improve the whole
+election process from keeping the privacy of the voter, casting a vote with the
+possibility to check if it was counted correctly to publishing the results. The
+result of the paper will give a new approach to extend the target of the
+election from small scale to large scale despite the fact of Ethereum
+limitation which can cast on the blockchain just five votes per minute. The
+primary challenge is to find an answer for this question: ""How to balance
+between voter privacy and transparency without breaking the important rule
+where the voter can proof for a specific candidate that he voted for him in a
+bribe situation?"".",1802.10134v1,cs.CY,2018-02-22 14:20:35+00:00,[arxiv.Result.Author('Nazim Faour')],
+86,Heuristics in Multi-Winner Approval Voting,"In many real world situations, collective decisions are made using voting.
+Moreover, scenarios such as committee or board elections require voting rules
+that return multiple winners. In multi-winner approval voting (AV), an agent
+may vote for as many candidates as they wish. Winners are chosen by tallying up
+the votes and choosing the top-$k$ candidates receiving the most votes. An
+agent may manipulate the vote to achieve a better outcome by voting in a way
+that does not reflect their true preferences. In complex and uncertain
+situations, agents may use heuristics to strategize, instead of incurring the
+additional effort required to compute the manipulation which most favors them.
+In this paper, we examine voting behavior in multi-winner approval voting
+scenarios with complete information. We show that people generally manipulate
+their vote to obtain a better outcome, but often do not identify the optimal
+manipulation. Instead, voters tend to prioritize the candidates with the
+highest utilities. Using simulations, we demonstrate the effectiveness of these
+heuristics in situations where agents only have access to partial information.",1905.12104v2,cs.GT,2019-05-28 21:44:07+00:00,"[arxiv.Result.Author('Jaelle Scheuerman'), arxiv.Result.Author('Jason L. Harman'), arxiv.Result.Author('Nicholas Mattei'), arxiv.Result.Author('K. Brent Venable')]",
+87,Bucklin Voting is Broadly Resistant to Control,"Electoral control models ways of changing the outcome of an election via such
+actions as adding/deleting/partitioning either candidates or voters. These
+actions modify an election's participation structure and aim at either making a
+favorite candidate win (""constructive control"") or prevent a despised candidate
+from winning (""destructive control""), which yields a total of 22 standard
+control scenarios. To protect elections from such control attempts,
+computational complexity has been used to show that electoral control, though
+not impossible, is computationally prohibitive. Among natural voting systems
+with a polynomial-time winner problem, the two systems with the highest number
+of proven resistances to control types (namely 19 out of 22) are
+""sincere-strategy preference-based approval voting"" (SP-AV, a modification of a
+system proposed by Brams and Sanver) and fallback voting. Both are hybrid
+systems; e.g., fallback voting combines approval with Bucklin voting. In this
+paper, we study the control complexity of Bucklin voting itself and show that
+it behaves equally well in terms of control resistance for the 20 cases
+investigated so far. As Bucklin voting is a special case of fallback voting,
+all resistances shown for Bucklin voting in this paper strengthen the
+corresponding resistance for fallback voting.",1005.4115v1,cs.CC,2010-05-22 09:12:04+00:00,"[arxiv.Result.Author('Gábor Erdélyi'), arxiv.Result.Author('Lena Piras'), arxiv.Result.Author('Jörg Rothe')]",
+88,"Square root voting system, optimal threshold and π","The problem of designing an optimal weighted voting system for the two-tier
+voting, applicable in the case of the Council of Ministers of the European
+Union (EU), is investigated. Various arguments in favour of the square root
+voting system, where the voting weights of member states are proportional to
+the square root of their population are discussed and a link between this
+solution and the random walk in the one-dimensional lattice is established. It
+is known that the voting power of every member state is approximately equal to
+its voting weight, if the threshold q for the qualified majority in the voting
+body is optimally chosen. We analyze the square root voting system for a
+generic 'union' of M states and derive in this case an explicit approximate
+formula for the level of the optimal threshold: q \simeq 1/2+1/\sqrt{{\pi} M}.
+The prefactor 1/\sqrt{{\pi}} appears here as a result of averaging over the
+ensemble of unions with random populations.",1104.5213v2,physics.soc-ph,2011-04-27 18:51:41+00:00,"[arxiv.Result.Author('Karol Zyczkowski'), arxiv.Result.Author('Wojciech Slomczynski')]",
+89,Penrose voting system and optimal quota,"Systems of indirect voting based on the principle of qualified majority can
+be analysed using the methods of game theory. In particular, this applies to
+the voting system in the Council of the European Union, which was recently a
+subject of a vivid political discussion. The a priori voting power of a voter
+measures his potential influence over the decisions of the voting body under a
+given decision rule. We investigate a system based on the law of Penrose, in
+which each representative in the voting body receives the number of votes (the
+voting weight) proportional to the square root of the population he or she
+represents. Here we demonstrate that for a generic distribution of the
+population there exists an optimal quota for which the voting power of any
+state is proportional to its weight. The optimal quota is shown to decrease
+with the number of voting countries.",physics/0610271v1,physics.soc-ph,2006-10-30 12:49:18+00:00,"[arxiv.Result.Author('Wojciech Slomczynski'), arxiv.Result.Author('Karol Zyczkowski')]","Acta Physica Polonica B37, 3133-3143 (2006)"
+90,Manipulation Can Be Hard in Tractable Voting Systems Even for Constant-Sized Coalitions,"Voting theory has become increasingly integrated with computational social
+choice and multiagent systems. Computational complexity has been extensively
+used as a shield against manipulation of voting systems, however for several
+voting schemes this complexity may cause calculating the winner to be
+computationally difficult. Of the many voting systems that have been studied
+with regard to election manipulation, a few have been found to have an
+unweighted coalitional manipulation problem that is NP-hard for a constant
+number of manipulators despite having a winner problem that is in P. We survey
+this interesting class of voting systems and the work that has analyzed their
+complexity.",1108.4439v1,cs.GT,2011-08-22 21:02:46+00:00,"[arxiv.Result.Author('Curtis Menton'), arxiv.Result.Author('Preetjot Singh')]",
+91,A mathematical evaluation of vote transfer systems,"The paper builds a general model of vote transfer systems on the basis of the
+current Hungarian electoral rules. It combines single-seat districts and list
+mandates with three possible compensation rule for 'wasted' votes in
+constituencies: no compensation (direct vote transfer, DVT), compensation for
+votes cast for losing party candidates (positive vote transfer, PVT) and
+compensation for all votes that are not necessary to win the district (negative
+vote transfer, NVT).
+  The model is studied in the case of two parties. When the number of votes for
+the majority party follows a uniform distribution in each district, DVT results
+in the greatest expected seat share, however, application of PVT, and,
+especially, NVT increases the probability of winning the election. The
+trade-off between vote transfer formulas and the number of list mandates
+reveals that the majority party should use an appropriately calibrated NVT
+system if it focuses on these two variables.",1607.02879v3,cs.GT,2016-07-11 09:58:58+00:00,[arxiv.Result.Author('László Csató')],
+92,Designing Strategyproof Election Systems with Score Voting,"We focus on the strategyproofness of voting systems where voters must choose
+a number of options among several possibilities. These systems include those
+that are used for Participatory Budgeting, where we organize an election to
+determine the allocation of a community's budget (city, region, etc.) dedicated
+to the financing of projects.
+  We present a model for studying voting mechanisms and the Constrained Change
+Property (CCP), which will be used to design voting mechanisms that are always
+strategyproof. We also define a new notion of social choice function and use it
+to design a new class of utilitarian voting mechanisms that we call score
+voting. We prove that the mechanisms designed with core voting with a neutral
+score function are equivalent to knapsack voting on the same instance and that
+any score voting designed with a total score function is strategyproof if and
+only if its score function satisfies CCP.
+  These results are combined to devise an algorithm that can find the closest
+total score function that makes any given score voting to be strategyproof.",2210.02496v1,cs.GT,2022-10-05 18:19:52+00:00,"[arxiv.Result.Author('Johanne Cohen'), arxiv.Result.Author('Daniel Cordeiro'), arxiv.Result.Author('Valentin Dardilhac'), arxiv.Result.Author('Victor Glaser')]",
+93,"Effectiveness, Decisiveness and Success in Weighted Voting Systems","We compare the notions ""Decisiveness"" and ""Success"" for certain weighted
+voting systems and various underlying voting measures. In particular, we
+compute the success rate for the Shapley-Shubik meassure and, more generally,
+for Common Belief Models.",1706.08382v1,math.GM,2017-06-08 10:27:31+00:00,[arxiv.Result.Author('Werner Kirsch')],
+94,Invariably Suboptimal - An attempt to improve the voting rules of Treaties of Nice and Lisbon,"We investigate the voting rules in the Council of the European Union. It is
+known that the current system, according to the Treaty of Nice, and the voting
+system proposed in the Lisbon treaty both strongly deviate from the square root
+law by Penrose. This is known to be the ideal voting rule under certain
+assumptions. In 2004 Slomczynski and Zyczkowski designed a voting system, now
+known as the Jagiellonian Compromise. It satisfies the square root law with
+very high accuracy. Each member state in this system obtains a voting weight
+proportional to the square root of the population. Additionally the quota is
+fixed in such a way that the voting power of each country is also proportional
+to the square root of the population.
+  In this paper we investigate to which extent a change of the quota in the
+Treaty of Nice and the Treaty of Lisbon may bring the voting power closer to
+the ideal square root distribution. Our computations show that even with
+optimal quota both systems are way off the ideal power distribution.",0812.4114v3,math.HO,2008-12-22 15:50:24+00:00,"[arxiv.Result.Author('Werner Kirsch'), arxiv.Result.Author('Jessica Langner')]",
+95,Manipulation and Control Complexity of Schulze Voting,"Schulze voting is a recently introduced voting system enjoying unusual
+popularity and a high degree of real-world use, with users including the
+Wikimedia foundation, several branches of the Pirate Party, and MTV. It is a
+Condorcet voting system that determines the winners of an election using
+information about paths in a graph representation of the election. We resolve
+the complexity of many electoral control cases for Schulze voting. We find that
+it falls short of the best known voting systems in terms of control resistance,
+demonstrating vulnerabilities of concern to some prospective users of the
+system.",1206.2111v4,cs.GT,2012-06-11 06:58:50+00:00,"[arxiv.Result.Author('Curtis Menton'), arxiv.Result.Author('Preetjot Singh')]",
+96,Voting Framework for Distributed Real-Time Ethernet based Dependable and Safe Systems,"In many industrial sectors such as factory automation and process control
+sensor redundancy is required to ensure reliable and highly-available
+operation. Measured values from N-redundant sensors are typically subjected to
+some voting scheme to determine a value which is used in further processing. In
+this paper we present a voting framework which allows the sensors and the
+voting scheme to be configured at systemconfiguration time. The voting scheme
+is designed as a Real Time Ethernet profile. We describe the structure of the
+voting system and the design and verification of the framework. We argue the
+applicability of this sub-system based on a successful prototype
+implementation.",2005.07262v1,cs.DC,2020-04-30 22:05:13+00:00,[arxiv.Result.Author('Hans Dermot Doran')],
+97,DOVER: A Method for Combining Diarization Outputs,"Speech recognition and other natural language tasks have long benefited from
+voting-based algorithms as a method to aggregate outputs from several systems
+to achieve a higher accuracy than any of the individual systems. Diarization,
+the task of segmenting an audio stream into speaker-homogeneous and co-indexed
+regions, has so far not seen the benefit of this strategy because the structure
+of the task does not lend itself to a simple voting approach. This paper
+presents DOVER (diarization output voting error reduction), an algorithm for
+weighted voting among diarization hypotheses, in the spirit of the ROVER
+algorithm for combining speech recognition hypotheses. We evaluate the
+algorithm for diarization of meeting recordings with multiple microphones, and
+find that it consistently reduces diarization error rate over the average of
+results from individual channels, and often improves on the single best channel
+chosen by an oracle.",1909.08090v2,cs.CL,2019-09-17 20:56:50+00:00,"[arxiv.Result.Author('Andreas Stolcke'), arxiv.Result.Author('Takuya Yoshioka')]","Proc. IEEE Automatic Speech Recognition and Understanding Workshop
+  2019, pp. 757-763"
+98,Optimizing Majority Voting Based Systems Under a Resource Constraint for Multiclass Problems,"Ensemble-based approaches are very effective in various fields in raising the
+accuracy of its individual members, when some voting rule is applied for
+aggregating the individual decisions. In this paper, we investigate how to find
+and characterize the ensembles having the highest accuracy if the total cost of
+the ensemble members is bounded. This question leads to Knapsack problem with
+non-linear and non-separable objective function in binary and multiclass
+classification if the majority voting is chosen for the aggregation. As the
+conventional solving methods cannot be applied for this task, a novel
+stochastic approach was introduced in the binary case where the energy function
+is discussed as the joint probability function of the member accuracy. We show
+some theoretical results with respect to the expected ensemble accuracy and its
+variance in the multiclass classification problem which can help us to solve
+the Knapsack problem.",1904.04360v1,cs.AI,2019-04-08 21:16:47+00:00,"[arxiv.Result.Author('Attila Tiba'), arxiv.Result.Author('Andras Hajdu'), arxiv.Result.Author('Gyorgy Terdik'), arxiv.Result.Author('Henrietta Toman')]",
+99,An Incoercible E-Voting Scheme Based on Revised Simplified Verifiable Re-encryption Mix-nets,"Simplified verifiable re-encryption mix-net (SVRM) is revised and a scheme
+for e-voting systems is developed based on it. The developed scheme enables
+e-voting systems to satisfy all essential requirements of elections. Namely,
+they satisfy requirements about privacy, verifiability, fairness and
+robustness. It also successfully protects voters from coercers except cases
+where the coercers force voters to abstain from elections. In detail, voters
+can conceal correspondences between them and their votes, anyone can verify the
+accuracy of election results, and interim election results are concealed from
+any entity. About incoercibility, provided that erasable-state voting booths
+which disable voters to memorize complete information exchanged between them
+and election authorities for constructing votes are available, coercer C cannot
+know candidates that voters coerced by C had chosen even if the candidates are
+unique to the voters. In addition, elections can be completed without
+reelections even when votes were handled illegitimately.",1512.05596v1,cs.CR,2015-12-17 14:30:01+00:00,"[arxiv.Result.Author('Shinsuke Tamura'), arxiv.Result.Author('Hazim A. Haddad'), arxiv.Result.Author('Nazmul Islam'), arxiv.Result.Author('Kazi Md. Rokibul Alam')]",Information Security and Computer Fraud 3 (2015) 32-38
+100,Distributed Double Machine Learning with a Serverless Architecture,"This paper explores serverless cloud computing for double machine learning.
+Being based on repeated cross-fitting, double machine learning is particularly
+well suited to exploit the high level of parallelism achievable with serverless
+computing. It allows to get fast on-demand estimations without additional cloud
+maintenance effort. We provide a prototype Python implementation
+\texttt{DoubleML-Serverless} for the estimation of double machine learning
+models with the serverless computing platform AWS Lambda and demonstrate its
+utility with a case study analyzing estimation times and costs.",2101.04025v2,cs.DC,2021-01-11 16:58:30+00:00,[arxiv.Result.Author('Malte S. Kurz')],"In Companion of the ACM/SPEC International Conference on
+  Performance Engineering (ICPE '21), 2021, Association for Computing
+  Machinery, New York, NY, USA, 27-33"
+101,PageRank in Malware Categorization,"In this paper, we propose a malware categorization method that models malware
+behavior in terms of instructions using PageRank. PageRank computes ranks of
+web pages based on structural information and can also compute ranks of
+instructions that represent the structural information of the instructions in
+malware analysis methods. Our malware categorization method uses the computed
+ranks as features in machine learning algorithms. In the evaluation, we compare
+the effectiveness of different PageRank algorithms and also investigate bagging
+and boosting algorithms to improve the categorization accuracy.",1608.00866v1,cs.CR,2016-08-02 15:26:41+00:00,"[arxiv.Result.Author('BooJoong Kang'), arxiv.Result.Author('Suleiman Y. Yerima'), arxiv.Result.Author('Kieran McLaughlin'), arxiv.Result.Author('Sakir Sezer')]",
+102,Mutant Density: A Measure of Fault-Sensitive Complexity,"Software code complexity is a well-studied property to determine software
+component health. However, the existing code complexity metrics do not directly
+take into account the fault-proneness aspect of the code. We propose a metric
+called mutant density where we use mutation as a method to introduce artificial
+faults in code, and count the number of possible mutations per line. We show
+how this metric can be used to perform helpful analysis of real-life software
+projects.",2104.12121v1,cs.SE,2021-04-25 10:03:06+00:00,"[arxiv.Result.Author('Ali Parsai'), arxiv.Result.Author('Serge Demeyer')]","In Proceedings of the IEEE/ACM 42nd International Conference on
+  Software Engineering Workshops (ICSEW 2020). Association for Computing
+  Machinery, New York, NY, USA, 742--745. (2020)"
+103,SWift -- A SignWriting improved fast transcriber,"We present SWift (SignWriting improved fast transcriber), an advanced editor
+for computer-aided writing and transcribing using SignWriting (SW). SW is
+devised to allow deaf people and linguists alike to exploit an easy-to-grasp
+written form of (any) sign language. Similarly, SWift has been developed for
+everyone who masters SW, and is not exclusively deaf-oriented. Using SWift, it
+is possible to compose and save any sign, using elementary components called
+glyphs. A guided procedure facilitates the composition process. SWift is aimed
+at helping to break down the ""electronic"" barriers that keep the deaf community
+away from Information and Communication Technology (ICT). The editor has been
+developed modularly and can be integrated everywhere the use of SW, as an
+alternative to written vocal language, may be advisable.",1911.10882v1,cs.CL,2019-11-25 12:54:58+00:00,"[arxiv.Result.Author('Claudia S. Bianchini'), arxiv.Result.Author('Fabrizio Borgia'), arxiv.Result.Author('Paolo Bottoni'), arxiv.Result.Author('Maria de Marsico')]","Proceedings of the International Working Conference on Advanced
+  Visual Interfaces, ACM - Association for Computer Machinery, pp.390 - 393,
+  2012, ACM AVI2012, 978-1-4503-1287-5"
+104,A histogram-free multicanonical Monte Carlo algorithm for the basis expansion of density of states,"We report a new multicanonical Monte Carlo (MC) algorithm to obtain the
+density of states (DOS) for physical systems with continuous state variables in
+statistical mechanics. Our algorithm is able to obtain an analytical form for
+the DOS expressed in a chosen basis set, instead of a numerical array of finite
+resolution as in previous variants of this class of MC methods such as the
+multicanonical (MUCA) sampling and Wang-Landau (WL) sampling. This is enabled
+by storing the visited states directly in a data set and avoiding the explicit
+collection of a histogram. This practice also has the advantage of avoiding
+undesirable artificial errors caused by the discretization and binning of
+continuous state variables. Our results show that this scheme is capable of
+obtaining converged results with a much reduced number of Monte Carlo steps,
+leading to a significant speedup over existing algorithms.",1707.07049v1,physics.comp-ph,2017-07-21 21:23:51+00:00,"[arxiv.Result.Author('Ying Wai Li'), arxiv.Result.Author('Markus Eisenbach')]","Proceedings of the Platform for Advanced Scientific Computing
+  Conference (PASC '17). Association for Computing Machinery (ACM), New York,
+  NY, USA, Article 10, 7 pages (2017)"
+105,Descriptive complexity of real computation and probabilistic independence logic,"We introduce a novel variant of BSS machines called Separate Branching BSS
+machines (S-BSS in short) and develop a Fagin-type logical characterisation for
+languages decidable in non-deterministic polynomial time by S-BSS machines. We
+show that NP on S-BSS machines is strictly included in NP on BSS machines and
+that every NP language on S-BSS machines is a countable union of closed sets in
+the usual topology of R^n. Moreover, we establish that on Boolean inputs NP on
+S-BSS machines without real constants characterises a natural fragment of the
+complexity class existsR (a class of problems polynomial time reducible to the
+true existential theory of the reals) and hence lies between NP and PSPACE.
+Finally we apply our results to determine the data complexity of probabilistic
+independence logic.",2003.00644v2,cs.LO,2020-03-02 03:56:38+00:00,"[arxiv.Result.Author('Miika Hannula'), arxiv.Result.Author('Juha Kontinen'), arxiv.Result.Author('Jan Van den Bussche'), arxiv.Result.Author('Jonni Virtema')]","Proceedings of the 35th Annual ACM/IEEE Symposium on Logic in
+  Computer Science (LICS), 2020. Association for Computing Machinery, New York,
+  NY, USA, 550-563"
+106,Free Lunch! Retrospective Uplift Modeling for Dynamic Promotions Recommendation within ROI Constraints,"Promotions and discounts have become key components of modern e-commerce
+platforms. For online travel platforms (OTPs), popular promotions include room
+upgrades, free meals and transportation services. By offering these promotions,
+customers can get more value for their money, while both the OTP and its travel
+partners may grow their loyal customer base. However, the promotions usually
+incur a cost that, if uncontrolled, can become unsustainable. Consequently, for
+a promotion to be viable, its associated costs must be balanced by incremental
+revenue within set financial constraints. Personalized treatment assignment can
+be used to satisfy such constraints.
+  This paper introduces a novel uplift modeling technique, relying on the
+Knapsack Problem formulation, that dynamically optimizes the incremental
+treatment outcome subject to the required Return on Investment (ROI)
+constraints. The technique leverages Retrospective Estimation, a modeling
+approach that relies solely on data from positive outcome examples. The method
+also addresses training data bias, long term effects, and seasonality
+challenges via online-dynamic calibration. This approach was tested via offline
+experiments and online randomized controlled trials at Booking .com - a leading
+OTP with millions of customers worldwide, resulting in a significant increase
+in the target outcome while staying within the required financial constraints
+and outperforming other approaches.",2008.06293v2,cs.LG,2020-08-14 11:13:58+00:00,"[arxiv.Result.Author('Dmitri Goldenberg'), arxiv.Result.Author('Javier Albert'), arxiv.Result.Author('Lucas Bernardi'), arxiv.Result.Author('Pablo Estevez')]","2020. In Fourteenth ACM Conference on Recommender Systems (RecSys
+  '20). Association for Computing Machinery, New York, NY, USA, 486-491"
+107,GeoAI at ACM SIGSPATIAL: The New Frontier of Geospatial Artificial Intelligence Research,"Geospatial Artificial Intelligence (GeoAI) is an interdisciplinary field
+enjoying tremendous adoption. However, the efficient design and implementation
+of GeoAI systems face many open challenges. This is mainly due to the lack of
+non-standardized approaches to artificial intelligence tool development,
+inadequate platforms, and a lack of multidisciplinary engagements, which all
+motivate domain experts to seek a shared stage with scientists and engineers to
+solve problems of significant impact on society. Since its inception in 2017,
+the GeoAI series of workshops has been co-located with the Association for
+Computing Machinery International Conference on Advances in Geographic
+Information Systems. The workshop series has fostered a nexus for
+geoscientists, computer scientists, engineers, entrepreneurs, and
+decision-makers, from academia, industry, and government to engage in
+artificial intelligence, spatiotemporal data computing, and geospatial data
+science research, motivated by various challenges. In this article, we revisit
+and discuss the state of GeoAI open research directions, the recent
+developments, and an emerging agenda calling for a continued cross-disciplinary
+community engagement.",2210.13207v1,cs.AI,2022-10-20 18:02:17+00:00,"[arxiv.Result.Author('Dalton Lunga'), arxiv.Result.Author('Yingjie Hu'), arxiv.Result.Author('Shawn Newsam'), arxiv.Result.Author('Song Gao'), arxiv.Result.Author('Bruno Martins'), arxiv.Result.Author('Lexie Yang'), arxiv.Result.Author('Xueqing Deng')]",
+108,Cross-Domain Aspect Extraction using Transformers Augmented with Knowledge Graphs,"The extraction of aspect terms is a critical step in fine-grained sentiment
+analysis of text. Existing approaches for this task have yielded impressive
+results when the training and testing data are from the same domain. However,
+these methods show a drastic decrease in performance when applied to
+cross-domain settings where the domain of the testing data differs from that of
+the training data. To address this lack of extensibility and robustness, we
+propose a novel approach for automatically constructing domain-specific
+knowledge graphs that contain information relevant to the identification of
+aspect terms. We introduce a methodology for injecting information from these
+knowledge graphs into Transformer models, including two alternative mechanisms
+for knowledge insertion: via query enrichment and via manipulation of attention
+patterns. We demonstrate state-of-the-art performance on benchmark datasets for
+cross-domain aspect term extraction using our approach and investigate how the
+amount of external knowledge available to the Transformer impacts model
+performance.",2210.10144v1,cs.CL,2022-10-18 20:18:42+00:00,"[arxiv.Result.Author('Phillip Howard'), arxiv.Result.Author('Arden Ma'), arxiv.Result.Author('Vasudev Lal'), arxiv.Result.Author('Ana Paula Simoes'), arxiv.Result.Author('Daniel Korat'), arxiv.Result.Author('Oren Pereg'), arxiv.Result.Author('Moshe Wasserblat'), arxiv.Result.Author('Gadi Singer')]","Proceedings of the 31st ACM International Conference on
+  Information & Knowledge Management (CIKM 2022). Association for Computing
+  Machinery, New York, NY, USA, 780-790"
+109,Healing Spaces: Feasibility of a Multisensory Experience for Older Adults with Advanced Dementia and their Caregivers,"Healing Spaces proposes a new approach to multisensory interventions that
+show potential in ameliorating the behavioral and psychological symptoms of
+advanced dementia in older adults. Using smart technology, the project combines
+both digital and physical components to transform spaces and create unified,
+curated sensory experiences that provide meaningful context for interaction,
+and are easy for caregivers to deliver. A usability study was conducted for the
+Healing Spaces app followed by a feasibility evaluation of the full experience
+in a memory care facility recruiting caregivers, and residents in advanced
+stages of dementia. The feasibility evaluation successfully illuminated
+strengths as well as areas for improvement for the Healing Spaces experience in
+a memory care setting with older adults with advanced dementia. Caregivers and
+facility managers expressed interest in continuing to use Healing Spaces with
+the residents of the facility. Lessons learned about the technical and
+logistical implementation of Healing Spaces are discussed, as well as future
+directions for study design and potential therapeutic value of the experience.",2007.02083v1,cs.CY,2020-07-04 12:27:19+00:00,"[arxiv.Result.Author('Gabriela Purri R. Gomes'), arxiv.Result.Author('Sydney Rubin'), arxiv.Result.Author('Leah I. Stein Duker'), arxiv.Result.Author('Donna Benton'), arxiv.Result.Author('Andreas Kratky'), arxiv.Result.Author('Sze Yu A Chen'), arxiv.Result.Author('Maryalice Jordan-Marsh'), arxiv.Result.Author('Marientina Gotsis')]","2020. In Proceedings of the 13th ACM International Conference on
+  PErvasive Technologies Related to Assistive Environments (PETRA 20).
+  Association for Computing Machinery, New York, NY, USA, Article 24, 1 to 9"
+110,Recurrent Neural Networks for Stochastic Control in Real-Time Bidding,"Bidding in real-time auctions can be a difficult stochastic control task;
+especially if underdelivery incurs strong penalties and the market is very
+uncertain. Most current works and implementations focus on optimally delivering
+a campaign given a reasonable forecast of the market. Practical implementations
+have a feedback loop to adjust and be robust to forecasting errors, but no
+implementation, to the best of our knowledge, uses a model of market risk and
+actively anticipates market shifts. Solving such stochastic control problems in
+practice is actually very challenging. This paper proposes an approximate
+solution based on a Recurrent Neural Network (RNN) architecture that is both
+effective and practical for implementation in a production environment. The RNN
+bidder provisions everything it needs to avoid missing its goal. It also
+deliberately falls short of its goal when buying the missing impressions would
+cost more than the penalty for not reaching it.",2006.07042v1,cs.LG,2020-06-12 09:53:10+00:00,"[arxiv.Result.Author('Nicolas Grislain'), arxiv.Result.Author('Nicolas Perrin'), arxiv.Result.Author('Antoine Thabault')]","2019. Proceedings of the 25th ACM SIGKDD International Conference
+  on Knowledge Discovery & Data Mining. Association for Computing Machinery,
+  New York, NY, USA"
+111,Software startup education: gamifying growth hacking,"Startups seek to create highly scalable business models. For startups, growth
+is thus vital. Growth hacking is a marketing strategy advocated by various
+startup practitioner experts. It focuses on using low cost practices while
+utilizing existing platforms in creative ways to gain more users for the
+service. Though topics related to growth hacking such as marketing on a general
+level have been extensively studied in the past, growth hacking as a
+practitioner-born topic has not seen much interesting among the academia. To
+both spark interest in growth hacking, and to facilitate teaching growth
+hacking in the academia, we present two board games intended to serve as an
+engaging introduction to growth hacking for students.",2102.09366v1,cs.CY,2021-02-11 11:30:32+00:00,"[arxiv.Result.Author('Kai-Kristian Kemell'), arxiv.Result.Author('Polina Feshchenko'), arxiv.Result.Author('Joonas Himmanen'), arxiv.Result.Author('Abrar Hossain'), arxiv.Result.Author('Furqan Jameel'), arxiv.Result.Author('Raffaele Luigi Puca'), arxiv.Result.Author('Teemu Vitikainen'), arxiv.Result.Author('Joni Kultanen'), arxiv.Result.Author('Juhani Risku'), arxiv.Result.Author('Johannes Impiö'), arxiv.Result.Author('Anssi Sorvisto'), arxiv.Result.Author('Pekka Abrahamsson')]","In Proceedings of the 2nd ACM SIGSOFT International Workshop on
+  Software-Intensive Business: Start-ups, Platforms, and Ecosystems (IWSiB
+  2019). Association for Computing Machinery, New York, NY, USA, 25-30"
+112,A nested transaction mechanism for LOCUS,"A working implementation of nested transactions has been produced for LOCUS,
+an integrated distributed operating system which provides a high degree of
+network transparency. Several aspects of our mechanism are novel. First, the
+mechanism allows a transaction to access objects directly without regard to the
+location of the object. Second, processes running on behalf of a single
+transaction may be located at many sites. Thus there is no need to invoke a new
+transaction to perform processing or access objects at a remote site. Third,
+unlike other environments, LOCUS allows replication of data objects at more
+than one site in the network, and this capability is incorporated into the
+transaction mechanism. If the copy of an object that is currently being
+accessed becomes unavailable, it is possible to continue work by using another
+one of the replicated copies. Finally, an efficient orphan removal algorithm is
+presented, and the problem of providing continued operation during network
+partitions is addressed in detail.",cs/9812011v1,cs.OS,1998-12-10 16:49:04+00:00,"[arxiv.Result.Author('Erik T. Mueller'), arxiv.Result.Author('Johanna D. Moore'), arxiv.Result.Author('Gerald J. Popek')]",
+113,Large-scale Recommendation for Portfolio Optimization,"Individual investors are now massively using online brokers to trade stocks
+with convenient interfaces and low fees, albeit losing the advice and
+personalization traditionally provided by full-service brokers. We frame the
+problem faced by online brokers of replicating this level of service in a
+low-cost and automated manner for a very large number of users. Because of the
+care required in recommending financial products, we focus on a risk-management
+approach tailored to each user's portfolio and risk profile. We show that our
+hybrid approach, based on Modern Portfolio Theory and Collaborative Filtering,
+provides a sound and effective solution. The method is applicable to stocks as
+well as other financial assets, and can be easily combined with various
+financial forecasting models. We validate our proposal by comparing it with
+several baselines in a domain expert-based study.",2103.07768v1,cs.AI,2021-03-13 18:22:48+00:00,"[arxiv.Result.Author('Robin Swezey'), arxiv.Result.Author('Bruno Charron')]","In Proceedings of the 12th ACM Conference on Recommender Systems
+  (RecSys 2018). Association for Computing Machinery, New York, NY, USA,
+  382-386"
+114,Reproducibility in Evolutionary Computation,"Experimental studies are prevalent in Evolutionary Computation (EC), and
+concerns about the reproducibility and replicability of such studies have
+increased in recent times, reflecting similar concerns in other scientific
+fields. In this article, we discuss, within the context of EC, the different
+types of reproducibility and suggest a classification that refines the badge
+system of the Association of Computing Machinery (ACM) adopted by ACM
+Transactions on Evolutionary Learning and Optimization
+(https://dlnext.acm.org/journal/telo). We identify cultural and technical
+obstacles to reproducibility in the EC field. Finally, we provide guidelines
+and suggest tools that may help to overcome some of these reproducibility
+obstacles.",2102.03380v2,cs.AI,2021-02-05 19:06:35+00:00,"[arxiv.Result.Author('Manuel López-Ibáñez'), arxiv.Result.Author('Juergen Branke'), arxiv.Result.Author('Luís Paquete')]","ACM Transactions on Evolutionary Learning and Optimization, 2021"
+115,An Agent-based Model of the Cognitive Mechanisms Underlying the Origins of Creative Cultural Evolution,"Human culture is uniquely cumulative and open-ended. Using a computational
+model of cultural evolution in which neural network based agents evolve ideas
+for actions through invention and imitation, we tested the hypothesis that this
+is due to the capacity for recursive recall. We compared runs in which agents
+were limited to single-step actions to runs in which they used recursive recall
+to chain simple actions into complex ones. Chaining resulted in higher cultural
+diversity, open-ended generation of novelty, and no ceiling on the mean fitness
+of actions. Both chaining and no-chaining runs exhibited convergence on optimal
+actions, but without chaining this set was static while with chaining it was
+ever-changing. Chaining increased the ability to capitalize on the capacity for
+learning. These findings show that the recursive recall hypothesis provides a
+computationally plausible explanation of why humans alone have evolved the
+cultural means to transform this planet.",1310.3781v2,cs.MA,2013-10-14 18:47:36+00:00,"[arxiv.Result.Author('Liane Gabora'), arxiv.Result.Author('Maryam Saberi')]","(2011). In A. Goel, F. Harrell, B. Magerko, & J. Prophet (Eds.),
+  Proceedings of the 8th ACM Conference on Cognition & Creativity (pp.
+  299-306). New York: Association for Computing Machinery (ACM)"
+116,Minimax Demographic Group Fairness in Federated Learning,"Federated learning is an increasingly popular paradigm that enables a large
+number of entities to collaboratively learn better models. In this work, we
+study minimax group fairness in federated learning scenarios where different
+participating entities may only have access to a subset of the population
+groups during the training phase. We formally analyze how our proposed group
+fairness objective differs from existing federated learning fairness criteria
+that impose similar performance across participants instead of demographic
+groups. We provide an optimization algorithm -- FedMinMax -- for solving the
+proposed problem that provably enjoys the performance guarantees of centralized
+learning algorithms. We experimentally compare the proposed approach against
+other state-of-the-art methods in terms of group fairness in various federated
+learning setups, showing that our approach exhibits competitive or superior
+performance.",2201.08304v2,cs.LG,2022-01-20 17:13:54+00:00,"[arxiv.Result.Author('Afroditi Papadaki'), arxiv.Result.Author('Natalia Martinez'), arxiv.Result.Author('Martin Bertran'), arxiv.Result.Author('Guillermo Sapiro'), arxiv.Result.Author('Miguel Rodrigues')]","2022 ACM Conference on Fairness, Accountability, and Transparency
+  (FAccT '22). Association for Computing Machinery, New York, NY, USA, 142-159"
+117,Towards Understanding Political Interactions on Instagram,"Online Social Networks (OSNs) allow personalities and companies to
+communicate directly with the public, bypassing filters of traditional medias.
+As people rely on OSNs to stay up-to-date, the political debate has moved
+online too. We witness the sudden explosion of harsh political debates and the
+dissemination of rumours in OSNs. Identifying such behaviour requires a deep
+understanding on how people interact via OSNs during political debates. We
+present a preliminary study of interactions in a popular OSN, namely Instagram.
+We take Italy as a case study in the period before the 2019 European Elections.
+We observe the activity of top Italian Instagram profiles in different
+categories: politics, music, sport and show. We record their posts for more
+than two months, tracking ""likes"" and comments from users. Results suggest that
+profiles of politicians attract markedly different interactions than other
+categories. People tend to comment more, with longer comments, debating for
+longer time, with a large number of replies, most of which are not explicitly
+solicited. Moreover, comments tend to come from a small group of very active
+users. Finally, we witness substantial differences when comparing profiles of
+different parties.",1904.11719v2,cs.SI,2019-04-26 08:48:06+00:00,"[arxiv.Result.Author('Martino Trevisan'), arxiv.Result.Author('Luca Vassio'), arxiv.Result.Author('Idilio Drago'), arxiv.Result.Author('Marco Mellia'), arxiv.Result.Author('Fabricio Murai'), arxiv.Result.Author('Flavio Figueiredo'), arxiv.Result.Author('Ana Paula Couto da Silva'), arxiv.Result.Author('Jussara M. Almeida')]","HT19: Proceedings of the 30th ACM Conference on Hypertext and
+  Social Media. September 2019. Pages 247-251. Association for Computing
+  Machinery"
+118,Automatic Software Repair: a Bibliography,"This article presents a survey on automatic software repair. Automatic
+software repair consists of automatically finding a solution to software bugs
+without human intervention. This article considers all kinds of repairs. First,
+it discusses behavioral repair where test suites, contracts, models, and
+crashing inputs are taken as oracle. Second, it discusses state repair, also
+known as runtime repair or runtime recovery, with techniques such as checkpoint
+and restart, reconfiguration, and invariant restoration. The uniqueness of this
+article is that it spans the research communities that contribute to this body
+of knowledge: software engineering, dependability, operating systems,
+programming languages, and security. It provides a novel and structured
+overview of the diversity of bug oracles and repair operators used in the
+literature.",1807.00515v1,cs.SE,2018-07-02 08:09:28+00:00,[arxiv.Result.Author('Martin Monperrus')],"ACM Computing Surveys, Association for Computing Machinery, 2017"
+119,Easing the Conscience with OPC UA: An Internet-Wide Study on Insecure Deployments,"Due to increasing digitalization, formerly isolated industrial networks,
+e.g., for factory and process automation, move closer and closer to the
+Internet, mandating secure communication. However, securely setting up OPC UA,
+the prime candidate for secure industrial communication, is challenging due to
+a large variety of insecure options. To study whether Internet-facing OPC UA
+appliances are configured securely, we actively scan the IPv4 address space for
+publicly reachable OPC UA systems and assess the security of their
+configurations. We observe problematic security configurations such as missing
+access control (on 24% of hosts), disabled security functionality (24%), or use
+of deprecated cryptographic primitives (25%) on in total 92% of the reachable
+deployments. Furthermore, we discover several hundred devices in multiple
+autonomous systems sharing the same security certificate, opening the door for
+impersonation attacks. Overall, in this paper, we highlight commonly found
+security misconfigurations and underline the importance of appropriate
+configuration for security-featuring protocols.",2010.13539v1,cs.CR,2020-10-26 12:48:20+00:00,"[arxiv.Result.Author('Markus Dahlmanns'), arxiv.Result.Author('Johannes Lohmöller'), arxiv.Result.Author('Ina Berenice Fink'), arxiv.Result.Author('Jan Pennekamp'), arxiv.Result.Author('Klaus Wehrle'), arxiv.Result.Author('Martin Henze')]","In Proceedings of the ACM Internet Measurement Conference 2020
+  (IMC '20). Association for Computing Machinery, New York, NY, USA, 101-110"
